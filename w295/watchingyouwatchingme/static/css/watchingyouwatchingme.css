@@ -1,0 +1,10 @@
+.logo {
+  background-image: url("../img/logo.jpg");
+  background-size: 100px;
+  background-repeat: no-repeat;
+  padding-left: 100px;
+}
+
+.bg-black {
+  background-color: black !important;
+}
