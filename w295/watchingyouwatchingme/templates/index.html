@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="WYWMApp">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
 
     <title>Watching you... watching me...</title>
   </head>
-  <body id="app">
+  <body ng-controller="WYWMController">
 
-      <nav class="navbar navbar-expand-md navbar-dark bg-black mb-4 logo fixed-top">
+      <nav class="navbar navbar-expand-md navbar-dark bg-black mb-4 logo fixed-top" id="wywmnavbar">
           <span class="navbar-brand" href="#"></span>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
@@ -24,12 +24,13 @@
             <form class="form-inline mt-2 mt-md-0">
               <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              <img class="ml-3 rounded-circle" src="{{ '{{userprofileimage}}' }}" height="34px" width="34px"/>
             </form>
           </div>
         </nav>
     
-        <main role="main" class="container">
-          <div class="jumbotron">
+        <main role="main" class="container" id="wywmmain">
+          <div class="jumbotron" ng-hide="loggedin">
             <h1>MICS Capstone Project (NN, AS, SA, JM)</h1>
             <p class="lead">
               This web site tries to find out political affiliation of Twitter user. That means - your political affiliation. 
@@ -45,16 +46,15 @@
               Sign in with Twitter &raquo;
             </span>
             </a>
+
           </div>
         </main>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="static/js/watchingyouwatchingme.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="static/js/watchingyouwatchingme.js?20200208-02"></script>
 
   </body>
 </html>
