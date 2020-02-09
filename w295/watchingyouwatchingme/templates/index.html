@@ -49,9 +49,14 @@
 
           </div>
 
-          <p ng-repeat="tweet in usertweets">
-            {{ '{{tweet.text}}' }}
-          </p>
+          <div class="media" ng-repeat="tweet in usertweets">
+            <img src="{{ '{{tweet.user.profile_image_url_https}}' }}" class="align-self-start mr-3 rounded-circle" alt="{{ '{{tweet.user.name}}' }}">
+            <div class="media-body">
+              <h5 class="mt-0">{{ '{{tweet.user.name}}' }}</h5>
+              <p>{{ '{{tweet.text}}' }}</p>
+            </div>
+          </div>
+
         </main>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

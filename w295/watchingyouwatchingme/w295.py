@@ -18,13 +18,12 @@ twitter = OAuth1Service(
 
 @app.route('/')
 def index():
-    """tweets = None
-    if g.user is not None:
-        resp = twitter.request('statuses/home_timeline.json')
-        if resp.status == 200:
-            tweets = resp.data
-        else:
-           flash('Unable to load tweets from Twitter.')"""
+    if ('DEBUG' in app.config) and (app.config['DEBUG'] == True):
+        session['consumer_key'] = app.config['CONSUMER_KEY']
+        session['consumer_secret'] = app.config['CONSUMER_SECRET']
+        session['access_token'] = app.config['ACCESS_TOKEN']
+        session['access_token_secret'] = app.config['ACCESS_TOKEN_SECRET']
+
     return render_template('index.html')
 
 @app.route('/login')
