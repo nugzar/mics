@@ -61,16 +61,15 @@ def oauthorize():
 
 @app.route('/logout')
 def logout():
-    session.pop('consumer_key', None)
-    session.pop('consumer_secret', None)
-    session.pop('access_token', None)
-    session.pop('access_token_secret', None)
-    session.pop('userinfo', None)
+    session.clear()
 
     return redirect(url_for('index'))
 
 @app.route('/userinfo')
 def userinfo(refresh=True):
+    if 'access_token' not in session:
+        return ""
+
     if ('userinfo' in session) and not refresh:
         return session['userinfo']
 
@@ -88,6 +87,9 @@ def userinfo(refresh=True):
 
 @app.route('/usertweets')
 def usertweets():
+    if 'access_token' not in session:
+        return ""
+
     if ('usertweets' in session):
         return session['usertweets']
 
