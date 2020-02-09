@@ -49,7 +49,7 @@
 
           </div>
 
-          <div class="media mt-3" ng-repeat="tweet in usertweets">
+          <div class="media mt-4" ng-repeat="tweet in usertweets">
             <img ng-src="{{ '{{tweet.user.profile_image_url_https}}' }}" class="align-self-start mr-3 rounded-circle" alt="{{ '{{tweet.user.name}}' }}">
             <div class="media-body">
               <h6 class="mt-0"><b>{{ '{{tweet.user.name}}' }}</b> 
@@ -57,6 +57,35 @@
                 <span class="text-right">{{ '{{tweet.created_at}}' }}</span>
               </h6>
               <p>{{ '{{tweet.text}}' }}</p>
+
+              <div class="media mt-2" ng-if="tweet.retweeted_status">
+                <a class="pr-3" href="#">
+                  <img ng-src="{{ '{{tweet.retweeted_status.user.profile_image_url_https}}' }}" class="align-self-start mr-3 rounded-circle" alt="{{ '{{tweet.retweeted_status.user.name}}' }}">
+                </a>
+                <div class="media-body">
+                  <h7 class="mt-0">
+                    <b>{{ '{{tweet.retweeted_status.user.name}}' }}</b> 
+                    <a href="https://twitter.com/{{ '{{tweet.retweeted_status.user.screen_name}}' }}">@{{ '{{tweet.retweeted_status.user.screen_name}}' }}</a>
+                    <span class="text-right">{{ '{{tweet.retweeted_status.created_at}}' }}</span>                    
+                  </h5>
+                  <p >{{ '{{tweet.retweeted_status.text}}' }}</p>
+                </div>
+              </div>
+
+              <div class="media mt-2" ng-if="tweet.quoted_status">
+                <a class="pr-3" href="#">
+                  <img ng-src="{{ '{{tweet.quoted_status.user.profile_image_url_https}}' }}" class="align-self-start mr-3 rounded-circle" alt="{{ '{{tweet.quoted_status.user.name}}' }}">
+                </a>
+                <div class="media-body">
+                  <h7 class="mt-0">
+                    <b>{{ '{{tweet.quoted_status.user.name}}' }}</b> 
+                    <a href="https://twitter.com/{{ '{{tweet.quoted_status.user.screen_name}}' }}">@{{ '{{tweet.quoted_status.user.screen_name}}' }}</a>
+                    <span class="text-right">{{ '{{tweet.retweeted_status.created_at}}' }}</span>                    
+                  </h5>
+                  <p >{{ '{{tweet.quoted_status.text}}' }}</p>
+                </div>
+              </div>
+              
             </div>
           </div>
 
