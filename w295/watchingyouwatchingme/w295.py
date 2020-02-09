@@ -90,9 +90,6 @@ def usertweets():
     if 'access_token' not in session:
         return ""
 
-    if ('usertweets' in session):
-        return session['usertweets']
-
     # Let's refresh the userinfo and tokens
     userinfo(True)
 
@@ -102,8 +99,6 @@ def usertweets():
     r = api.request('statuses/user_timeline', {'count':1000, 'screen_name': json.loads(session['userinfo'])['screen_name']})
 
     if r.status_code == 200:
-        #print (r.text)
-        session['usertweets'] = json.dumps(json.loads(r.text))
-        return session['usertweets']
+        return json.dumps(json.loads(r.text))
 
     return ""
