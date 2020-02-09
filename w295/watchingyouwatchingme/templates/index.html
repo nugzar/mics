@@ -49,10 +49,13 @@
 
           </div>
 
-          <div class="media" ng-repeat="tweet in usertweets">
+          <div class="media mt-3" ng-repeat="tweet in usertweets">
             <img src="{{ '{{tweet.user.profile_image_url_https}}' }}" class="align-self-start mr-3 rounded-circle" alt="{{ '{{tweet.user.name}}' }}">
             <div class="media-body">
-              <h5 class="mt-0">{{ '{{tweet.user.name}}' }}</h5>
+              <h6 class="mt-0"><b>{{ '{{tweet.user.name}}' }}</b> 
+                <a href="https://twitter.com/{{ '{{tweet.user.screen_name}}' }}">@{{ '{{tweet.user.screen_name}}' }}</a>
+                <span class="text-right">{{ '{{tweet.created_at}}' }}</span>
+              </h6>
               <p>{{ '{{tweet.text}}' }}</p>
             </div>
           </div>
