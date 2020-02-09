@@ -1,4 +1,6 @@
-from flask import Flask, redirect, url_for, render_template, request, session, json
+import os
+from flask import Flask, redirect, url_for, render_template
+from flask import request, session, json, send_from_directory
 from rauth import OAuth1Service
 from TwitterAPI import TwitterAPI
 
@@ -25,6 +27,11 @@ def index():
         session['access_token_secret'] = app.config['ACCESS_TOKEN_SECRET']
 
     return render_template('index.html')
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static/img'),
+        'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 @app.route('/login')
 def login():
