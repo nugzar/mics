@@ -70,8 +70,8 @@ def logout():
     return redirect(url_for('index'))
 
 @app.route('/userinfo')
-def userinfo():
-    if 'userinfo' in session:
+def userinfo(refresh=True):
+    if ('userinfo' in session) and not refresh:
         return session['userinfo']
 
     api = TwitterAPI(session['consumer_key'], session['consumer_secret'],
@@ -80,8 +80,28 @@ def userinfo():
     r = api.request('account/verify_credentials')
 
     if r.status_code == 200:
-        print (r.text)
-        session['userinfo'] = json.loads(r.text)
+        print ("Refreshed user details")
+        session['userinfo'] = json.dumps(json.loads(r.text))
         return session['userinfo']
+
+    return ""
+
+@app.route('/usertweets')
+def usertweets():
+    if ('usertweets' in session):
+        return session['usertweets']
+
+    # Let's refresh the userinfo and tokens
+    userinfo(True)
+
+    api = TwitterAPI(session['consumer_key'], session['consumer_secret'],
+        session['access_token'], session['access_token_secret'])
+
+    r = api.request('statuses/user_timeline', {'count':1000, 'screen_name': json.loads(session['userinfo'])['screen_name']})
+
+    if r.status_code == 200:
+        #print (r.text)
+        session['usertweets'] = json.dumps(json.loads(r.text))
+        return session['usertweets']
 
     return ""

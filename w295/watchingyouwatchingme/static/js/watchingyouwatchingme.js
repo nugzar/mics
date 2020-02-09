@@ -6,8 +6,13 @@ WYWMApp.controller('WYWMController', ['$scope','$http', '$timeout', '$filter', f
   $scope.loggedin = false;
 
   $http.get('/userinfo').then(function(response) {
-    $scope.userprofileimage = response.data.profile_image_url_https;
+    $scope.userinfo = response.data;
+    $scope.userprofileimage = $scope.userinfo.profile_image_url_https;
     $scope.loggedin = true;
+
+    $http.get('/usertweets').then(function(response) {
+      $scope.usertweets = response.data;
+    });
   });
 
 }]);
