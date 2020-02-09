@@ -6,6 +6,9 @@ WYWMApp.controller('WYWMController', ['$scope','$http', '$timeout', '$filter', f
   $scope.loggedin = false;
 
   $http.get('/userinfo').then(function(response) {
+    if (response.data == "")
+      return;
+
     $scope.userinfo = response.data;
     $scope.userprofileimage = $scope.userinfo.profile_image_url_https;
     $scope.loggedin = true;
