@@ -1,3 +1,6 @@
 venv
 *.pyc
 w295.config
+package
+*.zip
+__pycache__
