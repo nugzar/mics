@@ -21,7 +21,7 @@ def import_tweet(j, cursor, cv, mnb):
   if ("in_reply_to_user_id_str" in j) and (j["in_reply_to_user_id_str"] != "") and (j["in_reply_to_user_id_str"] is not None):
     mentioned_user_ids.append(j["in_reply_to_user_id_str"])
 
-  tweet_text = j['text'].encode('utf-8').decode('unicode_escape')
+  tweet_text = j['text']
   data = cv.transform([tweet_text]).toarray()
   mnb_sentiment = mnb.predict(data)
   mnb_score = mnb.predict_proba(data)
@@ -245,7 +245,6 @@ def import_tweet(j, cursor, cv, mnb):
           json.dumps(j['user']['withheld_in_countries'] if 'current_user_retweet' in j else ''),
           json.dumps(j['user']['withheld_scope'] if 'current_user_retweet' in j else '')
         ))
-
 
   if ("retweeted_status" in j) and (j["retweeted_status"] is not None):
     #print ("retweeted_status", j["retweeted_status"])
