@@ -53,7 +53,7 @@
             <img ng-src="{{ '{{tweet.user.profile_image_url_https}}' }}" class="align-self-start mr-3 rounded-circle" alt="{{ '{{tweet.user.name}}' }}">
             <div class="media-body">
               <h6 class="mt-0"><b>{{ '{{tweet.user.name}}' }}</b> 
-                <a href="https://twitter.com/{{ '{{tweet.user.screen_name}}' }}">@{{ '{{tweet.user.screen_name}}' }}</a>
+                <a href="https://twitter.com/{{ '{{tweet.user.screen_name}}' }}/status/{{ '{{tweet.id_str}}' }}">@{{ '{{tweet.user.screen_name}}' }}</a>
                 <span class="text-right">{{ '{{tweet.created_at}}' }}</span>
               </h6>
               <p>{{ '{{tweet.text}}' }}</p>

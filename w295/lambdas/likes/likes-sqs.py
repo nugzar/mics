@@ -1,5 +1,6 @@
 from __future__ import print_function
-import json, os, pymysql, import_tweet
+import json, os, pymysql, import_tweet, joblib
+from sklearn.naive_bayes import MultinomialNB
 
 def lambda_handler(event, context):
 
@@ -12,13 +13,19 @@ def lambda_handler(event, context):
 
   cursor = con.cursor(pymysql.cursors.DictCursor)
 
+  print ("Loading CountVectorizer.joblib.pkl...")
+  cv  = joblib.load('CountVectorizer.joblib.pkl')
+
+  print ("Loading MultinomialNB.joblib.pkl...")
+  mnb = joblib.load('MultinomialNB.joblib.pkl')
+
   for record in event['Records']:
     likes = json.loads(record["body"])
 
     userid = likes["userid_str"]
 
     for tweet in likes["favorites"]:
-      import_tweet.import_tweet(tweet, cursor)
+      import_tweet.import_tweet(tweet, cursor, cv, mnb)
       con.commit()
 
       cursor.execute("DELETE FROM favorited WHERE ID = %s", (tweet['id'],))

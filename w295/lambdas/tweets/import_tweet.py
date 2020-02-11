@@ -1,6 +1,7 @@
 import sys, json, pymysql, numpy as np
+from sklearn.naive_bayes import MultinomialNB
 
-def import_tweet(j, cursor):
+def import_tweet(j, cursor, cv, mnb):
   print (j['id'])
 
   cursor.execute("SELECT * FROM tweets WHERE id = %s", (int(j["id"]),))
@@ -20,6 +21,11 @@ def import_tweet(j, cursor):
   if ("in_reply_to_user_id_str" in j) and (j["in_reply_to_user_id_str"] != "") and (j["in_reply_to_user_id_str"] is not None):
     mentioned_user_ids.append(j["in_reply_to_user_id_str"])
 
+  tweet_text = j['text'].encode('utf-8').decode('unicode_escape')
+  data = cv.transform([tweet_text]).toarray()
+  mnb_sentiment = mnb.predict(data)
+  mnb_score = mnb.predict_proba(data)
+
   if len(results) == 0:
     #Adding new tweet
     cursor.execute("""
@@ -30,7 +36,8 @@ def import_tweet(j, cursor):
           retweet_count, retweeted, retweeted_status, source, scopes, text,
           full_text, display_text_range, place, truncated, user, withheld_copyright,
           withheld_in_countries, withheld_scope, extended_entities, extended_tweet,
-          quoted_status_id, quoted_status_id_str, quoted_status, user_id, user_id_str, mentioned_user_ids_str)
+          quoted_status_id, quoted_status_id_str, quoted_status, user_id, user_id_str, 
+          mentioned_user_ids_str, mnb_sentiment, mnb_score)
         VALUES (%s, %s, %s, STR_TO_DATE(%s, '%%a %%b %%d %%H:%%i:%%s +0000 %%Y'), %s,
           %s, %s, %s, %s, %s,
           %s, %s, %s,
@@ -38,7 +45,8 @@ def import_tweet(j, cursor):
           %s, %s, %s, %s, %s, %s,
           %s, %s, %s, %s, %s, %s,
           %s, %s, %s, %s,
-          %s, %s, %s, %s, %s, %s)""",
+          %s, %s, %s, %s, %s, 
+          %s, %s, %s)""",
         (
           j['id'],
           j['id_str'],
@@ -79,7 +87,9 @@ def import_tweet(j, cursor):
           json.dumps(j['quoted_status'] if 'quoted_status' in j else ''),
           j['user']['id'],
           j['user']['id_str'],
-          '|'.join(np.unique(mentioned_user_ids))
+          '|'.join(np.unique(mentioned_user_ids)),
+          int(mnb_sentiment[0]),
+          round(float(mnb_score[0][mnb_sentiment[0]]), 8),
         ))
   else:
     cursor.execute("""
@@ -123,7 +133,9 @@ def import_tweet(j, cursor):
           quoted_status_id = %s,
           quoted_status_id_str = %s,
           quoted_status = %s,
-          mentioned_user_ids_str = %s
+          mentioned_user_ids_str = %s,
+          mnb_sentiment = %s, 
+          mnb_score = %s
         WHERE id = %s
       """, (
           j['id_str'],
@@ -165,6 +177,8 @@ def import_tweet(j, cursor):
           j['quoted_status_id_str'] if 'quoted_status_id_str' in j else '',
           json.dumps(j['quoted_status'] if 'quoted_status' in j else ''),
           '|'.join(np.unique(mentioned_user_ids)),
+          int(mnb_sentiment[0]),
+          round(float(mnb_score[0][mnb_sentiment[0]]), 8),
           j['id']
         ))
 
@@ -235,8 +249,8 @@ def import_tweet(j, cursor):
 
   if ("retweeted_status" in j) and (j["retweeted_status"] is not None):
     #print ("retweeted_status", j["retweeted_status"])
-    import_tweet(j["retweeted_status"], cursor)
+    import_tweet(j["retweeted_status"], cursor, cv, mnb)
 
   if ("quoted_status" in j) and (j["quoted_status"] is not None):
     #print ("quoted_status", j["quoted_status"])
-    import_tweet(j["quoted_status"], cursor)
+    import_tweet(j["quoted_status"], cursor, cv, mnb)
