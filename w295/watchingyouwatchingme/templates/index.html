@@ -55,8 +55,10 @@
               <h6 class="mt-0"><b>{{ '{{tweet.user.name}}' }}</b> 
                 <a href="https://twitter.com/{{ '{{tweet.user.screen_name}}' }}/status/{{ '{{tweet.id_str}}' }}">@{{ '{{tweet.user.screen_name}}' }}</a>
                 <span>{{ '{{tweet.created_at}}' }}</span>
-                <span>Sentiment: {{ '{{tweet.mnb_sentiment}}' }}</span>
-                <span>Precision: {{ '{{tweet.mnb_score}}' }}</span>
+                <b>
+                  <span>Sentiment: {{ '{{tweet.mnb_sentiment}}' }}</span>
+                  <span>Precision: {{ '{{tweet.mnb_score}}' }}</span>
+                </b>b
               </h6>
               <p>{{ '{{tweet.text}}' }}</p>
 
