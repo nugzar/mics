@@ -144,7 +144,7 @@ def usertweets():
         for tweet in tweets:
             data = cv.transform([tweet['text']]).toarray()
             tweet['mnb_sentiment'] = int(mnb.predict(data)[0])
-            tweet['mnb_score'] = float(mnb.predict_proba(data)[0][tweet['mnb_sentiment']])
+            tweet['mnb_score'] = int(mnb.predict_proba(data)[0][tweet['mnb_sentiment']] * 100)
 
         return json.dumps(tweets)
 
