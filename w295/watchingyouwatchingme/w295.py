@@ -1,8 +1,9 @@
-import os, boto3
+import os, boto3, joblib
 from flask import Flask, redirect, url_for, render_template
 from flask import request, session, json, send_from_directory
 from rauth import OAuth1Service
 from TwitterAPI import TwitterAPI
+from sklearn.naive_bayes import MultinomialNB
 
 app = Flask(__name__)
 app.config.from_pyfile('w295.config', silent=True)
@@ -23,13 +24,19 @@ sqs = boto3.client('sqs',
     region_name=app.config['SQS_TWEETS_REGION']
 )
 
+print ("Loading CountVectorizer.joblib.pkl...")
+cv  = joblib.load('CountVectorizer.joblib.pkl')
+
+print ("Loading MultinomialNB.joblib.pkl...")
+mnb = joblib.load('MultinomialNB.joblib.pkl')
+
 @app.route('/')
 def index():
-    if ('DEBUG' in app.config) and (app.config['DEBUG'] == True):
-        session['consumer_key'] = app.config['CONSUMER_KEY']
-        session['consumer_secret'] = app.config['CONSUMER_SECRET']
-        session['access_token'] = app.config['ACCESS_TOKEN']
-        session['access_token_secret'] = app.config['ACCESS_TOKEN_SECRET']
+    #if ('DEBUG' in app.config) and (app.config['DEBUG'] == True):
+    #    session['consumer_key'] = app.config['CONSUMER_KEY']
+    #    session['consumer_secret'] = app.config['CONSUMER_SECRET']
+    #    session['access_token'] = app.config['ACCESS_TOKEN']
+    #    session['access_token_secret'] = app.config['ACCESS_TOKEN_SECRET']
 
     return render_template('index.html')
 
@@ -133,6 +140,11 @@ def usertweets():
                 }
             })
             print ('SQS Add usertweets:', n, n+chunk_size, response)
+
+        for tweet in tweets:
+            data = cv.transform([tweet['text']]).toarray()
+            tweet['mnb_sentiment'] = int(mnb.predict(data)[0])
+            tweet['mnb_score'] = float(mnb.predict_proba(data)[0][tweet['mnb_sentiment']])
 
         return json.dumps(tweets)
 

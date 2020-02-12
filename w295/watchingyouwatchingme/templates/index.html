@@ -54,7 +54,9 @@
             <div class="media-body">
               <h6 class="mt-0"><b>{{ '{{tweet.user.name}}' }}</b> 
                 <a href="https://twitter.com/{{ '{{tweet.user.screen_name}}' }}/status/{{ '{{tweet.id_str}}' }}">@{{ '{{tweet.user.screen_name}}' }}</a>
-                <span class="text-right">{{ '{{tweet.created_at}}' }}</span>
+                <span>{{ '{{tweet.created_at}}' }}</span>
+                <span>Sentiment: {{ '{{tweet.mnb_sentiment}}' }}</span>
+                <span>Precision: {{ '{{tweet.mnb_score}}' }}</span>
               </h6>
               <p>{{ '{{tweet.text}}' }}</p>
 
