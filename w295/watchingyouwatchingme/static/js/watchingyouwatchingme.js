@@ -16,6 +16,11 @@ WYWMApp.controller('WYWMController', ['$scope','$http', '$timeout', '$filter', f
     $http.get('/usertweets').then(function(response) {
       $scope.usertweets = response.data;
     });
+
+    $http.get('/userfriends').then(function(response) {
+      $scope.userfriends = response.data;
+    });
+
   });
 
 }]);

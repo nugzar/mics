@@ -36,12 +36,12 @@ print ("Loading pageranks... Done")
 
 @app.route('/')
 def index():
-    #if ('DEBUG' in app.config) and (app.config['DEBUG'] == True):
-    #    print ("DEBUG is defined")
-    #    session['consumer_key'] = app.config['CONSUMER_KEY']
-    #    session['consumer_secret'] = app.config['CONSUMER_SECRET']
-    #    session['access_token'] = app.config['ACCESS_TOKEN']
-    #    session['access_token_secret'] = app.config['ACCESS_TOKEN_SECRET']
+    if ('_DEBUG' in app.config) and (app.config['_DEBUG'] == True):
+        print ("DEBUG is defined")
+        session['consumer_key'] = app.config['CONSUMER_KEY']
+        session['consumer_secret'] = app.config['CONSUMER_SECRET']
+        session['access_token'] = app.config['ACCESS_TOKEN']
+        session['access_token_secret'] = app.config['ACCESS_TOKEN_SECRET']
 
     return render_template('index.html')
 
@@ -170,6 +170,7 @@ def usertweets():
                 if id_str in pageranks:
                     tweet['political_tendency'] = pageranks[id_str]["pt"]
                     tweet['pagerank'] = pageranks[id_str]["pr"]
+                    tweet['sname'] = pageranks[id_str]["sname"]
                     tweet['is_political'] = True
 
         return json.dumps(tweets)
@@ -213,7 +214,13 @@ def userfriends():
             })
             print ('SQS Add userfriends:', n, n+chunk_size, response)
 
-        return json.dumps(friends)
+        ufs = []
+
+        for id in friends["ids"]:
+            if str(id) in pageranks:
+                ufs.append(pageranks[str(id)])
+
+        return json.dumps(ufs)
 
     return ""
 

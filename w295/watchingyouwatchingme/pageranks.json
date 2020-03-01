@@ -1,2282 +1,3422 @@
 {
   "1009269193": {
+    "name": "Rep. Daniel Lipinski",
     "pr": 0.00132917267504504,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepLipinski"
   },
   "1011053278304591872": {
+    "name": "Clay Higgins",
     "pr": 0.000469476818833473,
-    "pt": 1
+    "pt": 1,
+    "sname": "CaptClayHiggins"
   },
   "1029094268542099457": {
+    "name": "Lance Gooden",
     "pr": 0.00097588035962576,
-    "pt": 1
+    "pt": 1,
+    "sname": "Lancegooden"
   },
   "1037321378": {
+    "name": "Mark Takano",
     "pr": 0.0014795600034681,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepMarkTakano"
   },
   "1051127714": {
+    "name": "Grace Meng",
     "pr": 0.00103368194142308,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepGraceMeng"
   },
   "1051446626": {
+    "name": "Ann Wagner",
     "pr": 0.00283622482970966,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepAnnWagner"
   },
   "1052896620797460481": {
+    "name": "Chrissy Houlahan",
     "pr": 0.000704199963520983,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepHoulahan"
   },
   "105290638": {
+    "name": "Ed Perlmutter",
     "pr": 0.000567261830703853,
-    "pt": -1
+    "pt": -1,
+    "sname": "Ed4Colorado"
   },
   "1055730738": {
+    "name": "Rep. Alan Lowenthal",
     "pr": 0.00206216105991897,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepLowenthal"
   },
   "1055907624": {
+    "name": "Rep. Joe Kennedy III",
     "pr": 0.00239114900339711,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepJoeKennedy"
   },
   "1058051748": {
+    "name": "Randy Weber",
     "pr": 0.00140892336954634,
-    "pt": 1
+    "pt": 1,
+    "sname": "TXRandy14"
   },
   "1058345042": {
+    "name": "Congressman Tom Rice",
     "pr": 0.00121520989152635,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepTomRice"
   },
   "1058460818": {
+    "name": "George Holding",
     "pr": 0.00100569175204224,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepHolding"
   },
   "1058520120": {
+    "name": "Tammy Duckworth",
     "pr": 0.00215224047678763,
-    "pt": -1
+    "pt": -1,
+    "sname": "SenDuckworth"
   },
   "1058717720": {
+    "name": "Ann McLane Kuster",
     "pr": 0.00157823178235666,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepAnnieKuster"
   },
   "1060370282": {
+    "name": "Markwayne Mullin",
     "pr": 0.00138362092640715,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepMullin"
   },
   "1060487274": {
+    "name": "Rep. Doug Collins",
     "pr": 0.00574909722157209,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepDougCollins"
   },
   "1061310112013434882": {
+    "name": "Rep. Dean Phillips",
     "pr": 0.00118893474741237,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepDeanPhillips"
   },
   "10615232": {
+    "name": "ChuckGrassley",
     "pr": 0.00307114198490294,
-    "pt": 1
+    "pt": 1,
+    "sname": "ChuckGrassley"
   },
   "1064595993222615040": {
+    "name": "Joe Morelle",
     "pr": 0.00108453226971863,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepJoeMorelle"
   },
   "1065995022": {
+    "name": "Jackie Walorski",
     "pr": 0.00186942888533184,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepWalorski"
   },
   "1067818539179024386": {
+    "name": "Kevin Hern",
     "pr": 0.000755413641475268,
-    "pt": 1
+    "pt": 1,
+    "sname": "repkevinhern"
   },
   "1068499286": {
+    "name": "Denny Heck",
     "pr": 0.00148182582538068,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepDennyHeck"
   },
   "1069636653353000962": {
+    "name": "Rep. Susan Wild",
     "pr": 0.0012812916131363,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepSusanWild"
   },
   "1071102246": {
+    "name": "Rep. Jared Huffman",
     "pr": 0.00154460012744815,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepHuffman"
   },
   "1071402577": {
+    "name": "Senator Deb Fischer",
     "pr": 0.00198678809562138,
-    "pt": 1
+    "pt": 1,
+    "sname": "SenatorFischer"
   },
   "1071900114": {
+    "name": "Ted Yoho",
     "pr": 0.00124886877014089,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepTedYoho"
   },
   "1074101017": {
+    "name": "Susan W. Brooks",
     "pr": 0.00211154734743438,
-    "pt": 1
+    "pt": 1,
+    "sname": "SusanWBrooks"
   },
   "1075205691621720064": {
+    "name": "Bryan Steil",
     "pr": 0.000699973774310806,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepBryanSteil"
   },
   "1075904377221722113": {
+    "name": "Rep. Lizzie Fletcher",
     "pr": 0.000489575279402399,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepFletcher"
   },
   "1077121945": {
+    "name": "Rep. Lois Frankel",
     "pr": 0.00196356449344127,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepLoisFrankel"
   },
   "1077446982": {
+    "name": "Rep. Roger Williams",
     "pr": 0.00117379335234398,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepRWilliams"
   },
   "10774652": {
+    "name": "TheBlaze",
     "pr": 0.0010616450858904,
-    "pt": 1
+    "pt": 1,
+    "sname": "theblaze"
   },
   "1079776144524754944": {
+    "name": "Nikki Haley",
     "pr": 0.00297411977872444,
-    "pt": 1
+    "pt": 1,
+    "sname": "NikkiHaley"
   },
   "1080222360643485698": {
+    "name": "Angie Craig",
     "pr": 0.000933272322522842,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepAngieCraig"
   },
   "1080462532815532032": {
+    "name": "Rep. Kim Schrier",
     "pr": 0.00052292666249629,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepKimSchrier"
   },
   "1080504024695222273": {
+    "name": "Congressman Denver Riggleman",
     "pr": 0.00100555254324159,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepRiggleman"
   },
   "1080509366": {
+    "name": "Bill Foster",
     "pr": 0.0013484763907083,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepBillFoster"
   },
   "1080587263132733442": {
+    "name": "Rep. Sylvia Garcia",
     "pr": 0.00139255517905873,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepSylviaGarcia"
   },
   "1080830346915209216": {
+    "name": "Rep. Xochitl Torres Small",
     "pr": 0.000831926637082361,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepTorresSmall"
   },
   "1080844782": {
+    "name": "Kyrsten Sinema",
     "pr": 0.00220711632167026,
-    "pt": -1
+    "pt": -1,
+    "sname": "SenatorSinema"
   },
   "1080854935535800320": {
+    "name": "Ron Wright",
     "pr": 0.000915654044908791,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepRonWright"
   },
   "1080894931311431682": {
+    "name": "Rep. Dan Crenshaw",
     "pr": 0.00179406742160021,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepDanCrenshaw"
   },
   "1081243468327018496": {
+    "name": "Congressman Michael Guest",
     "pr": 0.000801339109401245,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepMichaelGuest"
   },
   "1081312310059253763": {
+    "name": "John Rose",
     "pr": 0.000830843936368591,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepJohnRose"
   },
   "1081318716573470720": {
+    "name": "Carol Miller",
     "pr": 0.00103749508974408,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepCarolMiller"
   },
   "1081350574589833221": {
+    "name": "Rep. Ed Case",
     "pr": 0.000531655018104817,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepEdCase"
   },
   "1082311988926124036": {
+    "name": "John Joyce",
     "pr": 0.000803555481727234,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepJohnJoyce"
   },
   "1083448909": {
+    "name": "US Rep. Filemon Vela",
     "pr": 0.000957944645626353,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepFilemonVela"
   },
   "1083469084648505344": {
+    "name": "Congressman Jeff Van Drew",
     "pr": 0.000771746693118072,
-    "pt": 1
+    "pt": 1,
+    "sname": "CongressmanJVD"
   },
   "1083474782602125318": {
+    "name": "Congressman Jim Hagedorn",
     "pr": 0.000625639574269102,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepHagedorn"
   },
   "1089859058": {
+    "name": "Raul Ruiz",
     "pr": 0.000927518251738463,
-    "pt": -1
+    "pt": -1,
+    "sname": "CongressmanRuiz"
   },
   "109579534": {
+    "name": "Elise Stefanik",
     "pr": 0.00328261073158912,
-    "pt": 1
+    "pt": 1,
+    "sname": "EliseStefanik"
   },
   "1096059529": {
+    "name": "Jim Risch",
     "pr": 0.00199292572367183,
-    "pt": 1
+    "pt": 1,
+    "sname": "SenatorRisch"
   },
   "1099199839": {
+    "name": "Martin Heinrich",
     "pr": 0.00149508010619331,
-    "pt": -1
+    "pt": -1,
+    "sname": "MartinHeinrich"
   },
   "110755266": {
+    "name": "Scott Austin",
     "pr": 0.00038920338727424,
-    "pt": 1
+    "pt": 1,
+    "sname": "ScottMAustin"
   },
   "111671288": {
+    "name": "John Boozman",
     "pr": 0.000581791014263897,
-    "pt": 1
+    "pt": 1,
+    "sname": "Boozman4AR"
   },
   "112651673": {
+    "name": "Steve Womack",
     "pr": 0.000600172058969411,
-    "pt": 1
+    "pt": 1,
+    "sname": "womack4congress"
   },
   "112740986": {
+    "name": "Rep. Ron Kind",
     "pr": 0.00115125121233256,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepRonKind"
   },
   "113494390": {
+    "name": "Karen Bass",
     "pr": 0.000468241893278068,
-    "pt": -1
+    "pt": -1,
+    "sname": "KarenBassTweets"
   },
   "1136060761422405633": {
+    "name": "Congressman Fred Keller",
     "pr": 0.001463048015201,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepFredKeller"
   },
   "114607567": {
+    "name": "Brett Guthrie",
     "pr": 0.000377580427235422,
-    "pt": 1
+    "pt": 1,
+    "sname": "brettguthrie"
   },
   "115186195": {
+    "name": "Andy Barr",
     "pr": 0.000376064069274114,
-    "pt": 1
+    "pt": 1,
+    "sname": "barrforcongress"
   },
   "1155335864": {
+    "name": "Rep. Donald Payne Jr",
     "pr": 0.00119892907652307,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepDonaldPayne"
   },
   "115676070": {
+    "name": "Collin Peterson",
     "pr": 0.00043580801484824,
-    "pt": -1
+    "pt": -1,
+    "sname": "collinpeterson"
   },
   "115979444": {
+    "name": "Debbie Wasserman Schultz",
     "pr": 0.00121524855930494,
-    "pt": -1
+    "pt": -1,
+    "sname": "DWStweets"
   },
   "11650762": {
+    "name": "Roger Wicker",
     "pr": 0.000481172121731301,
-    "pt": 1
+    "pt": 1,
+    "sname": "RogerWicker"
   },
   "11651202": {
+    "name": "Steve Daines",
     "pr": 0.00206434077584101,
-    "pt": 1
+    "pt": 1,
+    "sname": "SteveDaines"
   },
   "116616867": {
+    "name": "Steven Palazzo",
     "pr": 0.000509952432153521,
-    "pt": 1
+    "pt": 1,
+    "sname": "StevenPalazzo"
   },
   "1173978070535024642": {
+    "name": "Greg Murphy",
     "pr": 0.000557409403239239,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepGregMurphy"
   },
   "120518554": {
+    "name": "Derek Kilmer",
     "pr": 0.000510580783462382,
-    "pt": -1
+    "pt": -1,
+    "sname": "DerekKilmer"
   },
   "1209417007": {
+    "name": "Steve Scalise",
     "pr": 0.0155652863468906,
-    "pt": 1
+    "pt": 1,
+    "sname": "SteveScalise"
   },
   "122174004": {
+    "name": "Dina Titus",
     "pr": 0.00116339777177098,
-    "pt": -1
+    "pt": -1,
+    "sname": "repdinatitus"
   },
   "1222257180": {
+    "name": "Rep. Tony C\u00e1rdenas",
     "pr": 0.00146217124027848,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepCardenas"
   },
   "1240107944": {
+    "name": "Dr. Roger Marshall",
     "pr": 0.00088560872753621,
-    "pt": 1
+    "pt": 1,
+    "sname": "RogerMarshallMD"
   },
   "124224165": {
+    "name": "Fred Upton",
     "pr": 0.00211391540401723,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepFredUpton"
   },
   "1249982359": {
+    "name": "Leader McConnell",
     "pr": 0.0108722034483431,
-    "pt": 1
+    "pt": 1,
+    "sname": "senatemajldr"
   },
   "1257667158": {
+    "name": "Chip Roy",
     "pr": 0.00124083450503212,
-    "pt": 1
+    "pt": 1,
+    "sname": "chiproytx"
   },
   "1260172386": {
+    "name": "Rep. Juan Vargas",
     "pr": 0.00114579460025381,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepJuanVargas"
   },
   "1262017122": {
+    "name": "Abby Finkenauer",
     "pr": 0.000828619611862772,
-    "pt": -1
+    "pt": -1,
+    "sname": "Abby4Iowa"
   },
   "127941167": {
+    "name": "David Rouzer",
     "pr": 0.000391586548925257,
-    "pt": 1
+    "pt": 1,
+    "sname": "DavidRouzer"
   },
   "128664931": {
+    "name": "Jim McGovern",
     "pr": 0.000576225475495087,
-    "pt": -1
+    "pt": -1,
+    "sname": "McGovernMA"
   },
   "129259273": {
+    "name": "Steve Watkins",
     "pr": 0.000590767242056716,
-    "pt": 1
+    "pt": 1,
+    "sname": "Steve4Kansas"
   },
   "130003817": {
+    "name": "Jody Hice",
     "pr": 0.00109227131534377,
-    "pt": 1
+    "pt": 1,
+    "sname": "JodyHice"
   },
   "130733698": {
+    "name": "Cathy McMorris Rodgers",
     "pr": 0.000540660225291892,
-    "pt": 1
+    "pt": 1,
+    "sname": "TeamCMR"
   },
   "131546062": {
+    "name": "Rick Scott",
     "pr": 0.00253458449336669,
-    "pt": 1
+    "pt": 1,
+    "sname": "SenRickScott"
   },
   "13218102": {
+    "name": "Senator John Cornyn",
     "pr": 0.00426269835142331,
-    "pt": 1
+    "pt": 1,
+    "sname": "JohnCornyn"
   },
   "1339931490": {
+    "name": "Robin Kelly",
     "pr": 0.00130464336558655,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepRobinKelly"
   },
   "137794015": {
+    "name": "Rep. Ted Deutch",
     "pr": 0.00238308670167833,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepTedDeutch"
   },
   "138203134": {
+    "name": "Alexandria Ocasio-Cortez",
     "pr": 0.00499127136036032,
-    "pt": -1
+    "pt": -1,
+    "sname": "AOC"
   },
   "1383059977": {
+    "name": "Joni Ernst",
     "pr": 0.00130201246117702,
-    "pt": 1
+    "pt": 1,
+    "sname": "joniernst"
   },
   "140519774": {
+    "name": "Rosa DeLauro",
     "pr": 0.00171331986284205,
-    "pt": -1
+    "pt": -1,
+    "sname": "rosadelauro"
   },
   "140529899": {
+    "name": "Dusty Johnson",
     "pr": 0.000478221404334063,
-    "pt": 1
+    "pt": 1,
+    "sname": "DustyJohnson"
   },
   "1410590874": {
+    "name": "Rep. Peter Welch",
     "pr": 0.00173889759977944,
-    "pt": -1
+    "pt": -1,
+    "sname": "PeterWelch"
   },
   "14125897": {
+    "name": "Jeanne Shaheen",
     "pr": 0.00105184127217577,
-    "pt": -1
+    "pt": -1,
+    "sname": "JeanneShaheen"
   },
   "142419647": {
+    "name": "Cedric Richmond",
     "pr": 0.000424138844756972,
-    "pt": -1
+    "pt": -1,
+    "sname": "CedricRichmond"
   },
   "144927376": {
+    "name": "Barbara Lee",
     "pr": 0.000622459641273497,
-    "pt": -1
+    "pt": -1,
+    "sname": "BarbaraLeeSays"
   },
   "14511951": {
+    "name": "HuffPost",
     "pr": 0.00170092638496984,
-    "pt": -1
+    "pt": -1,
+    "sname": "HuffPost"
   },
   "14515931": {
+    "name": "Brian Fitzpatrick",
     "pr": 0.000305370851274079,
-    "pt": 1
+    "pt": 1,
+    "sname": "therealfitz"
   },
   "145292853": {
+    "name": "Gary Peters",
     "pr": 0.000484069390244819,
-    "pt": -1
+    "pt": -1,
+    "sname": "GaryPeters"
   },
   "14529929": {
+    "name": "Jake Tapper",
     "pr": 0.00531386759035931,
-    "pt": -1
+    "pt": -1,
+    "sname": "jaketapper"
   },
   "14573926": {
+    "name": "Mike Levin",
     "pr": 0.00131540953340555,
-    "pt": -1
+    "pt": -1,
+    "sname": "MikeLevinCA"
   },
   "1480852568": {
+    "name": "Ben Sasse",
     "pr": 0.00104825608937235,
-    "pt": 1
+    "pt": 1,
+    "sname": "BenSasse"
   },
   "14984637": {
+    "name": "Chellie Pingree",
     "pr": 0.0014380798947293,
-    "pt": -1
+    "pt": -1,
+    "sname": "chelliepingree"
   },
   "150078976": {
+    "name": "Chris Murphy",
     "pr": 0.00308319482104014,
-    "pt": -1
+    "pt": -1,
+    "sname": "ChrisMurphyCT"
   },
   "151444950": {
+    "name": "Susan Davis",
     "pr": 0.00143421411449485,
-    "pt": -1
+    "pt": -1,
+    "sname": "DaviSusan"
   },
   "1531521632": {
+    "name": "Joyce Beatty",
     "pr": 0.00189891255797005,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepBeatty"
   },
   "15356407": {
+    "name": "Rep. Rob Wittman",
     "pr": 0.0013342405717096,
-    "pt": 1
+    "pt": 1,
+    "sname": "RobWittman"
   },
   "153944899": {
+    "name": "Lloyd Doggett",
     "pr": 0.000993850931154101,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepLloydDoggett"
   },
   "1542372750": {
+    "name": "Joe Neguse",
     "pr": 0.000865960261305165,
-    "pt": -1
+    "pt": -1,
+    "sname": "JoeNeguse"
   },
   "15513604": {
+    "name": "FOX & friends",
     "pr": 0.0104852972221823,
-    "pt": 1
+    "pt": 1,
+    "sname": "foxandfriends"
   },
   "155585373": {
+    "name": "John Larson",
     "pr": 0.00068661965283542,
-    "pt": -1
+    "pt": -1,
+    "sname": "JohnLarsonCT"
   },
   "15600527": {
+    "name": "John Shimkus",
     "pr": 0.002369076328095,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepShimkus"
   },
   "156333623": {
+    "name": "Congressman Al Green",
     "pr": 0.00116044461694202,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepAlGreen"
   },
   "15745368": {
+    "name": "Marco Rubio",
     "pr": 0.00473405326684549,
-    "pt": 1
+    "pt": 1,
+    "sname": "marcorubio"
   },
   "15751083": {
+    "name": "Michael Burgess, MD",
     "pr": 0.00147404641019636,
-    "pt": 1
+    "pt": 1,
+    "sname": "michaelcburgess"
   },
   "15764644": {
+    "name": "Nancy Pelosi",
     "pr": 0.015828473946492,
-    "pt": -1
+    "pt": -1,
+    "sname": "SpeakerPelosi"
   },
   "1577754348": {
+    "name": "Mikie Sherrill",
     "pr": 0.000903574918402152,
-    "pt": -1
+    "pt": -1,
+    "sname": "MikieSherrill"
   },
   "15808765": {
+    "name": "Cory Booker",
     "pr": 0.00361817774506813,
-    "pt": -1
+    "pt": -1,
+    "sname": "CoryBooker"
   },
   "158414847": {
+    "name": "The Daily Show",
     "pr": 0.00131388827367707,
-    "pt": -1
+    "pt": -1,
+    "sname": "TheDailyShow"
   },
   "158520264": {
+    "name": "Rick Larsen",
     "pr": 0.000662765395452109,
-    "pt": -1
+    "pt": -1,
+    "sname": "larsenrick"
   },
   "15954997": {
+    "name": "Earl Blumenauer",
     "pr": 0.00153178771456198,
-    "pt": -1
+    "pt": -1,
+    "sname": "repblumenauer"
   },
   "1609364557": {
+    "name": "Alma Adams",
     "pr": 0.00059468603578596,
-    "pt": -1
+    "pt": -1,
+    "sname": "AlmaforCongress"
   },
   "16129920": {
+    "name": "Rachel Maddow MSNBC",
     "pr": 0.0023944020686143,
-    "pt": -1
+    "pt": -1,
+    "sname": "maddow"
   },
   "161411080": {
+    "name": "Rep.Grace Napolitano",
     "pr": 0.00120491114739156,
-    "pt": -1
+    "pt": -1,
+    "sname": "gracenapolitano"
   },
   "161743731": {
+    "name": "Rep. Kay Granger",
     "pr": 0.00137698738567344,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepKayGranger"
   },
   "161791703": {
+    "name": "Rep. Bobby Scott",
     "pr": 0.00272434830486045,
-    "pt": -1
+    "pt": -1,
+    "sname": "BobbyScott"
   },
   "162069635": {
+    "name": "Steve Cohen",
     "pr": 0.000717992907591017,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepCohen"
   },
   "16256269": {
+    "name": "Virginia Foxx",
     "pr": 0.00181334818791516,
-    "pt": 1
+    "pt": 1,
+    "sname": "virginiafoxx"
   },
   "162940479": {
+    "name": "Mike Johnson",
     "pr": 0.000451602888416626,
-    "pt": 1
+    "pt": 1,
+    "sname": "mike_p_johnson"
   },
   "163570705": {
+    "name": "Rep. Emanuel Cleaver",
     "pr": 0.00146416559351902,
-    "pt": -1
+    "pt": -1,
+    "sname": "repcleaver"
   },
   "164007407": {
+    "name": "Eliot Engel",
     "pr": 0.0020753554378588,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepEliotEngel"
   },
   "164369297": {
+    "name": "Rep. Nydia Velazquez",
     "pr": 0.00254218896027332,
-    "pt": -1
+    "pt": -1,
+    "sname": "NydiaVelazquez"
   },
   "16473577": {
+    "name": "Jon Tester",
     "pr": 0.000567674977405354,
-    "pt": -1
+    "pt": -1,
+    "sname": "jontester"
   },
   "166751745": {
+    "name": "Ryan Fournier",
     "pr": 0.00110593591843114,
-    "pt": 1
+    "pt": 1,
+    "sname": "RyanAFournier"
   },
   "167699332": {
+    "name": "Mike Kelly",
     "pr": 0.000387678712615919,
-    "pt": 1
+    "pt": 1,
+    "sname": "MikeKellyofEM"
   },
   "168502762": {
+    "name": "Rep. Eddie Bernice Johnson",
     "pr": 0.00155297872019545,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepEBJ"
   },
   "168673083": {
+    "name": "David Scott",
     "pr": 0.00100479575800391,
-    "pt": -1
+    "pt": -1,
+    "sname": "repdavidscott"
   },
   "172858784": {
+    "name": "Tim Kaine",
     "pr": 0.00330050784506775,
-    "pt": -1
+    "pt": -1,
+    "sname": "timkaine"
   },
   "172944579": {
+    "name": "Russ Fulcher",
     "pr": 0.000461699629594333,
-    "pt": 1
+    "pt": 1,
+    "sname": "RussFulcher"
   },
   "1730030220": {
+    "name": "Darren Soto",
     "pr": 0.00110563986003251,
-    "pt": -1
+    "pt": -1,
+    "sname": "DarrenSoto"
   },
   "17494010": {
+    "name": "Chuck Schumer",
     "pr": 0.00548778412650573,
-    "pt": -1
+    "pt": -1,
+    "sname": "SenSchumer"
   },
   "180564322": {
+    "name": "Greg Walden",
     "pr": 0.000311286372275923,
-    "pt": 1
+    "pt": 1,
+    "sname": "votegregwalden"
   },
   "18061669": {
+    "name": "Sen. Lisa Murkowski",
     "pr": 0.00215662320995343,
-    "pt": 1
+    "pt": 1,
+    "sname": "lisamurkowski"
   },
   "18087749": {
+    "name": "Mike Gallagher",
     "pr": 0.00063846276229258,
-    "pt": 1
+    "pt": 1,
+    "sname": "radiotalkermike"
   },
   "18137749": {
+    "name": "Senator Chris Van Hollen",
     "pr": 0.00233375138243517,
-    "pt": -1
+    "pt": -1,
+    "sname": "ChrisVanHollen"
   },
   "18166778": {
+    "name": "Rep. Jim Jordan",
     "pr": 0.0128031981217996,
-    "pt": 1
+    "pt": 1,
+    "sname": "Jim_Jordan"
   },
   "1849261916": {
+    "name": "Blaine Luetkemeyer",
     "pr": 0.000719766464533935,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepBlaine"
   },
   "1861019372": {
+    "name": "Mike Braun",
     "pr": 0.00077328936446147,
-    "pt": 1
+    "pt": 1,
+    "sname": "braun4indiana"
   },
   "18632666": {
+    "name": "Senator Jerry Moran",
     "pr": 0.0020789346594368,
-    "pt": 1
+    "pt": 1,
+    "sname": "JerryMoran"
   },
   "18674498": {
+    "name": "Dan Kildee",
     "pr": 0.000575749953358938,
-    "pt": -1
+    "pt": -1,
+    "sname": "dankildee"
   },
   "18695134": {
+    "name": "Senator Bob Menendez",
     "pr": 0.00198429662603033,
-    "pt": -1
+    "pt": -1,
+    "sname": "SenatorMenendez"
   },
   "18696134": {
+    "name": "Albio Sires",
     "pr": 0.000914052321322633,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepSires"
   },
   "18773159": {
+    "name": "RepScottPerry",
     "pr": 0.00156187834881581,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepScottPerry"
   },
   "188019606": {
+    "name": "James E. Clyburn",
     "pr": 0.00207662781639591,
-    "pt": -1
+    "pt": -1,
+    "sname": "WhipClyburn"
   },
   "18805303": {
+    "name": "Jeff Fortenberry",
     "pr": 0.00129809585526933,
-    "pt": 1
+    "pt": 1,
+    "sname": "JeffFortenberry"
   },
   "18829123": {
+    "name": "Marcia L. Fudge",
     "pr": 0.000331637571190748,
-    "pt": -1
+    "pt": -1,
+    "sname": "mlfudge"
   },
   "18909919": {
+    "name": "Jim Langevin",
     "pr": 0.00207282099435295,
-    "pt": -1
+    "pt": -1,
+    "sname": "JimLangevin"
   },
   "18967498": {
+    "name": "Glenn 'GT' Thompson",
     "pr": 0.0024155040954596,
-    "pt": 1
+    "pt": 1,
+    "sname": "CongressmanGT"
   },
   "190328374": {
+    "name": "Tom Graves",
     "pr": 0.00176500441250084,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepTomGraves"
   },
   "1912799826": {
+    "name": "Dan Bishop",
     "pr": 0.000886773806646838,
-    "pt": 1
+    "pt": 1,
+    "sname": "jdanbishop"
   },
   "19318314": {
+    "name": "Ben Ray Luj\u00e1n",
     "pr": 0.00162742067831277,
-    "pt": -1
+    "pt": -1,
+    "sname": "repbenraylujan"
   },
   "193441812": {
+    "name": "Pramila Jayapal",
     "pr": 0.00100109928062648,
-    "pt": -1
+    "pt": -1,
+    "sname": "PramilaJayapal"
   },
   "193732179": {
+    "name": "Judy Chu",
     "pr": 0.00131285922821027,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepJudyChu"
   },
   "193794406": {
+    "name": "Shelley Moore Capito",
     "pr": 0.00269516775918203,
-    "pt": 1
+    "pt": 1,
+    "sname": "SenCapito"
   },
   "193872188": {
+    "name": "Rep. Pete Visclosky",
     "pr": 0.000935539193494416,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepVisclosky"
   },
   "19397785": {
+    "name": "Oprah Winfrey",
     "pr": 0.000521646772007796,
-    "pt": -1
+    "pt": -1,
+    "sname": "Oprah"
   },
   "19419870": {
+    "name": "Alexander Mooney",
     "pr": 0.000448096481715528,
-    "pt": 1
+    "pt": 1,
+    "sname": "AWMooneyDC"
   },
   "195115786": {
+    "name": "Peter DeFazio",
     "pr": 0.00041913590533295,
-    "pt": -1
+    "pt": -1,
+    "sname": "DeFazio4Oregon"
   },
   "19682187": {
+    "name": "Juli\u00e1n Castro",
     "pr": 0.00194399551981072,
-    "pt": -1
+    "pt": -1,
+    "sname": "JulianCastro"
   },
   "19726613": {
+    "name": "Sen. Susan Collins",
     "pr": 0.00203856388382087,
-    "pt": 1
+    "pt": 1,
+    "sname": "SenatorCollins"
   },
   "19739126": {
+    "name": "Kevin McCarthy",
     "pr": 0.0154484856029448,
-    "pt": 1
+    "pt": 1,
+    "sname": "GOPLeader"
   },
   "19926675": {
+    "name": "Rep. Kevin Brady",
     "pr": 0.00361886211352238,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepKevinBrady"
   },
   "199325935": {
+    "name": "Andr\u00e9 Carson",
     "pr": 0.00126012339894392,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepAndreCarson"
   },
   "20053279": {
+    "name": "Rep. Pete Olson",
     "pr": 0.0014588836352293,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepPeteOlson"
   },
   "20113797": {
+    "name": "Debbie Stabenow",
     "pr": 0.000586569718795235,
-    "pt": -1
+    "pt": -1,
+    "sname": "stabenow"
   },
   "202206694": {
+    "name": "Sen. John Barrasso",
     "pr": 0.00297395564717006,
-    "pt": 1
+    "pt": 1,
+    "sname": "SenJohnBarrasso"
   },
   "20467163": {
+    "name": "Rep. Vern Buchanan",
     "pr": 0.000762677066157926,
-    "pt": 1
+    "pt": 1,
+    "sname": "VernBuchanan"
   },
   "20495104": {
+    "name": "Stephen Lynch",
     "pr": 0.00026477096745466,
-    "pt": -1
+    "pt": -1,
+    "sname": "TheStephenLynch"
   },
   "20545793": {
+    "name": "Rep. Kurt Schrader",
     "pr": 0.00114021827506909,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepSchrader"
   },
   "20688358": {
+    "name": "Marc Veasey",
     "pr": 0.000463315739447294,
-    "pt": -1
+    "pt": -1,
+    "sname": "MarcVeasey"
   },
   "21048033": {
+    "name": "Jeff Duncan",
     "pr": 0.000465142192873265,
-    "pt": 1
+    "pt": 1,
+    "sname": "Duncan4Congress"
   },
   "21059255": {
+    "name": "Ted Lieu",
     "pr": 0.002195299751059,
-    "pt": -1
+    "pt": -1,
+    "sname": "tedlieu"
   },
   "21061366": {
+    "name": "Andy Levin",
     "pr": 0.0011056690151439,
-    "pt": -1
+    "pt": -1,
+    "sname": "Andy_Levin"
   },
   "210926192": {
+    "name": "Rep. Henry Cuellar",
     "pr": 0.0016249129655672,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepCuellar"
   },
   "21111098": {
+    "name": "Richard Shelby",
     "pr": 0.0015247536733261,
-    "pt": 1
+    "pt": 1,
+    "sname": "SenShelby"
   },
   "211420609": {
+    "name": "Steve Stivers",
     "pr": 0.0014891011767504,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepSteveStivers"
   },
   "211530910": {
+    "name": "Bill Johnson",
     "pr": 0.00169506991247153,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepBillJohnson"
   },
   "21157904": {
+    "name": "Richard Burr",
     "pr": 0.00156906019401594,
-    "pt": 1
+    "pt": 1,
+    "sname": "SenatorBurr"
   },
   "21269970": {
+    "name": "Senator Roy Blunt",
     "pr": 0.00219963872141664,
-    "pt": 1
+    "pt": 1,
+    "sname": "RoyBlunt"
   },
   "21406834": {
+    "name": "Ed Markey",
     "pr": 0.00258522025419798,
-    "pt": -1
+    "pt": -1,
+    "sname": "SenMarkey"
   },
   "21572351": {
+    "name": "Billy Long",
     "pr": 0.00137516342423901,
-    "pt": 1
+    "pt": 1,
+    "sname": "auctnr1"
   },
   "21669223": {
+    "name": "Lamar Alexander",
     "pr": 0.000386194794541385,
-    "pt": 1
+    "pt": 1,
+    "sname": "LamarAlexander"
   },
   "217543151": {
+    "name": "Tim Scott",
     "pr": 0.00327348673753677,
-    "pt": 1
+    "pt": 1,
+    "sname": "SenatorTimScott"
   },
   "21826591": {
+    "name": "Van Taylor",
     "pr": 0.000651684177378601,
-    "pt": 1
+    "pt": 1,
+    "sname": "VanTaylorTX"
   },
   "218292287": {
+    "name": "Greg Stanton",
     "pr": 0.000777078295539127,
-    "pt": -1
+    "pt": -1,
+    "sname": "gregstantonaz"
   },
   "21924842": {
+    "name": "Greg Steube",
     "pr": 0.000482771735703189,
-    "pt": 1
+    "pt": 1,
+    "sname": "gregsteube"
   },
   "219429281": {
+    "name": "Adam Kinzinger",
     "pr": 0.00189472522913645,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepKinzinger"
   },
   "22055226": {
+    "name": "Louie Gohmert",
     "pr": 0.00216635100496242,
-    "pt": 1
+    "pt": 1,
+    "sname": "replouiegohmert"
   },
   "221162525": {
+    "name": "Senator Pat Toomey",
     "pr": 0.00178873364796813,
-    "pt": 1
+    "pt": 1,
+    "sname": "SenToomey"
   },
   "2212905492": {
+    "name": "Jennifer Wexton",
     "pr": 0.000778641731855577,
-    "pt": -1
+    "pt": -1,
+    "sname": "JenniferWexton"
   },
   "221792092": {
+    "name": "Nita Lowey",
     "pr": 0.00208999330722825,
-    "pt": -1
+    "pt": -1,
+    "sname": "NitaLowey"
   },
   "22195441": {
+    "name": "Thom Tillis",
     "pr": 0.000667126903620339,
-    "pt": 1
+    "pt": 1,
+    "sname": "ThomTillis"
   },
   "223166587": {
+    "name": "Jeff Merkley",
     "pr": 0.000763249116487667,
-    "pt": -1
+    "pt": -1,
+    "sname": "JeffMerkley"
   },
   "22523087": {
+    "name": "Jim Cooper",
     "pr": 0.000637894982584025,
-    "pt": -1
+    "pt": -1,
+    "sname": "repjimcooper"
   },
   "22545491": {
+    "name": "Ken Calvert",
     "pr": 0.000888112227349595,
-    "pt": 1
+    "pt": 1,
+    "sname": "KenCalvert"
   },
   "225921757": {
+    "name": "Sen. James Lankford",
     "pr": 0.00206677673134505,
-    "pt": 1
+    "pt": 1,
+    "sname": "SenatorLankford"
   },
   "226222147": {
+    "name": "Pete Buttigieg",
     "pr": 0.00167985833958592,
-    "pt": -1
+    "pt": -1,
+    "sname": "PeteButtigieg"
   },
   "22669526": {
+    "name": "Rep. Gwen Moore",
     "pr": 0.00163229570814881,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepGwenMoore"
   },
   "22812754": {
+    "name": "Rep. Gregory Meeks",
     "pr": 0.00147806336666213,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepGregoryMeeks"
   },
   "229197216": {
+    "name": "Rep. David Schweikert",
     "pr": 0.00146499414637887,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepDavid"
   },
   "2293131060": {
+    "name": "Katherine Clark",
     "pr": 0.00222050851865124,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepKClark"
   },
   "23022687": {
+    "name": "Ted Cruz",
     "pr": 0.0045189984631184,
-    "pt": 1
+    "pt": 1,
+    "sname": "tedcruz"
   },
   "231108733": {
+    "name": "US Rep Brendan Boyle",
     "pr": 0.000871708893619992,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepBrendanBoyle"
   },
   "23124635": {
+    "name": "Rep. Tom Cole",
     "pr": 0.00106159561888365,
-    "pt": 1
+    "pt": 1,
+    "sname": "TomColeOK04"
   },
   "231510077": {
+    "name": "Joaquin Castro",
     "pr": 0.00254364598519462,
-    "pt": -1
+    "pt": -1,
+    "sname": "JoaquinCastrotx"
   },
   "23176276": {
+    "name": "Meghan McCain",
     "pr": 0.00106518033559695,
-    "pt": 1
+    "pt": 1,
+    "sname": "MeghanMcCain"
   },
   "233737858": {
+    "name": "Senator Ron Johnson",
     "pr": 0.00178034292639349,
-    "pt": 1
+    "pt": 1,
+    "sname": "SenRonJohnson"
   },
   "233949261": {
+    "name": "Rep. Bill Huizenga",
     "pr": 0.00189275160943884,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepHuizenga"
   },
   "234014087": {
+    "name": "Rep Frederica Wilson",
     "pr": 0.00218817251999563,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepWilson"
   },
   "234057152": {
+    "name": "Morgan Griffith",
     "pr": 0.00111458344435555,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepMGriffith"
   },
   "234128524": {
+    "name": "Senator Todd Young",
     "pr": 0.00155744977460594,
-    "pt": 1
+    "pt": 1,
+    "sname": "SenToddYoung"
   },
   "234374703": {
+    "name": "Senator Joe Manchin",
     "pr": 0.00180555724519852,
-    "pt": -1
+    "pt": -1,
+    "sname": "Sen_JoeManchin"
   },
   "234812598": {
+    "name": "Larry Bucshon, MD",
     "pr": 0.00178692307999209,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepLarryBucshon"
   },
   "234822928": {
+    "name": "Rep. Bob Gibbs",
     "pr": 0.00161776294309613,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepBobGibbs"
   },
   "235190657": {
+    "name": "Chuck Fleischmann",
     "pr": 0.00115247689948954,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepChuck"
   },
   "235217558": {
+    "name": "Cory Gardner",
     "pr": 0.00191530973986441,
-    "pt": 1
+    "pt": 1,
+    "sname": "SenCoryGardner"
   },
   "2352629311": {
+    "name": "Josh Hawley",
     "pr": 0.00198464881210991,
-    "pt": 1
+    "pt": 1,
+    "sname": "HawleyMO"
   },
   "235312723": {
+    "name": "Scott DesJarlais",
     "pr": 0.00151353855154711,
-    "pt": 1
+    "pt": 1,
+    "sname": "DesJarlaisTN04"
   },
   "2361650234": {
+    "name": "Debbie Dingell",
     "pr": 0.000420161008102884,
-    "pt": -1
+    "pt": -1,
+    "sname": "DebDingell"
   },
   "23725826": {
+    "name": "Michael Cloud",
     "pr": 0.000459312133126612,
-    "pt": 1
+    "pt": 1,
+    "sname": "MichaelJCloud"
   },
   "237299871": {
+    "name": "Mo Brooks",
     "pr": 0.000942423958736097,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepMoBrooks"
   },
   "23775782": {
+    "name": "Steve Chabot",
     "pr": 0.000494206727613207,
-    "pt": 1
+    "pt": 1,
+    "sname": "SteveChabot"
   },
   "237862972": {
+    "name": "Rep Tim Walberg",
     "pr": 0.00165858167278424,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepWalberg"
   },
   "2382685057": {
+    "name": "Rob Woodall",
     "pr": 0.0012987592356102,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepRobWoodall"
   },
   "23976316": {
+    "name": "Kenny Marchant",
     "pr": 0.00127609775225424,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepKenMarchant"
   },
   "240427862": {
+    "name": "David B. McKinley",
     "pr": 0.00158934593447935,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepMcKinley"
   },
   "240812994": {
+    "name": "Yvette D. Clarke",
     "pr": 0.00171453102986469,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepYvetteClarke"
   },
   "2409478435": {
+    "name": "Norma Torres",
     "pr": 0.000451172852915309,
-    "pt": -1
+    "pt": -1,
+    "sname": "Norma4Congress"
   },
   "24195214": {
+    "name": "Jan Schakowsky",
     "pr": 0.00214680689888744,
-    "pt": -1
+    "pt": -1,
+    "sname": "janschakowsky"
   },
   "24215154": {
+    "name": "Andy Kim",
     "pr": 0.000738243319759615,
-    "pt": -1
+    "pt": -1,
+    "sname": "AndyKimNJ"
   },
   "242555999": {
+    "name": "Sheldon Whitehouse",
     "pr": 0.00285476643838605,
-    "pt": -1
+    "pt": -1,
+    "sname": "SenWhitehouse"
   },
   "242772524": {
+    "name": "Frank Lucas",
     "pr": 0.000755725568235463,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepFrankLucas"
   },
   "242836537": {
+    "name": "Sen. Patrick Leahy",
     "pr": 0.00220280226768463,
-    "pt": -1
+    "pt": -1,
+    "sname": "SenatorLeahy"
   },
   "242873057": {
+    "name": "Rep. Scott Tipton",
     "pr": 0.00164757898279115,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepTipton"
   },
   "242926427": {
+    "name": "Jaime Herrera Beutler",
     "pr": 0.00103274565863909,
-    "pt": 1
+    "pt": 1,
+    "sname": "HerreraBeutler"
   },
   "2432952828": {
+    "name": "Glenn Grothman",
     "pr": 0.000355884289779359,
-    "pt": 1
+    "pt": 1,
+    "sname": "GrothmanforWI"
   },
   "2433737761": {
+    "name": "Alcee L. Hastings",
     "pr": 0.000999901500606348,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepHastingsFL"
   },
   "245451804": {
+    "name": "Rep. Jim Costa",
     "pr": 0.000806578931786153,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepJimCosta"
   },
   "2460043826": {
+    "name": "Bobby Rush",
     "pr": 0.000310695017876637,
-    "pt": -1
+    "pt": -1,
+    "sname": "BobbyRushBlues"
   },
   "246478393": {
+    "name": "Steven Horsford",
     "pr": 0.00113574979387504,
-    "pt": -1
+    "pt": -1,
+    "sname": "StevenHorsford"
   },
   "248495200": {
+    "name": "Seth Moulton",
     "pr": 0.00186007974674305,
-    "pt": -1
+    "pt": -1,
+    "sname": "sethmoulton"
   },
   "24913074": {
+    "name": "Jackie Speier",
     "pr": 0.00176187047812034,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepSpeier"
   },
   "249348006": {
+    "name": "Rep. Anna G. Eshoo",
     "pr": 0.00136726487713783,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepAnnaEshoo"
   },
   "249410485": {
+    "name": "Sanford Bishop, Jr.",
     "pr": 0.000968996985855227,
-    "pt": -1
+    "pt": -1,
+    "sname": "SanfordBishop"
   },
   "250188760": {
+    "name": "Ron Wyden",
     "pr": 0.00211641625652367,
-    "pt": -1
+    "pt": -1,
+    "sname": "RonWyden"
   },
   "25068921": {
+    "name": "Paul Cook",
     "pr": 0.000696801383246519,
-    "pt": 1
+    "pt": 1,
+    "sname": "Cook680News"
   },
   "25073877": {
+    "name": "Donald J. Trump",
     "pr": 0.112293742808597,
-    "pt": 1
+    "pt": 1,
+    "sname": "realDonaldTrump"
   },
   "25086658": {
+    "name": "Bill Posey",
     "pr": 0.00065007036214194,
-    "pt": 1
+    "pt": 1,
+    "sname": "congbillposey"
   },
   "252819323": {
+    "name": "Tom Reed",
     "pr": 0.00145985087067904,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepTomReed"
   },
   "25345777": {
+    "name": "Joe Courtney",
     "pr": 0.000696490979198398,
-    "pt": -1
+    "pt": -1,
+    "sname": "jcourt40"
   },
   "254082173": {
+    "name": "Joe Wilson",
     "pr": 0.000966660589202735,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepJoeWilson"
   },
   "2559398984": {
+    "name": "Don Young",
     "pr": 0.000305944601293538,
-    "pt": 1
+    "pt": 1,
+    "sname": "DonYoungAK"
   },
   "257180565": {
+    "name": "Cheri Bustos",
     "pr": 0.000976540837681071,
-    "pt": -1
+    "pt": -1,
+    "sname": "CheriBustos"
   },
   "2573587962": {
+    "name": "Tom O'Halleran",
     "pr": 0.000288005167230694,
-    "pt": -1
+    "pt": -1,
+    "sname": "TomOHalleran"
   },
   "258900199": {
+    "name": "Carolyn  B. Maloney",
     "pr": 0.00206861331715412,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepMaloney"
   },
   "259364314": {
+    "name": "John Sarbanes",
     "pr": 0.000564304710645738,
-    "pt": -1
+    "pt": -1,
+    "sname": "JohnSarbanes"
   },
   "26051676": {
+    "name": "Gus Bilirakis",
     "pr": 0.00105153126543177,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepGusBilirakis"
   },
   "26057209": {
+    "name": "John Curtis",
     "pr": 0.000379374519688475,
-    "pt": 1
+    "pt": 1,
+    "sname": "CurtisUT"
   },
   "2612307559": {
+    "name": "Rob Portman",
     "pr": 0.0011243038839612,
-    "pt": 1
+    "pt": 1,
+    "sname": "robportman"
   },
   "262192574": {
+    "name": "Cindy Hyde-Smith",
     "pr": 0.00086741580080163,
-    "pt": 1
+    "pt": 1,
+    "sname": "cindyhydesmith"
   },
   "26424123": {
+    "name": "Michael McCaul",
     "pr": 0.00202353857292248,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepMcCaul"
   },
   "2643570679": {
+    "name": "Stephanie Myers",
     "pr": 0.000754489685176116,
-    "pt": 1
+    "pt": 1,
+    "sname": "_StephanieMyers"
   },
   "26520948": {
+    "name": "Alana Mastrangelo",
     "pr": 0.000517544326252816,
-    "pt": 1
+    "pt": 1,
+    "sname": "ARmastrangelo"
   },
   "26594419": {
+    "name": "John Neely Kennedy",
     "pr": 0.000755864679216476,
-    "pt": 1
+    "pt": 1,
+    "sname": "JohnKennedyLA"
   },
   "26637348": {
+    "name": "Tulsi Gabbard ?",
     "pr": 0.00133376858023924,
-    "pt": -1
+    "pt": -1,
+    "sname": "TulsiGabbard"
   },
   "26642006": {
+    "name": "Alyssa Milano",
     "pr": 0.00216250725901735,
-    "pt": -1
+    "pt": -1,
+    "sname": "Alyssa_Milano"
   },
   "266719387": {
+    "name": "Steny Hoyer",
     "pr": 0.000631082450339226,
-    "pt": -1
+    "pt": -1,
+    "sname": "StenyHoyer"
   },
   "2696643955": {
+    "name": "Rep. John Moolenaar",
     "pr": 0.000842839440644273,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepMoolenaar"
   },
   "271160889": {
+    "name": "Amanda House",
     "pr": 0.000956289756466534,
-    "pt": 1
+    "pt": 1,
+    "sname": "AmandaLeeHouse"
   },
   "272004287": {
+    "name": "Ann Kirkpatrick",
     "pr": 0.000618352559002839,
-    "pt": -1
+    "pt": -1,
+    "sname": "Ann_Kirkpatrick"
   },
   "2724095695": {
+    "name": "Rep. Stacey Plaskett",
     "pr": 0.00102700584526793,
-    "pt": -1
+    "pt": -1,
+    "sname": "StaceyPlaskett"
   },
   "2750127259": {
+    "name": "Lee Zeldin",
     "pr": 0.00661847458738653,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepLeeZeldin"
   },
   "27676828": {
+    "name": "Patrick McHenry",
     "pr": 0.00182054544431243,
-    "pt": 1
+    "pt": 1,
+    "sname": "PatrickMcHenry"
   },
   "27789237": {
+    "name": "Harley Rouda",
     "pr": 0.000538844444433014,
-    "pt": -1
+    "pt": -1,
+    "sname": "HarleyRouda"
   },
   "278005891": {
+    "name": "Brad Schneider",
     "pr": 0.00034380143329548,
-    "pt": -1
+    "pt": -1,
+    "sname": "Schneider4IL10"
   },
   "278094476": {
+    "name": "Ben Cardin",
     "pr": 0.000908244449949147,
-    "pt": -1
+    "pt": -1,
+    "sname": "BenCardinforMD"
   },
   "278124059": {
+    "name": "Richard Blumenthal",
     "pr": 0.00196563478804767,
-    "pt": -1
+    "pt": -1,
+    "sname": "SenBlumenthal"
   },
   "281540744": {
+    "name": "Daniel Webster",
     "pr": 0.000575887997565758,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepWebster"
   },
   "28267055": {
+    "name": "Kevin Cramer",
     "pr": 0.00071670431350485,
-    "pt": 1
+    "pt": 1,
+    "sname": "kevincramer"
   },
   "2847221717": {
+    "name": "John Ratcliffe",
     "pr": 0.00359948425848616,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepRatcliffe"
   },
   "2847603597": {
+    "name": "Jes\u00fas \u201cChuy\u201d Garc\u00eda",
     "pr": 0.000521483723139984,
-    "pt": -1
+    "pt": -1,
+    "sname": "ChuyForCongress"
   },
   "2852998461": {
+    "name": "Rep. Bruce Westerman",
     "pr": 0.00123396719022674,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepWesterman"
   },
   "28602948": {
+    "name": "Raul M. Grijalva",
     "pr": 0.00199044696905991,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepRaulGrijalva"
   },
   "2861616083": {
+    "name": "Gary Palmer",
     "pr": 0.00124313790561352,
-    "pt": 1
+    "pt": 1,
+    "sname": "USRepGaryPalmer"
   },
   "2862577383": {
+    "name": "Congressman Ken Buck",
     "pr": 0.00118954904683642,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepKenBuck"
   },
   "2863006655": {
+    "name": "Brenda Lawrence",
     "pr": 0.00164699968193144,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepLawrence"
   },
   "2863210809": {
+    "name": "David Perdue",
     "pr": 0.00214066399060964,
-    "pt": 1
+    "pt": 1,
+    "sname": "sendavidperdue"
   },
   "286476728": {
+    "name": "Deb Haaland",
     "pr": 0.00152581707120697,
-    "pt": -1
+    "pt": -1,
+    "sname": "Deb4CongressNM"
   },
   "2891210047": {
+    "name": "Sen. Dan Sullivan",
     "pr": 0.0018391612094605,
-    "pt": 1
+    "pt": 1,
+    "sname": "SenDanSullivan"
   },
   "289342771": {
+    "name": "Lauren Duca",
     "pr": 0.000702331644329054,
-    "pt": -1
+    "pt": -1,
+    "sname": "laurenduca"
   },
   "2908170952": {
+    "name": "Diamond and Silk\u00ae",
     "pr": 0.0015843813515166,
-    "pt": 1
+    "pt": 1,
+    "sname": "DiamondandSilk"
   },
   "2914163523": {
+    "name": "Barry Loudermilk",
     "pr": 0.00118807808358938,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepLoudermilk"
   },
   "2914515430": {
+    "name": "Tom Emmer",
     "pr": 0.00139284551717443,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepTomEmmer"
   },
   "291756142": {
+    "name": "Mike Enzi",
     "pr": 0.00166018151984958,
-    "pt": 1
+    "pt": 1,
+    "sname": "SenatorEnzi"
   },
   "292594517": {
+    "name": "Scott Peters",
     "pr": 0.000545674396046136,
-    "pt": -1
+    "pt": -1,
+    "sname": "ScottPetersSD"
   },
   "2929491549": {
+    "name": "Brian Babin",
     "pr": 0.00146494548533542,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepBrianBabin"
   },
   "2930635215": {
+    "name": "Rep. Dan Newhouse",
     "pr": 0.00153427573390018,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepNewhouse"
   },
   "293131808": {
+    "name": "Senator Patty Murray",
     "pr": 0.00235485270794565,
-    "pt": -1
+    "pt": -1,
+    "sname": "PattyMurray"
   },
   "29442313": {
+    "name": "Bernie Sanders",
     "pr": 0.00274159402820219,
-    "pt": -1
+    "pt": -1,
+    "sname": "SenSanders"
   },
   "29450962": {
+    "name": "John Lewis",
     "pr": 0.0049179288099123,
-    "pt": -1
+    "pt": -1,
+    "sname": "repjohnlewis"
   },
   "29495695": {
+    "name": "Kelly Loeffler",
     "pr": 0.000570083615786188,
-    "pt": 1
+    "pt": 1,
+    "sname": "kloeffler"
   },
   "29501253": {
+    "name": "Adam Schiff",
     "pr": 0.0101501949892667,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepAdamSchiff"
   },
   "2953974395": {
+    "name": "French Hill",
     "pr": 0.00194929644269781,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepFrenchHill"
   },
   "295685416": {
+    "name": "Mike Conaway",
     "pr": 0.00152565102969196,
-    "pt": 1
+    "pt": 1,
+    "sname": "ConawayTX11"
   },
   "296245061": {
+    "name": "Rep. Adrian Smith",
     "pr": 0.0010218728357764,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepAdrianSmith"
   },
   "2962868158": {
+    "name": "Rep. Don Beyer",
     "pr": 0.00284146403628434,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepDonBeyer"
   },
   "2962891515": {
+    "name": "Rep. Ralph Abraham",
     "pr": 0.000638445952479358,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepAbraham"
   },
   "2963445730": {
+    "name": "Rep. Will Hurd",
     "pr": 0.00199229213484171,
-    "pt": 1
+    "pt": 1,
+    "sname": "HurdOnTheHill"
   },
   "296361085": {
+    "name": "Senator John Thune",
     "pr": 0.00161985576116692,
-    "pt": 1
+    "pt": 1,
+    "sname": "SenJohnThune"
   },
   "2964877294": {
+    "name": "Rep. Mike Bost",
     "pr": 0.00225936079053343,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepBost"
   },
   "2964949642": {
+    "name": "Martha McSally",
     "pr": 0.00191639340816628,
-    "pt": 1
+    "pt": 1,
+    "sname": "SenMcSallyAZ"
   },
   "2966570782": {
+    "name": "Ruben Gallego",
     "pr": 0.00185060811885957,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepRubenGallego"
   },
   "2966765501": {
+    "name": "Rep. John Katko",
     "pr": 0.000839346095588478,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepJohnKatko"
   },
   "2968007206": {
+    "name": "Mark DeSaulnier",
     "pr": 0.00119271390354814,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepDeSaulnier"
   },
   "2968451607": {
+    "name": "Rep. Bonnie Watson Coleman",
     "pr": 0.00217727207771124,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepBonnie"
   },
   "2970462034": {
+    "name": "Kathleen Rice",
     "pr": 0.00198161998532005,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepKathleenRice"
   },
   "2973870195": {
+    "name": "Buddy Carter",
     "pr": 0.00130463273636469,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepBuddyCarter"
   },
   "29766367": {
+    "name": "Rep. Sam Graves",
     "pr": 0.00231269683496513,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepSamGraves"
   },
   "3018670151": {
+    "name": "Rep. Pete Aguilar",
     "pr": 0.0010347741734339,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepPeteAguilar"
   },
   "3018960919": {
+    "name": "Rebel News",
     "pr": 0.000330873552374673,
-    "pt": 1
+    "pt": 1,
+    "sname": "RebelNewsOnline"
   },
   "30216513": {
+    "name": "Rep. Brad Sherman",
     "pr": 0.00116854401424886,
-    "pt": -1
+    "pt": -1,
+    "sname": "BradSherman"
   },
   "302574863": {
+    "name": "Chris Smith",
     "pr": 0.000288672112289018,
-    "pt": 1
+    "pt": 1,
+    "sname": "chrissmithonair"
   },
   "3026622545": {
+    "name": "Rep. Aumua Amata??",
     "pr": 0.000753944842538934,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepAmata"
   },
   "30354991": {
+    "name": "Kamala Harris",
     "pr": 0.00304520272249427,
-    "pt": -1
+    "pt": -1,
+    "sname": "KamalaHarris"
   },
   "303633791": {
+    "name": "Nanette Barrag\u00e1n",
     "pr": 0.000673806816169302,
-    "pt": -1
+    "pt": -1,
+    "sname": "Nanette4CA"
   },
   "303861808": {
+    "name": "Mike Thompson",
     "pr": 0.0018213515943003,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepThompson"
   },
   "305620929": {
+    "name": "Dutch Ruppersberger",
     "pr": 0.0019006811777456,
-    "pt": -1
+    "pt": -1,
+    "sname": "Call_Me_Dutch"
   },
   "308794407": {
+    "name": "Dick Durbin",
     "pr": 0.000680194744670681,
-    "pt": -1
+    "pt": -1,
+    "sname": "DickDurbin"
   },
   "309070309": {
+    "name": "Mark Pocan",
     "pr": 0.00120675659577596,
-    "pt": -1
+    "pt": -1,
+    "sname": "MarkPocan"
   },
   "31013444": {
+    "name": "Ayanna Pressley",
     "pr": 0.00344287987812294,
-    "pt": -1
+    "pt": -1,
+    "sname": "AyannaPressley"
   },
   "3109108467": {
+    "name": "Don Bacon",
     "pr": 0.000756800157770728,
-    "pt": 1
+    "pt": 1,
+    "sname": "DonJBacon"
   },
   "312134473": {
+    "name": "Rep. Linda S\u00e1nchez",
     "pr": 0.00182082619083824,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepLindaSanchez"
   },
   "3122099613": {
+    "name": "Donald Norcross",
     "pr": 0.00134784448328773,
-    "pt": -1
+    "pt": -1,
+    "sname": "DonaldNorcross"
   },
   "31395445": {
+    "name": "Jim Baird",
     "pr": 0.000307029863435696,
-    "pt": 1
+    "pt": 1,
+    "sname": "J_Baird"
   },
   "3145735852": {
+    "name": "CatherineCortezMasto",
     "pr": 0.000859010056138099,
-    "pt": -1
+    "pt": -1,
+    "sname": "CatherineForNV"
   },
   "31611298": {
+    "name": "Jim Himes",
     "pr": 0.000911559422507183,
-    "pt": -1
+    "pt": -1,
+    "sname": "jahimes"
   },
   "3170031728": {
+    "name": "Brian Mast",
     "pr": 0.000657018097117027,
-    "pt": 1
+    "pt": 1,
+    "sname": "BrianMastFL"
   },
   "317386234": {
+    "name": "David Kustoff",
     "pr": 0.000624877050957146,
-    "pt": 1
+    "pt": 1,
+    "sname": "DavidKustoff"
   },
   "31801993": {
+    "name": "Rep. Frank Pallone",
     "pr": 0.00248616255891102,
-    "pt": -1
+    "pt": -1,
+    "sname": "FrankPallone"
   },
   "32135704": {
+    "name": "Peter King",
     "pr": 0.000319943526863895,
-    "pt": 1
+    "pt": 1,
+    "sname": "peter_king"
   },
   "3237898542": {
+    "name": "Salud Carbajal",
     "pr": 0.000368059925503854,
-    "pt": -1
+    "pt": -1,
+    "sname": "carbajalsalud"
   },
   "3317799825": {
+    "name": "Trent Kelly",
     "pr": 0.00213852457702486,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepTrentKelly"
   },
   "33537967": {
+    "name": "Amy Klobuchar",
     "pr": 0.00216825476517916,
-    "pt": -1
+    "pt": -1,
+    "sname": "amyklobuchar"
   },
   "33563161": {
+    "name": "Jos\u00e9 E. Serrano",
     "pr": 0.00104165616303457,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepJoseSerrano"
   },
   "33576489": {
+    "name": "Brian Higgins",
     "pr": 0.000734087656512915,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepBrianHiggins"
   },
   "33977070": {
+    "name": "Mike Rogers",
     "pr": 0.00164635592911176,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepMikeRogersAL"
   },
   "3420965229": {
+    "name": "Greg Gianforte",
     "pr": 0.000448829053293862,
-    "pt": 1
+    "pt": 1,
+    "sname": "GregForMontana"
   },
   "342863309": {
+    "name": "Beto O'Rourke",
     "pr": 0.00246800586139824,
-    "pt": -1
+    "pt": -1,
+    "sname": "BetoORourke"
   },
   "346509049": {
+    "name": "Michael F.Q. San Nicolas",
     "pr": 0.000495289523454774,
-    "pt": -1
+    "pt": -1,
+    "sname": "GuamCongressman"
   },
   "346964561": {
+    "name": "Colin Allred",
     "pr": 0.00106672930605265,
-    "pt": -1
+    "pt": -1,
+    "sname": "ColinAllredTX"
   },
   "34715823": {
+    "name": "Debbie Lesko",
     "pr": 0.00166794482213807,
-    "pt": 1
+    "pt": 1,
+    "sname": "DebbieLesko"
   },
   "353890966": {
+    "name": "Tim Burchett",
     "pr": 0.000936589010489559,
-    "pt": 1
+    "pt": 1,
+    "sname": "timburchett"
   },
   "35567751": {
+    "name": "Maria Cantwell",
     "pr": 0.000714342822530574,
-    "pt": -1
+    "pt": -1,
+    "sname": "MariaCantwell"
   },
   "357606935": {
+    "name": "Elizabeth Warren",
     "pr": 0.00347763522598076,
-    "pt": -1
+    "pt": -1,
+    "sname": "ewarren"
   },
   "3609064098": {
+    "name": "Jodey Arrington",
     "pr": 0.00104202988166195,
-    "pt": 1
+    "pt": 1,
+    "sname": "JodeyArrington"
   },
   "361569788": {
+    "name": "Maggie for NH",
     "pr": 0.000758667128862198,
-    "pt": -1
+    "pt": -1,
+    "sname": "Maggie_Hassan"
   },
   "36686040": {
+    "name": "Maxine Waters",
     "pr": 0.00208351289458657,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepMaxineWaters"
   },
   "3686482216": {
+    "name": "Darin LaHood",
     "pr": 0.00205184979367717,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepLaHood"
   },
   "37094727": {
+    "name": "Mario Diaz-Balart",
     "pr": 0.00129768707392649,
-    "pt": 1
+    "pt": 1,
+    "sname": "MarioDB"
   },
   "377534571": {
+    "name": "Mac Thornberry Press",
     "pr": 0.00117751865805424,
-    "pt": 1
+    "pt": 1,
+    "sname": "MacTXPress"
   },
   "377609596": {
+    "name": "Eric Swalwell",
     "pr": 0.00166747881864124,
-    "pt": -1
+    "pt": -1,
+    "sname": "ericswalwell"
   },
   "378752087": {
+    "name": "Michael Doyle",
     "pr": 0.000458411051823395,
-    "pt": -1
+    "pt": -1,
+    "sname": "MichaelDoyle10"
   },
   "381152398": {
+    "name": "Rep. Terri A. Sewell",
     "pr": 0.00247342751404273,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepTerriSewell"
   },
   "381577682": {
+    "name": "Tom Carper",
     "pr": 0.000458057100582705,
-    "pt": -1
+    "pt": -1,
+    "sname": "TomCarperforDE"
   },
   "38254095": {
+    "name": "Rep. Doris Matsui",
     "pr": 0.00111740500565428,
-    "pt": -1
+    "pt": -1,
+    "sname": "DorisMatsui"
   },
   "382791093": {
+    "name": "Senator John Hoeven",
     "pr": 0.00124821001371525,
-    "pt": 1
+    "pt": 1,
+    "sname": "SenJohnHoeven"
   },
   "384913290": {
+    "name": "Rep. John Yarmuth",
     "pr": 0.00102933872004371,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepJohnYarmuth"
   },
   "385429543": {
+    "name": "Jerry McNerney",
     "pr": 0.00106657272921656,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepMcNerney"
   },
   "38960144": {
+    "name": "Veronica Escobar",
     "pr": 0.0012971418591318,
-    "pt": -1
+    "pt": -1,
+    "sname": "vgescobar"
   },
   "38970940": {
+    "name": "Charlie Crist",
     "pr": 0.000517617045791861,
-    "pt": -1
+    "pt": -1,
+    "sname": "CharlieCrist"
   },
   "39000115": {
+    "name": "Katy Tur",
     "pr": 0.0011894914149836,
-    "pt": -1
+    "pt": -1,
+    "sname": "KatyTurNBC"
   },
   "391445643": {
+    "name": "Haley Stevens",
     "pr": 0.00117352386303464,
-    "pt": -1
+    "pt": -1,
+    "sname": "HaleyLive"
   },
   "395419988": {
+    "name": "Chris Stewart",
     "pr": 0.000571164490870659,
-    "pt": 1
+    "pt": 1,
+    "sname": "StewartforUtah"
   },
   "398193180": {
+    "name": "Jimmy Gomez",
     "pr": 0.00115154961640566,
-    "pt": -1
+    "pt": -1,
+    "sname": "JimmyGomezCA"
   },
   "39834947": {
+    "name": "Rand Paul",
     "pr": 0.000319594119276859,
-    "pt": 1
+    "pt": 1,
+    "sname": "DrRandPaul"
   },
   "40264497": {
+    "name": "Ben Cline",
     "pr": 0.00115821626693614,
-    "pt": 1
+    "pt": 1,
+    "sname": "Cline4Virginia"
   },
   "402719755": {
+    "name": "RepMarkAmodei",
     "pr": 0.000772611696826777,
-    "pt": 1
+    "pt": 1,
+    "sname": "MarkAmodeiNV2"
   },
   "40302336": {
+    "name": "(((Rep. Nadler)))",
     "pr": 0.0044643574813193,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepJerryNadler"
   },
   "404355121": {
+    "name": "John Carter",
     "pr": 0.000664931339000059,
-    "pt": 1
+    "pt": 1,
+    "sname": "JudgeJohnCarter"
   },
   "4049197462": {
+    "name": "Lisa Blunt Rochester",
     "pr": 0.00051477779601921,
-    "pt": -1
+    "pt": -1,
+    "sname": "LisaBRochester"
   },
   "41225640": {
+    "name": "Suzan DelBene",
     "pr": 0.000899111700374298,
-    "pt": -1
+    "pt": -1,
+    "sname": "SuzanDelBene"
   },
   "41814169": {
+    "name": "Fareed Zakaria",
     "pr": 0.000575761396950094,
-    "pt": -1
+    "pt": -1,
+    "sname": "FareedZakaria"
   },
   "4212470319": {
+    "name": "Lloyd Smucker",
     "pr": 0.000610672820512822,
-    "pt": 1
+    "pt": 1,
+    "sname": "LloydSmuckerPA"
   },
   "4228409359": {
+    "name": "Jimmy Panetta",
     "pr": 0.000283354486978322,
-    "pt": -1
+    "pt": -1,
+    "sname": "JimmyPanetta"
   },
   "42481696": {
+    "name": "Bradley Byrne",
     "pr": 0.000494374410772161,
-    "pt": 1
+    "pt": 1,
+    "sname": "BradleyByrne"
   },
   "428333": {
+    "name": "CNN Breaking News",
     "pr": 0.00132075764610413,
-    "pt": -1
+    "pt": -1,
+    "sname": "cnnbrk"
   },
   "431105217": {
+    "name": "Josh Gottheimer",
     "pr": 0.000487011772507569,
-    "pt": -1
+    "pt": -1,
+    "sname": "JoshGottheimer"
   },
   "432676344": {
+    "name": "G. K. Butterfield",
     "pr": 0.00136488094704104,
-    "pt": -1
+    "pt": -1,
+    "sname": "GKButterfield"
   },
   "432895323": {
+    "name": "Lindsey Graham",
     "pr": 0.00774214633873133,
-    "pt": 1
+    "pt": 1,
+    "sname": "LindseyGrahamSC"
   },
   "435331179": {
+    "name": "Rashida Tlaib",
     "pr": 0.00252855676355333,
-    "pt": -1
+    "pt": -1,
+    "sname": "RashidaTlaib"
   },
   "436192442": {
+    "name": "Mark Walker",
     "pr": 0.000627821466273922,
-    "pt": 1
+    "pt": 1,
+    "sname": "Walker4NC"
   },
   "438665212": {
+    "name": "Josh Harder",
     "pr": 0.000439231328715703,
-    "pt": -1
+    "pt": -1,
+    "sname": "JoshHarder"
   },
   "43910797": {
+    "name": "Sherrod Brown",
     "pr": 0.00198602136276482,
-    "pt": -1
+    "pt": -1,
+    "sname": "SenSherrodBrown"
   },
   "44251742": {
+    "name": "Julia Brownley",
     "pr": 0.000307252472276516,
-    "pt": -1
+    "pt": -1,
+    "sname": "JuliaBrownley"
   },
   "442824717": {
+    "name": "Rep. Richard Neal",
     "pr": 0.00109222682498861,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepRichardNeal"
   },
   "45645232": {
+    "name": "Michael Bennet",
     "pr": 0.000680340294235841,
-    "pt": -1
+    "pt": -1,
+    "sname": "MichaelBennet"
   },
   "462143773": {
+    "name": "Cicilline Press Office",
     "pr": 0.00126707198904334,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepCicilline"
   },
   "466532637": {
+    "name": "Tim Ryan",
     "pr": 0.000968687726391121,
-    "pt": -1
+    "pt": -1,
+    "sname": "TimRyan"
   },
   "467823431": {
+    "name": "Hakeem Jeffries",
     "pr": 0.00255118616787886,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepJeffries"
   },
   "4749863113": {
+    "name": "Jacky Rosen",
     "pr": 0.000920620806830759,
-    "pt": -1
+    "pt": -1,
+    "sname": "RosenforNevada"
   },
   "476256944": {
+    "name": "Senator Dianne Feinstein",
     "pr": 0.00249220675601125,
-    "pt": -1
+    "pt": -1,
+    "sname": "SenFeinstein"
   },
   "477223342": {
+    "name": "Guy Reschenthaler",
     "pr": 0.000282195825664149,
-    "pt": 1
+    "pt": 1,
+    "sname": "reschenthaler"
   },
   "47724293": {
+    "name": "Tina Smith",
     "pr": 0.000902516252378723,
-    "pt": -1
+    "pt": -1,
+    "sname": "TinaSmithMN"
   },
   "47747074": {
+    "name": "Brian Schatz",
     "pr": 0.00228693205751479,
-    "pt": -1
+    "pt": -1,
+    "sname": "brianschatz"
   },
   "478855762": {
+    "name": "Jessie Jane Duff - Text TRUMP to 88022",
     "pr": 0.000633543415208805,
-    "pt": 1
+    "pt": 1,
+    "sname": "JessieJaneDuff"
   },
   "479872233": {
+    "name": "Rep. Lucille Roybal-Allard",
     "pr": 0.00171318850982523,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepRoybalAllard"
   },
   "48117116": {
+    "name": "Steve King",
     "pr": 0.000900630529760921,
-    "pt": 1
+    "pt": 1,
+    "sname": "SteveKingIA"
   },
   "48255275": {
+    "name": "Ben McAdams",
     "pr": 0.00075095375351977,
-    "pt": -1
+    "pt": -1,
+    "sname": "BenMcAdams"
   },
   "4851790919": {
+    "name": "David Trone",
     "pr": 0.000440414616379009,
-    "pt": -1
+    "pt": -1,
+    "sname": "davidjtrone"
   },
   "486694111": {
+    "name": "Senator Jack Reed",
     "pr": 0.00123188430817,
-    "pt": -1
+    "pt": -1,
+    "sname": "SenJackReed"
   },
   "486907980": {
+    "name": "Carley Shimkus",
     "pr": 0.00164173921041393,
-    "pt": 1
+    "pt": 1,
+    "sname": "CarleyShimkus"
   },
   "49698134": {
+    "name": "Joy Reid",
     "pr": 0.00166075212255467,
-    "pt": -1
+    "pt": -1,
+    "sname": "JoyAnnReid"
   },
   "50055701": {
+    "name": "Mitt Romney",
     "pr": 0.00247947645891075,
-    "pt": 1
+    "pt": 1,
+    "sname": "MittRomney"
   },
   "50152441": {
+    "name": "Tom McClintock",
     "pr": 0.00065181111379035,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepMcClintock"
   },
   "50396027": {
+    "name": "Rick Allen",
     "pr": 0.000353034657289348,
-    "pt": 1
+    "pt": 1,
+    "sname": "rickallenlive"
   },
   "50918998": {
+    "name": "Rick Crawford",
     "pr": 0.000448862628329188,
-    "pt": 1
+    "pt": 1,
+    "sname": "Crawford4Cong"
   },
   "510516465": {
+    "name": "Dave Loebsack",
     "pr": 0.00067495219647241,
-    "pt": -1
+    "pt": -1,
+    "sname": "daveloebsack"
   },
   "51228911": {
+    "name": "US Rep. Mike Turner",
     "pr": 0.00190640556582023,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepMikeTurner"
   },
   "516880804": {
+    "name": "Rep. Betty McCollum",
     "pr": 0.00125830158779022,
-    "pt": -1
+    "pt": -1,
+    "sname": "BettyMcCollum04"
   },
   "518644221": {
+    "name": "Rep. Brad Wenstrup",
     "pr": 0.00198535723874467,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepBradWenstrup"
   },
   "52503751": {
+    "name": "Dr. Phil Roe",
     "pr": 0.00202377042394971,
-    "pt": 1
+    "pt": 1,
+    "sname": "DrPhilRoe"
   },
   "54412900": {
+    "name": "Devin Nunes",
     "pr": 0.00367156109285377,
-    "pt": 1
+    "pt": 1,
+    "sname": "DevinNunes"
   },
   "549579841": {
+    "name": "Jamie Raskin",
     "pr": 0.000751890269109075,
-    "pt": -1
+    "pt": -1,
+    "sname": "jamie_raskin"
   },
   "550401754": {
+    "name": "Hal Rogers",
     "pr": 0.000902149309360698,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepHalRogers"
   },
   "55463505": {
+    "name": "Jason Smith",
     "pr": 0.000264770967454659,
-    "pt": 1
+    "pt": 1,
+    "sname": "howaboutafresca"
   },
   "55677432": {
+    "name": "Bill Cassidy, M.D.",
     "pr": 0.00130223009433137,
-    "pt": 1
+    "pt": 1,
+    "sname": "BillCassidy"
   },
   "558769636": {
+    "name": "Suzanne Bonamici",
     "pr": 0.00124946370503837,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepBonamici"
   },
   "56864092": {
+    "name": "Mike Quigley",
     "pr": 0.00143738075458265,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepMikeQuigley"
   },
   "574799823": {
+    "name": "Chris Pappas",
     "pr": 0.000814126303476658,
-    "pt": -1
+    "pt": -1,
+    "sname": "ChrisPappasNH"
   },
   "581141508": {
+    "name": "Marcy Kaptur",
     "pr": 0.00153349045484195,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepMarcyKaptur"
   },
   "584012853": {
+    "name": "Rep. Doug Lamborn",
     "pr": 0.00202107935266898,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepDLamborn"
   },
   "584912320": {
+    "name": "Lacy Clay MO1st",
     "pr": 0.000768059097426751,
-    "pt": -1
+    "pt": -1,
+    "sname": "LacyClayMO1"
   },
   "58579942": {
+    "name": "Matt Gaetz",
     "pr": 0.00181190712879235,
-    "pt": 1
+    "pt": 1,
+    "sname": "mattgaetz"
   },
   "587100576": {
+    "name": "Garret Graves",
     "pr": 0.000528612702915237,
-    "pt": 1
+    "pt": 1,
+    "sname": "garretgraves"
   },
   "58928690": {
+    "name": "Rep. Adam Smith",
     "pr": 0.00140823414093134,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepAdamSmith"
   },
   "600463589": {
+    "name": "Senator Mike Crapo",
     "pr": 0.00239811785704126,
-    "pt": 1
+    "pt": 1,
+    "sname": "MikeCrapo"
   },
   "602919981": {
+    "name": "Susie Lee",
     "pr": 0.000795793801170836,
-    "pt": -1
+    "pt": -1,
+    "sname": "SusieLeeNV"
   },
   "603083228": {
+    "name": "Troy Balderson",
     "pr": 0.000776197217180403,
-    "pt": 1
+    "pt": 1,
+    "sname": "Troy_Balderson"
   },
   "605615715": {
+    "name": "Ross Spano",
     "pr": 0.000691626357231053,
-    "pt": 1
+    "pt": 1,
+    "sname": "RossSpano"
   },
   "60828944": {
+    "name": "Tom Udall",
     "pr": 0.00193274586029753,
-    "pt": -1
+    "pt": -1,
+    "sname": "SenatorTomUdall"
   },
   "617266600": {
+    "name": "Katie Porter",
     "pr": 0.000877161503682479,
-    "pt": -1
+    "pt": -1,
+    "sname": "katieporteroc"
   },
   "63150856": {
+    "name": "Marsha Blackburn",
     "pr": 0.0013606914679513,
-    "pt": 1
+    "pt": 1,
+    "sname": "VoteMarsha"
   },
   "63291287": {
+    "name": "Stacey DASH",
     "pr": 0.000803782506679547,
-    "pt": 1
+    "pt": 1,
+    "sname": "staceydash"
   },
   "66804351": {
+    "name": "Sean Casten",
     "pr": 0.000611979126675065,
-    "pt": -1
+    "pt": -1,
+    "sname": "SeanCasten"
   },
   "69086398": {
+    "name": "Martha Roby",
     "pr": 0.000441038096940714,
-    "pt": 1
+    "pt": 1,
+    "sname": "TeamRoby"
   },
   "702601370344402944": {
+    "name": "Andy Biggs",
     "pr": 0.0010458672170088,
-    "pt": 1
+    "pt": 1,
+    "sname": "andybiggs4az"
   },
   "70468535": {
+    "name": "Lila Rose",
     "pr": 0.000939359405458782,
-    "pt": 1
+    "pt": 1,
+    "sname": "LilaGraceRose"
   },
   "712783082336571392": {
+    "name": "Bishop for Congress",
     "pr": 0.000332385682782372,
-    "pt": 1
+    "pt": 1,
+    "sname": "RobBishopUT"
   },
   "72198806": {
+    "name": "Kirsten Gillibrand",
     "pr": 0.00315633255895943,
-    "pt": -1
+    "pt": -1,
+    "sname": "SenGillibrand"
   },
   "722555010588872705": {
+    "name": "Ron Estes",
     "pr": 0.000395510989852942,
-    "pt": 1
+    "pt": 1,
+    "sname": "RonEstesKS"
   },
   "7270292": {
+    "name": "Sen. Jim Inhofe",
     "pr": 0.00179167398213677,
-    "pt": 1
+    "pt": 1,
+    "sname": "JimInhofe"
   },
   "737719829579345920": {
+    "name": "Donna E. Shalala",
     "pr": 0.000563887532543672,
-    "pt": -1
+    "pt": -1,
+    "sname": "DonnaShalala"
   },
   "742735530287304704": {
+    "name": "Warren Davidson",
     "pr": 0.00123175564901337,
-    "pt": 1
+    "pt": 1,
+    "sname": "WarrenDavidson"
   },
   "7429102": {
+    "name": "Mark Warner",
     "pr": 0.00245609296266564,
-    "pt": -1
+    "pt": -1,
+    "sname": "MarkWarner"
   },
   "74508260": {
+    "name": "Bill Pascrell, Jr.",
     "pr": 0.00144917702168327,
-    "pt": -1
+    "pt": -1,
+    "sname": "BillPascrell"
   },
   "745372686596120576": {
+    "name": "Stephanie Murphy",
     "pr": 0.000662711716490271,
-    "pt": -1
+    "pt": -1,
+    "sname": "SMurphyCongress"
   },
   "746481056145018880": {
+    "name": "Lou Correa",
     "pr": 0.000278272202335331,
-    "pt": -1
+    "pt": -1,
+    "sname": "voteloucorrea"
   },
   "74658627": {
+    "name": "Andrew Harris",
     "pr": 0.000270408963340731,
-    "pt": 1
+    "pt": 1,
+    "sname": "andrewharris33"
   },
   "749686190": {
+    "name": "Jennifer Franco",
     "pr": 0.00109292459977167,
-    "pt": 1
+    "pt": 1,
+    "sname": "jennfranconews"
   },
   "750046943905058816": {
+    "name": "Debbie Mucarsel-Powell",
     "pr": 0.000746561375183064,
-    "pt": -1
+    "pt": -1,
+    "sname": "DebbieforFL"
   },
   "751799352755052544": {
+    "name": "Jack Bergman",
     "pr": 0.000443544416883042,
-    "pt": 1
+    "pt": 1,
+    "sname": "JackBergman_MI1"
   },
   "752590435537739776": {
+    "name": "Vicky Hartzler",
     "pr": 0.000361305288880803,
-    "pt": 1
+    "pt": 1,
+    "sname": "VickyH4Congress"
   },
   "75364211": {
+    "name": "Senator Pat Roberts",
     "pr": 0.00191606428137167,
-    "pt": 1
+    "pt": 1,
+    "sname": "SenPatRoberts"
   },
   "756123897783808000": {
+    "name": "Kathy Castor",
     "pr": 0.00059899371189789,
-    "pt": -1
+    "pt": -1,
+    "sname": "KathyCastorFL"
   },
   "76132891": {
+    "name": "Cong. Mike Simpson",
     "pr": 0.00115069214888578,
-    "pt": 1
+    "pt": 1,
+    "sname": "CongMikeSimpson"
   },
   "76452765": {
+    "name": "Rep. Robert Aderholt",
     "pr": 0.00120317390684622,
-    "pt": 1
+    "pt": 1,
+    "sname": "Robert_Aderholt"
   },
   "771152516": {
+    "name": "Ro Khanna",
     "pr": 0.00110622918735384,
-    "pt": -1
+    "pt": -1,
+    "sname": "RoKhanna"
   },
   "776664410": {
+    "name": "Matt Cartwright",
     "pr": 0.00205090919813077,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepCartwright"
   },
   "783792992": {
+    "name": "Ilhan Omar",
     "pr": 0.00331688565734552,
-    "pt": -1
+    "pt": -1,
+    "sname": "IlhanMN"
   },
   "78445977": {
+    "name": "Gerry Connolly",
     "pr": 0.00086164482156749,
-    "pt": -1
+    "pt": -1,
+    "sname": "GerryConnolly"
   },
   "789244177": {
+    "name": "Rep. Danny K. Davis",
     "pr": 0.000827641465446307,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepDannyDavis"
   },
   "798973032362606600": {
+    "name": "Rep. Val Demings",
     "pr": 0.00218160315072346,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepValDemings"
   },
   "80231689": {
+    "name": "Sean Maloney",
     "pr": 0.000319409680949372,
-    "pt": -1
+    "pt": -1,
+    "sname": "seanny202"
   },
   "804552437574946820": {
+    "name": "Anthony Gonzalez",
     "pr": 0.000267576487893118,
-    "pt": 1
+    "pt": 1,
+    "sname": "AnthonyBGonzal"
   },
   "80612021": {
+    "name": "Sheila Jackson Lee",
     "pr": 0.00192930072753945,
-    "pt": -1
+    "pt": -1,
+    "sname": "JacksonLeeTX18"
   },
   "806583915012046854": {
+    "name": "Drew Ferguson",
     "pr": 0.000955631993685528,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepDrewFerguson"
   },
   "807095": {
+    "name": "The New York Times",
     "pr": 0.0168568279195961,
-    "pt": -1
+    "pt": -1,
+    "sname": "nytimes"
   },
   "811239440916054016": {
+    "name": "Tom Malinowski",
     "pr": 0.000711857180345782,
-    "pt": -1
+    "pt": -1,
+    "sname": "Malinowski"
   },
   "811986281177772032": {
+    "name": "Trey Hollingsworth",
     "pr": 0.00115019878929244,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepTrey"
   },
   "813286": {
+    "name": "Barack Obama",
     "pr": 0.0126595888208822,
-    "pt": -1
+    "pt": -1,
+    "sname": "BarackObama"
   },
   "814179031956488192": {
+    "name": "Raja Krishnamoorthi",
     "pr": 0.00243326032835175,
-    "pt": -1
+    "pt": -1,
+    "sname": "CongressmanRaja"
   },
   "815952318487298048": {
+    "name": "Dr. Neal Dunn",
     "pr": 0.000797839022524384,
-    "pt": 1
+    "pt": 1,
+    "sname": "DrNealDunnFL2"
   },
   "816111677917851649": {
+    "name": "Francis Rooney",
     "pr": 0.00109706670931184,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepRooney"
   },
   "816131319033950208": {
+    "name": "Jim Banks",
     "pr": 0.00209279373083108,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepJimBanks"
   },
   "816181091673448448": {
+    "name": "Rep. Donald McEachin",
     "pr": 0.00164446432781897,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepMcEachin"
   },
   "816705409486618624": {
+    "name": "Tom Suozzi",
     "pr": 0.000631750915500589,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepTomSuozzi"
   },
   "817076257770835968": {
+    "name": "Adriano Espaillat",
     "pr": 0.001528520468704,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepEspaillat"
   },
   "817138492614524928": {
+    "name": "Ted Budd",
     "pr": 0.00160527216425341,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepTedBudd"
   },
   "818472418620608512": {
+    "name": "US Rep. Al Lawson Jr",
     "pr": 0.00120962502615872,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepAlLawsonJr"
   },
   "818536152588238849": {
+    "name": "Rep. Vicente Gonzalez",
     "pr": 0.001141803510191,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepGonzalez"
   },
   "818910970567344128": {
+    "name": "Vice President Mike Pence",
     "pr": 0.0140852571323729,
-    "pt": 1
+    "pt": 1,
+    "sname": "VP"
   },
   "823302838524739584": {
+    "name": "Chris Coons",
     "pr": 0.000766151568498997,
-    "pt": -1
+    "pt": -1,
+    "sname": "ChrisCoonsforDE"
   },
   "823552974253342721": {
+    "name": "Anthony Brown",
     "pr": 0.00132359706042659,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepAnthonyBrown"
   },
   "82453460": {
+    "name": "Bennie G. Thompson",
     "pr": 0.00115962197653035,
-    "pt": -1
+    "pt": -1,
+    "sname": "BennieGThompson"
   },
   "826589191412862976": {
+    "name": "Joe Cunningham",
     "pr": 0.000697823382294213,
-    "pt": -1
+    "pt": -1,
+    "sname": "JoeCunninghamSC"
   },
   "828977216595849216": {
+    "name": "Rep. John Rutherford",
     "pr": 0.00128941754084507,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepRutherfordFL"
   },
   "828997388920619008": {
+    "name": "Secretary Betsy DeVos",
     "pr": 0.00262778335912211,
-    "pt": -1
+    "pt": -1,
+    "sname": "BetsyDeVosED"
   },
   "829061809135030272": {
+    "name": "Antonio Delgado",
     "pr": 0.00100842971893159,
-    "pt": -1
+    "pt": -1,
+    "sname": "DelgadoforNY19"
   },
   "833673914": {
+    "name": "Michael Waltz",
     "pr": 0.00103808869218194,
-    "pt": 1
+    "pt": 1,
+    "sname": "michaelgwaltz"
   },
   "838462994": {
+    "name": "James Comer",
     "pr": 0.000648806435130675,
-    "pt": 1
+    "pt": 1,
+    "sname": "KYComer"
   },
   "84119348": {
+    "name": "Paul Tonko \u26ab\ufe0f",
     "pr": 0.00130350915517725,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepPaulTonko"
   },
   "845689249": {
+    "name": "Jessica Fletcher",
     "pr": 0.000823164155669509,
-    "pt": 1
+    "pt": 1,
+    "sname": "heckyessica"
   },
   "851477335052140544": {
+    "name": "Jason Crow",
     "pr": 0.00065952045302511,
-    "pt": -1
+    "pt": -1,
+    "sname": "JasonCrowCO6"
   },
   "851621377": {
+    "name": "Sensenbrenner Press",
     "pr": 0.00109528860652282,
-    "pt": 1
+    "pt": 1,
+    "sname": "JimPressOffice"
   },
   "855240223432769538": {
+    "name": "Conor Lamb",
     "pr": 0.000528974465601524,
-    "pt": -1
+    "pt": -1,
+    "sname": "ConorLambPA"
   },
   "857009033882083329": {
+    "name": "Lizzie Pannill Fletcher",
     "pr": 0.000582971657832588,
-    "pt": -1
+    "pt": -1,
+    "sname": "Lizzie4Congress"
   },
   "860547911268139008": {
+    "name": "Elissa Slotkin",
     "pr": 0.000826034566898017,
-    "pt": -1
+    "pt": -1,
+    "sname": "ElissaSlotkin"
   },
   "867495243482058755": {
+    "name": "Cindy Axne",
     "pr": 0.000549606591846399,
-    "pt": -1
+    "pt": -1,
+    "sname": "Axne4Congress"
   },
   "872148729184362497": {
+    "name": "Paul Gosar",
     "pr": 0.000606973719847676,
-    "pt": 1
+    "pt": 1,
+    "sname": "DrPaulGosar"
   },
   "872156132688711681": {
+    "name": "Lauren Underwood",
     "pr": 0.000879937999979113,
-    "pt": -1
+    "pt": -1,
+    "sname": "LaurenUnderwood"
   },
   "87510313": {
+    "name": "Tammy Baldwin",
     "pr": 0.000670224474444503,
-    "pt": -1
+    "pt": -1,
+    "sname": "tammybaldwin"
   },
   "876894308309147650": {
+    "name": "Gil Cisneros",
     "pr": 0.000698806130648872,
-    "pt": -1
+    "pt": -1,
+    "sname": "GilCisnerosCA"
   },
   "878247600096509952": {
+    "name": "Candace Owens",
     "pr": 0.00141690763263433,
-    "pt": 1
+    "pt": 1,
+    "sname": "RealCandaceO"
   },
   "880480631108644864": {
+    "name": "Rep. Ralph Norman",
     "pr": 0.00137550301373002,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepRalphNorman"
   },
   "880850093548687360": {
+    "name": "Kendra Horn",
     "pr": 0.00061560644579964,
-    "pt": -1
+    "pt": -1,
+    "sname": "HornForCongress"
   },
   "882843534750961664": {
+    "name": "TJ Cox",
     "pr": 0.0006264853215031,
-    "pt": -1
+    "pt": -1,
+    "sname": "TJCoxCongress"
   },
   "882958562296819714": {
+    "name": "Abigail Spanberger",
     "pr": 0.00114478931855663,
-    "pt": -1
+    "pt": -1,
+    "sname": "SpanbergerVA07"
   },
   "883069589722198018": {
+    "name": "Pete Stauber",
     "pr": 0.000638274964888825,
-    "pt": 1
+    "pt": 1,
+    "sname": "PeteStauber"
   },
   "88784440": {
+    "name": "Mike Lee",
     "pr": 0.00280285150526626,
-    "pt": 1
+    "pt": 1,
+    "sname": "SenMikeLee"
   },
   "88806753": {
+    "name": "John Garamendi",
     "pr": 0.00126535224540154,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepGaramendi"
   },
   "890038958104735744": {
+    "name": "Greg Pence",
     "pr": 0.000428896098579941,
-    "pt": 1
+    "pt": 1,
+    "sname": "GregPenceIN"
   },
   "892491627088011264": {
+    "name": "Max Rose",
     "pr": 0.000699066221818993,
-    "pt": -1
+    "pt": -1,
+    "sname": "MaxRose4NY"
   },
   "893543272504852480": {
+    "name": "Mark Green",
     "pr": 0.000637359482084563,
-    "pt": 1
+    "pt": 1,
+    "sname": "USAIDMarkGreen"
   },
   "900516768032202752": {
+    "name": "Jared Golden",
     "pr": 0.00044638039404866,
-    "pt": -1
+    "pt": -1,
+    "sname": "golden4congress"
   },
   "902344195": {
+    "name": "Jackie Ibanez ??",
     "pr": 0.000947331379591982,
-    "pt": 1
+    "pt": 1,
+    "sname": "JackieibanezFNC"
   },
   "903354645623566340": {
+    "name": "Dan Meuser",
     "pr": 0.000392102315648105,
-    "pt": 1
+    "pt": 1,
+    "sname": "Meuser4Congress"
   },
   "90639372": {
+    "name": "Dwight Evans",
     "pr": 0.00151667254271113,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepDwightEvans"
   },
   "915831762": {
+    "name": "Anthony Brindisi",
     "pr": 0.000423981613768279,
-    "pt": -1
+    "pt": -1,
+    "sname": "ABrindisiNY"
   },
   "915975047545749504": {
+    "name": "Lori Trahan",
     "pr": 0.000738375981943181,
-    "pt": -1
+    "pt": -1,
+    "sname": "LoriTrahanMA"
   },
   "92186819": {
+    "name": "Senator Mazie Hirono",
     "pr": 0.00155833187701281,
-    "pt": -1
+    "pt": -1,
+    "sname": "maziehirono"
   },
   "928481": {
+    "name": "Amanda Marcotte",
     "pr": 0.000403490141222574,
-    "pt": -1
+    "pt": -1,
+    "sname": "AmandaMarcotte"
   },
   "930552552302792705": {
+    "name": "Dan Crenshaw",
     "pr": 0.00242141907413384,
-    "pt": 1
+    "pt": 1,
+    "sname": "DanCrenshawTX"
   },
   "935033864": {
+    "name": "Richard Hudson",
     "pr": 0.00172327144948856,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepRichHudson"
   },
   "935717078966964228": {
+    "name": "Madeleine Dean",
     "pr": 0.000416925843631504,
-    "pt": -1
+    "pt": -1,
+    "sname": "MadeleineDean"
   },
   "93575832": {
+    "name": "Bob Latta",
     "pr": 0.000976678195405836,
-    "pt": 1
+    "pt": 1,
+    "sname": "latta4congress"
   },
   "939091": {
+    "name": "Joe Biden (Text Join to 30330)",
     "pr": 0.00445629729451369,
-    "pt": -1
+    "pt": -1,
+    "sname": "JoeBiden"
   },
   "941080085121175552": {
+    "name": "Doug Jones",
     "pr": 0.00095585838730586,
-    "pt": -1
+    "pt": -1,
+    "sname": "SenDougJones"
   },
   "94154021": {
+    "name": "Bob Casey Jr.",
     "pr": 0.000414105490696968,
-    "pt": -1
+    "pt": -1,
+    "sname": "Bob_Casey"
   },
   "947956236804337664": {
+    "name": "Lucy McBath",
     "pr": 0.000829244927399572,
-    "pt": -1
+    "pt": -1,
+    "sname": "lucymcbath"
   },
   "950111395378597888": {
+    "name": "Elaine Luria",
     "pr": 0.000848310739074313,
-    "pt": -1
+    "pt": -1,
+    "sname": "ElaineLuriaVA"
   },
   "950783972": {
+    "name": "Ami Bera, M.D.",
     "pr": 0.00106115503349069,
-    "pt": -1
+    "pt": -1,
+    "sname": "RepBera"
   },
   "950952511556538368": {
+    "name": "Sharice Davids",
     "pr": 0.000823308982098157,
-    "pt": -1
+    "pt": -1,
+    "sname": "sharicedavids"
   },
   "952540201": {
+    "name": "Diana DeGette",
     "pr": 0.000481504178954418,
-    "pt": -1
+    "pt": -1,
+    "sname": "DeGette5280"
   },
   "95546148": {
+    "name": "Bill Keating",
     "pr": 0.000330468216013437,
-    "pt": -1
+    "pt": -1,
+    "sname": "WilliamKeating"
   },
   "958510641228275712": {
+    "name": "William Timmons",
     "pr": 0.00111448486826395,
-    "pt": 1
+    "pt": 1,
+    "sname": "VoteTimmons"
   },
   "961312723035394048": {
+    "name": "Mary Gay Scanlon",
     "pr": 0.000786237262884171,
-    "pt": -1
+    "pt": -1,
+    "sname": "marygayscanlon"
   },
   "963480595": {
+    "name": "Mark Meadows",
     "pr": 0.0108022890384305,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepMarkMeadows"
   },
   "964996994623311874": {
+    "name": "Kelly Armstrong",
     "pr": 0.00115221311789378,
-    "pt": 1
+    "pt": 1,
+    "sname": "Armstrong_ND"
   },
   "968650362": {
+    "name": "Tom Cotton",
     "pr": 0.00223473473187567,
-    "pt": 1
+    "pt": 1,
+    "sname": "SenTomCotton"
   },
   "97171189": {
+    "name": "Bill Flores",
     "pr": 0.000969753230001225,
-    "pt": 1
+    "pt": 1,
+    "sname": "Flores4Congress"
   },
   "975200486": {
+    "name": "Thomas Massie",
     "pr": 0.00196702282943538,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepThomasMassie"
   },
   "97583689": {
+    "name": "Hank Johnson",
     "pr": 0.000604618686651618,
-    "pt": -1
+    "pt": -1,
+    "sname": "ReElectHank"
   },
   "976969338": {
+    "name": "Dave Joyce",
     "pr": 0.00157617204695016,
-    "pt": 1
+    "pt": 1,
+    "sname": "RepDaveJoyce"
   },
   "978029858": {
+    "name": "Mike Rounds",
     "pr": 0.000449316200279555,
-    "pt": 1
+    "pt": 1,
+    "sname": "RoundsforSenate"
   },
   "98471035": {
+    "name": "Liz Cheney",
     "pr": 0.000929505380601387,
-    "pt": 1
+    "pt": 1,
+    "sname": "Liz_Cheney"
   },
   "98475069": {
+    "name": "Paul Mitchell",
     "pr": 0.000310695017876637,
-    "pt": 1
+    "pt": 1,
+    "sname": "PaulMitchellUS"
   },
   "98809456": {
+    "name": "David Price",
     "pr": 0.000564234237771666,
-    "pt": -1
+    "pt": -1,
+    "sname": "DAVIDprice24"
   },
   "991721030631780354": {
+    "name": "Jahana Hayes",
     "pr": 0.000650759666041612,
-    "pt": -1
+    "pt": -1,
+    "sname": "JahanaHayesCT"
   },
   "993153006": {
+    "name": "US Rep Rodney Davis",
     "pr": 0.00222894605481718,
-    "pt": 1
+    "pt": 1,
+    "sname": "RodneyDavis"
   }
 }
