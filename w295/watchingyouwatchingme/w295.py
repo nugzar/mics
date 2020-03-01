@@ -36,12 +36,12 @@ print ("Loading pageranks... Done")
 
 @app.route('/')
 def index():
-    if ('DEBUG' in app.config) and (app.config['DEBUG'] == True):
-        print ("DEBUG is defined")
-        session['consumer_key'] = app.config['CONSUMER_KEY']
-        session['consumer_secret'] = app.config['CONSUMER_SECRET']
-        session['access_token'] = app.config['ACCESS_TOKEN']
-        session['access_token_secret'] = app.config['ACCESS_TOKEN_SECRET']
+    #if ('DEBUG' in app.config) and (app.config['DEBUG'] == True):
+    #    print ("DEBUG is defined")
+    #    session['consumer_key'] = app.config['CONSUMER_KEY']
+    #    session['consumer_secret'] = app.config['CONSUMER_SECRET']
+    #    session['access_token'] = app.config['ACCESS_TOKEN']
+    #    session['access_token_secret'] = app.config['ACCESS_TOKEN_SECRET']
 
     return render_template('index.html')
 
