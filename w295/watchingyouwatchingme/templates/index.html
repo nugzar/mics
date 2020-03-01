@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/all.css">
     <link rel="stylesheet" href="static/css/bootstrap.css">
     <link rel="stylesheet" href="static/css/watchingyouwatchingme.css">
 
@@ -51,13 +52,17 @@
 
           <div class="media mt-4" ng-repeat="tweet in usertweets">
             <img ng-src="{{ '{{tweet.user.profile_image_url_https}}' }}" class="align-self-start mr-3 rounded-circle" alt="{{ '{{tweet.user.name}}' }}">
-            <div class="media-body">
+            <div class="media-body" ng-class="{'alert': tweet.is_political, 'alert-warning': tweet.is_political}">
               <h6 class="mt-0"><b>{{ '{{tweet.user.name}}' }}</b> 
                 <a href="https://twitter.com/{{ '{{tweet.user.screen_name}}' }}/status/{{ '{{tweet.id_str}}' }}">@{{ '{{tweet.user.screen_name}}' }}</a>
                 <span>{{ '{{tweet.created_at}}' }}</span>
+                <span class="badge badge-danger" ng-show="tweet.is_political && tweet.political_tendency == 1">Republican</span>
+                <span class="badge badge-primary" ng-show="tweet.is_political && tweet.political_tendency == -1">Democrat</span>
                 <b>
-                  <span>Sentiment: {{ '{{tweet.mnb_sentiment}}' }}</span>
-                  <span>Precision: {{ '{{tweet.mnb_score}}' }}%</span>
+                  <span>
+                      <i class="far fa-thumbs-up" ng-show="tweet.mnb_sentiment == 1"></i>
+                      <i class="far fa-thumbs-down" ng-show="tweet.mnb_sentiment == 0"></i>
+                      {{ '{{tweet.mnb_score}}' }}%</span>
                 </b>
               </h6>
               <p>{{ '{{tweet.text}}' }}</p>

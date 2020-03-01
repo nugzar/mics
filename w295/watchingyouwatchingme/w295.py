@@ -30,13 +30,18 @@ cv  = joblib.load('CountVectorizer.joblib.pkl')
 print ("Loading MultinomialNB.joblib.pkl...")
 mnb = joblib.load('MultinomialNB.joblib.pkl')
 
+print ("Loading pageranks...")
+pageranks = json.load(open("pageranks.json"))
+print ("Loading pageranks... Done")
+
 @app.route('/')
 def index():
-    #if ('DEBUG' in app.config) and (app.config['DEBUG'] == True):
-    #    session['consumer_key'] = app.config['CONSUMER_KEY']
-    #    session['consumer_secret'] = app.config['CONSUMER_SECRET']
-    #    session['access_token'] = app.config['ACCESS_TOKEN']
-    #    session['access_token_secret'] = app.config['ACCESS_TOKEN_SECRET']
+    if ('DEBUG' in app.config) and (app.config['DEBUG'] == True):
+        print ("DEBUG is defined")
+        session['consumer_key'] = app.config['CONSUMER_KEY']
+        session['consumer_secret'] = app.config['CONSUMER_SECRET']
+        session['access_token'] = app.config['ACCESS_TOKEN']
+        session['access_token_secret'] = app.config['ACCESS_TOKEN_SECRET']
 
     return render_template('index.html')
 
@@ -145,6 +150,27 @@ def usertweets():
             data = cv.transform([tweet['text']]).toarray()
             tweet['mnb_sentiment'] = int(mnb.predict(data)[0])
             tweet['mnb_score'] = int(mnb.predict_proba(data)[0][tweet['mnb_sentiment']] * 100)
+            tweet['is_political'] = False
+
+            mentioned_user_ids = []
+
+            if ("entities" in tweet) and (tweet['entities'] is not None):
+                mentioned_user_ids.extend([x["id_str"] for x in tweet['entities']['user_mentions']])
+
+            if ("retweeted_status" in tweet) and (tweet["retweeted_status"] is not None):
+                mentioned_user_ids.append(tweet["retweeted_status"]["user"]["id_str"])
+
+            if ("quoted_status" in tweet) and (tweet["quoted_status"] is not None):
+                mentioned_user_ids.append(tweet["quoted_status"]["user"]["id_str"])
+
+            if ("in_reply_to_user_id_str" in tweet) and (tweet["in_reply_to_user_id_str"] != "") and (tweet["in_reply_to_user_id_str"] is not None):
+                mentioned_user_ids.append(tweet["in_reply_to_user_id_str"])
+
+            for id_str in mentioned_user_ids:
+                if id_str in pageranks:
+                    tweet['political_tendency'] = pageranks[id_str]["pt"]
+                    tweet['pagerank'] = pageranks[id_str]["pr"]
+                    tweet['is_political'] = True
 
         return json.dumps(tweets)
 
