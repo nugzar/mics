@@ -21,6 +21,10 @@ WYWMApp.controller('WYWMController', ['$scope','$http', '$timeout', '$filter', f
       $scope.userfriends = response.data;
     });
 
+    $http.get('/userlikes').then(function(response) {
+      $scope.userlikes = response.data;
+    });
+
   });
 
 }]);

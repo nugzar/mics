@@ -47,7 +47,6 @@
               Sign in with Twitter &raquo;
             </span>
             </a>
-
           </div>
 
           <div class="row">
@@ -67,8 +66,8 @@
                         <h6 class="mt-0"><b>{{ '{{tweet.user.name}}' }}</b> 
                           <a href="https://twitter.com/{{ '{{tweet.user.screen_name}}' }}/status/{{ '{{tweet.id_str}}' }}">@{{ '{{tweet.user.screen_name}}' }}</a>
                           <span>{{ '{{tweet.created_at}}' }}</span>
-                          <span class="badge badge-danger" ng-show="tweet.is_political && tweet.political_tendency == 1">{{ '{{tweet.sname}}' }} (Rep)</span>
-                          <span class="badge badge-primary" ng-show="tweet.is_political && tweet.political_tendency == -1">{{ '{{tweet.sname}}' }} (Dem)</span>
+                          <span class="badge badge-danger" ng-show="tweet.is_political && tweet.pt == 1">{{ '{{tweet.sname}}' }} (Rep)</span>
+                          <span class="badge badge-primary" ng-show="tweet.is_political && tweet.pt == -1">{{ '{{tweet.sname}}' }} (Dem)</span>
                           <b>
                             <span>
                                 <i class="far fa-thumbs-up" ng-show="tweet.mnb_sentiment == 1"></i>
@@ -123,13 +122,32 @@
                 <tbody>
                   <tr ng-repeat="userfriend in userfriends">
                     <td>
-                        <span class="badge badge-danger" ng-show="userfriend.pt == 1">{{ '{{userfriend.sname}}' }} (Rep)</span>
-                        <span class="badge badge-primary" ng-show="userfriend.pt == -1">{{ '{{userfriend.sname}}' }} (Dem)</span>
+                        {{ '{{userfriend.sname}}' }} 
+                        <span class="badge badge-danger" ng-show="userfriend.pt == 1">(Rep)</span>
+                        <span class="badge badge-primary" ng-show="userfriend.pt == -1">(Dem)</span>
                     </td>
                   </tr>
                 </tbody>
               </table>
-            </div>
+
+              <table class="table table-sm table-borderless">
+                  <thead>
+                    <tr class="table-info">
+                      <th>Liked Tweets</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-repeat="userlike in userlikes">
+                      <td>
+                          <span class="badge badge-danger" ng-show="userlike.pt == 1">{{ '{{userlike.sname}}' }} (Rep):</span>
+                          <span class="badge badge-primary" ng-show="userlike.pt == -1">{{ '{{userlike.sname}}' }} (Dem):</span>
+                          <br />
+                          {{ '{{userlike.text}}' }}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
           </div>
 
         </main>
@@ -138,7 +156,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
-    <script src="static/js/watchingyouwatchingme.js?20200301-01"></script>
+    <script src="static/js/watchingyouwatchingme.js?20200301-02"></script>
 
   </body>
 </html>

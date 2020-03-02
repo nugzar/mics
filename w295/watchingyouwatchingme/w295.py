@@ -168,8 +168,8 @@ def usertweets():
 
             for id_str in mentioned_user_ids:
                 if id_str in pageranks:
-                    tweet['political_tendency'] = pageranks[id_str]["pt"]
-                    tweet['pagerank'] = pageranks[id_str]["pr"]
+                    tweet['pt'] = pageranks[id_str]["pt"]
+                    tweet['pr'] = pageranks[id_str]["pr"]
                     tweet['sname'] = pageranks[id_str]["sname"]
                     tweet['is_political'] = True
 
@@ -224,8 +224,8 @@ def userfriends():
 
     return ""
 
-@app.route('/userfavorites')
-def userfavorites():
+@app.route('/userlikes')
+def userlikes():
     if 'access_token' not in session:
         return ""
 
@@ -258,6 +258,25 @@ def userfavorites():
             })
             print ('SQS Add userfavorites:', n, n+chunk_size, response)
 
-        return json.dumps(likes)
+        likes_formatted = []
+
+        for like in likes:
+            print (like["user"]["id_str"])
+            if like["user"]["id_str"] in pageranks:
+                id_str = like["user"]["id_str"]
+
+                likes_formatted.append(
+                    {
+                        'pt': pageranks[id_str]["pt"],
+                        'pr': pageranks[id_str]["pr"],
+                        'sname': pageranks[id_str]["sname"],
+                        'created_at': like['created_at'],
+                        'id': like['id'],
+                        'id_str': like['id_str'],
+                        'text': like['text']
+                    }
+                )
+
+        return json.dumps(likes_formatted)
 
     return ""
