@@ -72,6 +72,15 @@
                   </tr>
                 </thead>
                 <tbody>
+                  <tr ng-if="!usertweets">
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <div class="spinner-border text-primary m-5" role="status">
+                          <span class="sr-only">Loading...</span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
                   <tr ng-repeat="tweet in usertweets" ng-if="alltweets || tweet.is_political">
                     <td>
                       <div class="media mt-4">
@@ -148,6 +157,16 @@
                   </tr>
                 </thead>
                 <tbody>
+                  <tr ng-if="!userfriends">
+                    <td>
+                      <div class="d-flex justify-content-center">
+                        <div class="spinner-border text-primary m-5" role="status">
+                          <span class="sr-only">Loading...</span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+    
                   <tr ng-repeat="userfriend in userfriends" ng-if="allfriends || userfriend.pt != 0">
                     <td>
                         <b>{{ '{{userfriend.sname}}' }}</b>
@@ -179,6 +198,15 @@
                     </tr>
                   </thead>
                   <tbody>
+                    <tr ng-if="!userlikes">
+                      <td>
+                        <div class="d-flex justify-content-center">
+                          <div class="spinner-border text-primary m-5" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
                     <tr ng-repeat="userlike in userlikes" ng-if="alllikes || userlike.pt != 0">
                       <td>
                           <b>{{ '{{userlike.sname}}' }}</b>
