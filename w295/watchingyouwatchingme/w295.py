@@ -185,40 +185,58 @@ def userfriends():
     # Let's refresh the userinfo and tokens
     userinfo()
 
-    #print ('Calling userlikes:', session['consumer_key'], session['consumer_secret'],
-    #    session['access_token'], session['access_token_secret'])
+    users = []
+    cursor = -1
 
     api = TwitterAPI(session['consumer_key'], session['consumer_secret'],
         session['access_token'], session['access_token_secret'])
 
-    r = api.request('friends/ids')
+    while cursor != 0:
+        r = api.request('friends/list', {'count':200, 'cursor':cursor})
+        cursor = 0
 
-    if r.status_code == 200:
-        friends = json.loads(r.text)
-        chunk_size = 1000
-        message = {}
+        if r.status_code == 200:
+            friends = json.loads(r.text)
+            users.extend(friends["users"])
+            cursor = int(friends["next_cursor"])
 
-        message["userid_str"] = json.loads(session['userinfo'])["id_str"]
+            chunk_size = 1000
+            message = {}
 
-        for n in range(0, len(friends["ids"]), chunk_size):
-            message["ids"] = friends["ids"][n:n+chunk_size]
+            friends["ids"] = [u["id"] for u in friends["users"]]
 
-            response = sqs.send_message(
-                QueueUrl=app.config['SQS_FRIENDS_ENDPOINT'],
-                MessageBody=json.dumps(message), 
-                MessageAttributes={
-                'Sender': {
-                    'StringValue': 'userfriends',
-                    'DataType': 'String'
-                }
-            })
-            print ('SQS Add userfriends:', n, n+chunk_size, response)
+            message["userid_str"] = json.loads(session['userinfo'])["id_str"]
+
+            for n in range(0, len(friends["ids"]), chunk_size):
+                message["ids"] = friends["ids"][n:n+chunk_size]
+
+                response = sqs.send_message(
+                    QueueUrl=app.config['SQS_FRIENDS_ENDPOINT'],
+                    MessageBody=json.dumps(message), 
+                    MessageAttributes={
+                    'Sender': {
+                        'StringValue': 'userfriends',
+                        'DataType': 'String'
+                    }
+                })
+                print ('SQS Add userfriends:', n, n+chunk_size, response)
 
         ufs = []
 
-        for id in friends["ids"]:
-            if str(id) in pageranks:
-                ufs.append(pageranks[str(id)])
+        for user in users:
+            u = {
+                "name": user["name"],
+                "pr": 0.,
+                "pt": 0,
+                "sname": user["screen_name"],
+                "id": user["id"],
+                "id_str": user["id_str"]
+            }
+            if u["id_str"] in pageranks:
+                u["pr"] = pageranks[u["id_str"]]["pr"]
+                u["pt"] = pageranks[u["id_str"]]["pt"]
+
+            ufs.append(u)
 
         return json.dumps(ufs)
 
@@ -261,21 +279,22 @@ def userlikes():
         likes_formatted = []
 
         for like in likes:
-            print (like["user"]["id_str"])
+            l = {
+                'pt': 0,
+                'pr': 0,
+                'sname': like['user']['screen_name'],
+                'name': like['user']['name'],
+                'created_at': like['created_at'],
+                'id': like['id'],
+                'id_str': like['id_str'],
+                'text': like['text']
+            }
             if like["user"]["id_str"] in pageranks:
                 id_str = like["user"]["id_str"]
+                l['pt'] = pageranks[id_str]["pt"]
+                l['pr'] = pageranks[id_str]["pr"]
 
-                likes_formatted.append(
-                    {
-                        'pt': pageranks[id_str]["pt"],
-                        'pr': pageranks[id_str]["pr"],
-                        'sname': pageranks[id_str]["sname"],
-                        'created_at': like['created_at'],
-                        'id': like['id'],
-                        'id_str': like['id_str'],
-                        'text': like['text']
-                    }
-                )
+            likes_formatted.append(l)
 
         return json.dumps(likes_formatted)
 

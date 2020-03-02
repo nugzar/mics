@@ -54,11 +54,25 @@
               <table class="table table-sm table-borderless">
                 <thead>
                   <tr class="table-info">
-                    <th>Tweets</th>
+                    <th>
+                      <div class="row">
+                        <div class="col-sm-8">
+                          Tweets
+                        </div>
+                        <div class="col-sm-4 text-right">
+                          Polit
+                          <label class="switch" id="tweets">
+                            <input type="checkbox" ng-model="alltweets" ng-checked="alltweets"> 
+                            <span class="slider round"></span>
+                          </label>
+                          All
+                        </div>
+                      </div>                      
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr ng-repeat="tweet in usertweets">
+                  <tr ng-repeat="tweet in usertweets" ng-if="alltweets || tweet.is_political">
                     <td>
                       <div class="media mt-4">
                       <img ng-src="{{ '{{tweet.user.profile_image_url_https}}' }}" class="align-self-start mr-3 rounded-circle" alt="{{ '{{tweet.user.name}}' }}">
@@ -116,13 +130,27 @@
               <table class="table table-sm table-borderless">
                 <thead>
                   <tr class="table-info">
-                    <th>Following</th>
+                    <th>
+                      <div class="row">
+                        <div class="col-sm-4">
+                            Following
+                        </div>
+                        <div class="col-sm-8 text-right">
+                          Polit
+                          <label class="switch">
+                            <input type="checkbox" ng-model="allfriends" ng-checked="allfriends"> 
+                            <span class="slider round"></span>
+                          </label>
+                          All
+                        </div>
+                      </div>                      
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr ng-repeat="userfriend in userfriends">
+                  <tr ng-repeat="userfriend in userfriends" ng-if="allfriends || userfriend.pt != 0">
                     <td>
-                        {{ '{{userfriend.sname}}' }} 
+                        <b>{{ '{{userfriend.sname}}' }}</b>
                         <span class="badge badge-danger" ng-show="userfriend.pt == 1">(Rep)</span>
                         <span class="badge badge-primary" ng-show="userfriend.pt == -1">(Dem)</span>
                     </td>
@@ -133,14 +161,29 @@
               <table class="table table-sm table-borderless">
                   <thead>
                     <tr class="table-info">
-                      <th>Liked Tweets</th>
+                      <th>
+                          <div class="row">
+                          <div class="col-sm-4">
+                              Likes
+                          </div>
+                          <div class="col-sm-8 text-right">
+                            Polit
+                            <label class="switch">
+                              <input type="checkbox" ng-model="alllikes" ng-checked="alllikes"> 
+                              <span class="slider round"></span>
+                            </label>
+                            All
+                          </div>
+                        </div>                      
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr ng-repeat="userlike in userlikes">
+                    <tr ng-repeat="userlike in userlikes" ng-if="alllikes || userlike.pt != 0">
                       <td>
-                          <span class="badge badge-danger" ng-show="userlike.pt == 1">{{ '{{userlike.sname}}' }} (Rep):</span>
-                          <span class="badge badge-primary" ng-show="userlike.pt == -1">{{ '{{userlike.sname}}' }} (Dem):</span>
+                          <b>{{ '{{userlike.sname}}' }}</b>
+                          <span class="badge badge-danger" ng-show="userlike.pt == 1">(Rep):</span>
+                          <span class="badge badge-primary" ng-show="userlike.pt == -1">(Dem):</span>
                           <br />
                           {{ '{{userlike.text}}' }}
                       </td>

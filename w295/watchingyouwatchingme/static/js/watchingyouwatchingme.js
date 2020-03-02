@@ -12,6 +12,9 @@ WYWMApp.controller('WYWMController', ['$scope','$http', '$timeout', '$filter', f
     $scope.userinfo = response.data;
     $scope.userprofileimage = $scope.userinfo.profile_image_url_https;
     $scope.loggedin = true;
+    $scope.alltweets = true;
+    $scope.allfriends = false;
+    $scope.alllikes = false;
 
     $http.get('/usertweets').then(function(response) {
       $scope.usertweets = response.data;
