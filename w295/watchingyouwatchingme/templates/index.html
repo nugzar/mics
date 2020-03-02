@@ -49,6 +49,19 @@
             </a>
           </div>
 
+          <div class="row" ng-show="loggedin && usertweets && userfriends && userlikes">
+            <div class="col-12">
+              <div class="alert alert-info" role="alert">
+                Based on your activity on Twitter 
+                <span ng-show="republcan_score != democrat_score"> you are {{ '{{probability}}' }}
+                  <span class="btn btn-danger lead" ng-show="republcan_score > democrat_score">Republican for {{ '{{ republcan_score * 100 / (republcan_score + democrat_score) | number:0 }}%' }}</span>
+                  <span class="btn btn-primary lead" ng-show="republcan_score < democrat_score">Democrat for {{ '{{ democrat_score * 100 / (republcan_score + democrat_score) | number:0 }}%' }}</span>
+                </span>
+                <span ng-show="republcan_score == democrat_score">we were not able to identify your political affiliation.</span>
+              </div>
+            </div>
+          </div>
+
           <div class="row" ng-show="loggedin">
             <div class="col-9">
               <table class="table table-sm table-borderless">
@@ -94,7 +107,7 @@
                           <b>
                             <span>
                                 <i class="far fa-thumbs-up" ng-show="tweet.mnb_sentiment == 1"></i>
-                                <i class="far fa-thumbs-down" ng-show="tweet.mnb_sentiment == 0"></i>
+                                <i class="far fa-thumbs-down" ng-show="tweet.mnb_sentiment == -1"></i>
                                 {{ '{{tweet.mnb_score}}' }}%</span>
                           </b>
                         </h6>

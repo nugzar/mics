@@ -148,8 +148,8 @@ def usertweets():
 
         for tweet in tweets:
             data = cv.transform([tweet['text']]).toarray()
-            tweet['mnb_sentiment'] = int(mnb.predict(data)[0])
-            tweet['mnb_score'] = int(mnb.predict_proba(data)[0][tweet['mnb_sentiment']] * 100)
+            tweet['mnb_sentiment'] = (1 if int(mnb.predict(data)[0]) == 1 else -1)
+            tweet['mnb_score'] = int(mnb.predict_proba(data)[0][int(mnb.predict(data)[0])] * 100)
             tweet['is_political'] = False
 
             mentioned_user_ids = []
