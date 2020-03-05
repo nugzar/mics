@@ -38,6 +38,7 @@ WYWMApp.controller('WYWMController', ['$scope','$http', '$timeout', '$filter', f
 
     $http.get('/userfriends').then(function(response) {
       $scope.userfriends = response.data;
+      /*
       $scope.userfriends.forEach(function (friend) {
         score = friend.pt * friend.pr;
         if (score > 0)
@@ -49,6 +50,7 @@ WYWMApp.controller('WYWMController', ['$scope','$http', '$timeout', '$filter', f
           $scope.democrat_score += -score;
         }
       });
+      */
     });
 
     $http.get('/userlikes').then(function(response) {
