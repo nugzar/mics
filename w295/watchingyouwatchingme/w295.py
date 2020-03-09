@@ -18,12 +18,6 @@ twitter = OAuth1Service(
     authorize_url='https://api.twitter.com/oauth/authorize',
     base_url='https://api.twitter.com/1.1/')
 
-sqs = boto3.client('sqs',
-    aws_access_key_id=app.config['SQS_TWEETS_ADD_KEY'],
-    aws_secret_access_key=app.config['SQS_TWEETS_ADD_SECRET'],
-    region_name=app.config['SQS_TWEETS_REGION']
-)
-
 print ("Loading CountVectorizer.joblib.pkl...")
 cv  = joblib.load('CountVectorizer.joblib.pkl')
 
@@ -132,19 +126,6 @@ def usertweets():
 
     if r.status_code == 200:
         tweets = json.loads(r.text)
-        chunk_size = 25
-
-        for n in range(0, len(tweets), chunk_size):
-            response = sqs.send_message(
-                QueueUrl=app.config['SQS_TWEETS_ENDPOINT'],
-                MessageBody=json.dumps(tweets[n:n+chunk_size]), 
-                MessageAttributes={
-                'Sender': {
-                    'StringValue': 'usertweets',
-                    'DataType': 'String'
-                }
-            })
-            print ('SQS Add usertweets:', n, n+chunk_size, response)
 
         for tweet in tweets:
             data = cv.transform([tweet['text']]).toarray()
@@ -198,28 +179,6 @@ def userfriends():
         if r.status_code == 200:
             friends = json.loads(r.text)
             users.extend(friends["users"])
-            cursor = int(friends["next_cursor"])
-
-            chunk_size = 1000
-            message = {}
-
-            friends["ids"] = [u["id"] for u in friends["users"]]
-
-            message["userid_str"] = json.loads(session['userinfo'])["id_str"]
-
-            for n in range(0, len(friends["ids"]), chunk_size):
-                message["ids"] = friends["ids"][n:n+chunk_size]
-
-                response = sqs.send_message(
-                    QueueUrl=app.config['SQS_FRIENDS_ENDPOINT'],
-                    MessageBody=json.dumps(message), 
-                    MessageAttributes={
-                    'Sender': {
-                        'StringValue': 'userfriends',
-                        'DataType': 'String'
-                    }
-                })
-                print ('SQS Add userfriends:', n, n+chunk_size, response)
 
         ufs = []
 
@@ -257,24 +216,6 @@ def userlikes():
 
     if r.status_code == 200:
         likes = json.loads(r.text)
-        chunk_size = 25
-        message = {}
-
-        message["userid_str"] = json.loads(session['userinfo'])["id_str"]
-
-        for n in range(0, len(likes), chunk_size):
-            message["favorites"] = likes[n:n+chunk_size]
-
-            response = sqs.send_message(
-                QueueUrl=app.config['SQS_LIKES_ENDPOINT'],
-                MessageBody=json.dumps(message), 
-                MessageAttributes={
-                'Sender': {
-                    'StringValue': 'userfavorites',
-                    'DataType': 'String'
-                }
-            })
-            print ('SQS Add userfavorites:', n, n+chunk_size, response)
 
         likes_formatted = []
 

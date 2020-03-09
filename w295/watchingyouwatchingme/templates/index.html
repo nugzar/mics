@@ -49,21 +49,25 @@
             </a>
           </div>
 
-          <div class="row" ng-show="loggedin && usertweets && userfriends && userlikes">
-            <div class="col-12">
-              <div class="alert alert-info" role="alert">
-                Based on your activity on Twitter 
-                <span ng-show="republcan_score != democrat_score"> you are {{ '{{probability}}' }}
-                  <span class="btn btn-danger lead" ng-show="republcan_score > democrat_score">Republican for {{ '{{ republcan_score * 100 / (republcan_score + democrat_score) | number:0 }}%' }}</span>
-                  <span class="btn btn-primary lead" ng-show="republcan_score < democrat_score">Democrat for {{ '{{ democrat_score * 100 / (republcan_score + democrat_score) | number:0 }}%' }}</span>
-                </span>
-                <span ng-show="republcan_score == democrat_score">we were not able to identify your political affiliation.</span>
-              </div>
-            </div>
-          </div>
-
           <div class="row" ng-show="loggedin">
             <div class="col-9">
+
+              <div class="row align-items-center p-1" ng-show="loggedin && usertweets && userfriends && userlikes">
+                <div class="col-1"></div>
+                <div class="col-2"><img src="static/img/democrat.png" alt="Democrat" class="img-thumbnail"></div>
+                <div class="col-6">
+                    <div class="text-center" ng-show="republcan_score < democrat_score">Based on your activity on Twitter you are <div class="text-primary">Democrat for {{ '{{ democrat_score * 100 / (republcan_score + democrat_score) | number:0 }}%' }}</div></div>
+                    <div class="text-center" ng-show="republcan_score > democrat_score">Based on your activity on Twitter you are <div class="text-danger">Republican for {{ '{{ republcan_score * 100 / (republcan_score + democrat_score) | number:0 }}%' }}</div></div>
+                    <div class="text-center" ng-show="republcan_score == democrat_score">Based on your activity on Twitter we were not able to identify your political affiliation.</div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: {{ '{{ democrat_score * 100 / (republcan_score + democrat_score) | number:0 }}%' }}" aria-valuenow="{{ '{{ democrat_score * 100 / (republcan_score + democrat_score) | number:0 }}' }}" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar bg-success" role="progressbar" style="width: {{ '{{ republcan_score * 100 / (republcan_score + democrat_score) | number:0 }}%' }}" aria-valuenow="{{ '{{ republcan_score * 100 / (republcan_score + democrat_score) | number:0 }}' }}" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>                  
+                </div>
+                <div class="col-2"><img src="static/img/republican.png" alt="Republican" class="img-thumbnail"></div>
+                <div class="col-1"></div>
+              </div>
+
               <table class="table table-sm table-borderless">
                 <thead>
                   <tr class="table-info">
