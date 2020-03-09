@@ -49,13 +49,30 @@
             </a>
           </div>
 
-          <div class="row" ng-show="loggedin">
-            <div class="col-9">
+          <div class="row align-items-center" ng-show="loggedin">
 
-              <div class="row align-items-center" ng-show="loggedin && usertweets && userfriends && userlikes">
+            <div class="col-12">
+              <div class="row align-items-center p-3">
                 <div class="col-1"></div>
                 <div class="col-2"><img src="static/img/democrat.png" alt="Democrat" class="img-thumbnail"></div>
                 <div class="col-6">
+
+
+                  <div class="text-center" ng-show="!loggedin || !usertweets || !userfriends || !userlikes">
+
+                      <div class="d-flex flex-column align-items-center justify-content-center text-primary">
+                          <div class="row">
+                              <strong>Please wait while we are collecting the data...</strong>
+                            </div>
+                           <div class="row">
+                              <div class="spinner-border" role="status">
+                                  <span class="sr-only">Loading...</span>
+                              </div>
+                           </div>
+                       </div>
+                  </div>
+
+                  <div ng-show="loggedin && usertweets && userfriends && userlikes">
                     <div class="text-center" ng-show="republcan_score < democrat_score">Based on your activity on Twitter you are <div class="text-primary">Democrat for {{ '{{ democrat_score * 100 / (republcan_score + democrat_score) | number:0 }}%' }}</div></div>
                     <div class="text-center" ng-show="republcan_score > democrat_score">Based on your activity on Twitter you are <div class="text-danger">Republican for {{ '{{ republcan_score * 100 / (republcan_score + democrat_score) | number:0 }}%' }}</div></div>
                     <div class="text-center" ng-show="republcan_score == democrat_score">Based on your activity on Twitter we were not able to identify your political affiliation.</div>
@@ -63,18 +80,22 @@
                       <div class="progress-bar" role="progressbar" style="width: {{ '{{ democrat_score * 100 / (republcan_score + democrat_score) | number:0 }}%' }}" aria-valuenow="{{ '{{ democrat_score * 100 / (republcan_score + democrat_score) | number:0 }}' }}" aria-valuemin="0" aria-valuemax="100"></div>
                       <div class="progress-bar bg-success" role="progressbar" style="width: {{ '{{ republcan_score * 100 / (republcan_score + democrat_score) | number:0 }}%' }}" aria-valuenow="{{ '{{ republcan_score * 100 / (republcan_score + democrat_score) | number:0 }}' }}" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>                  
+                  </div>
                 </div>
                 <div class="col-2"><img src="static/img/republican.png" alt="Republican" class="img-thumbnail"></div>
                 <div class="col-1"></div>
               </div>
 
-              <div class="row align-items-center" ng-show="loggedin && usertweets && userfriends && userlikes">
+              <div class="row align-items-center m-3" ng-show="loggedin && usertweets && userfriends && userlikes">
                 <div class="col-3"></div>
                 <div class="col-6 p-3"><canvas id="myChart" height="180"></canvas></div>
                 <div class="col-3"></div>
               </div>
+            </div>
 
-              <table class="table table-sm table-borderless">
+            <div class="row" ng-show="usertweets">
+              <div class="col-6">
+                <table class="table table-sm table-borderless">
                 <thead>
                   <tr class="table-info">
                     <th>
@@ -95,15 +116,6 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr ng-if="!usertweets">
-                    <td>
-                      <div class="d-flex justify-content-center">
-                        <div class="spinner-border text-primary m-5" role="status">
-                          <span class="sr-only">Loading...</span>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
                   <tr ng-repeat="tweet in usertweets" ng-if="alltweets || tweet.is_political">
                     <td>
                       <div class="media mt-4">
@@ -159,7 +171,7 @@
               </table>
             </div>
             <div class="col-3">
-              <table class="table table-sm table-borderless">
+              <table class="table table-sm table-borderless" ng-show="userfriends">
                 <thead>
                   <tr class="table-info">
                     <th>
@@ -180,16 +192,6 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr ng-if="!userfriends">
-                    <td>
-                      <div class="d-flex justify-content-center">
-                        <div class="spinner-border text-primary m-5" role="status">
-                          <span class="sr-only">Loading...</span>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-    
                   <tr ng-repeat="userfriend in userfriends" ng-if="allfriends || userfriend.pt != 0">
                     <td>
                         <b>{{ '{{userfriend.sname}}' }}</b>
@@ -199,8 +201,9 @@
                   </tr>
                 </tbody>
               </table>
-
-              <table class="table table-sm table-borderless">
+            </div>
+            <div class="col-3">
+              <table class="table table-sm table-borderless" ng-show="userlikes">
                   <thead>
                     <tr class="table-info">
                       <th>
@@ -221,15 +224,6 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr ng-if="!userlikes">
-                      <td>
-                        <div class="d-flex justify-content-center">
-                          <div class="spinner-border text-primary m-5" role="status">
-                            <span class="sr-only">Loading...</span>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
                     <tr ng-repeat="userlike in userlikes" ng-if="alllikes || userlike.pt != 0">
                       <td>
                           <b>{{ '{{userlike.sname}}' }}</b>
@@ -251,7 +245,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
-    <script src="static/js/watchingyouwatchingme.js?20200305-03"></script>
+    <script src="static/js/watchingyouwatchingme.js?20200305-04"></script>
 
   </body>
 </html>

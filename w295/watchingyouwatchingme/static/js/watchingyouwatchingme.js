@@ -104,21 +104,21 @@ WYWMApp.controller('WYWMController', ['$scope','$http', '$timeout', '$filter', f
           type: 'pie',
           data: {
               labels: [
-                'Dem: Tweets ' + Math.round($scope.d_tweets_score / ($scope.democrat_score + $scope.republcan_score) * 100) + '%',
-                'Dem: Likes ' + Math.round($scope.d_likes_score / ($scope.democrat_score + $scope.republcan_score) * 100) + '%',
-                'Dem: Follows ' + Math.round($scope.d_friends_score / ($scope.democrat_score + $scope.republcan_score) * 100) + '%',
-                'Rep: Tweets ' + Math.round($scope.r_tweets_score / ($scope.democrat_score + $scope.republcan_score) * 100) + '%',
-                'Rep: Likes ' + Math.round($scope.r_likes_score / ($scope.democrat_score + $scope.republcan_score) * 100) + '%',
-                'Rep: Follows ' + Math.round($scope.r_friends_score / ($scope.democrat_score + $scope.republcan_score) * 100) + '%'
+                'Dem: Tweets ' + Number($scope.d_tweets_score / ($scope.democrat_score + $scope.republcan_score) * 100).toFixed(2) + '%',
+                'Dem: Likes ' + Number($scope.d_likes_score / ($scope.democrat_score + $scope.republcan_score) * 100).toFixed(2) + '%',
+                'Dem: Follows ' + Number($scope.d_friends_score / ($scope.democrat_score + $scope.republcan_score) * 100).toFixed(2) + '%',
+                'Rep: Tweets ' + Number($scope.r_tweets_score / ($scope.democrat_score + $scope.republcan_score) * 100).toFixed(2) + '%',
+                'Rep: Likes ' + Number($scope.r_likes_score / ($scope.democrat_score + $scope.republcan_score) * 100).toFixed(2) + '%',
+                'Rep: Follows ' + Number($scope.r_friends_score / ($scope.democrat_score + $scope.republcan_score) * 100).toFixed(2) + '%'
               ],
               datasets: [{
                   data: [
-                    Math.round($scope.d_tweets_score / ($scope.democrat_score + $scope.republcan_score) * 100),
-                    Math.round($scope.d_likes_score / ($scope.democrat_score + $scope.republcan_score) * 100),
-                    Math.round($scope.d_friends_score / ($scope.democrat_score + $scope.republcan_score) * 100),
-                    Math.round($scope.r_tweets_score / ($scope.democrat_score + $scope.republcan_score) * 100),
-                    Math.round($scope.r_likes_score / ($scope.democrat_score + $scope.republcan_score) * 100),
-                    Math.round($scope.r_friends_score / ($scope.democrat_score + $scope.republcan_score) * 100)
+                    Number($scope.d_tweets_score / ($scope.democrat_score + $scope.republcan_score) * 100).toFixed(2),
+                    Number($scope.d_likes_score / ($scope.democrat_score + $scope.republcan_score) * 100).toFixed(2),
+                    Number($scope.d_friends_score / ($scope.democrat_score + $scope.republcan_score) * 100).toFixed(2),
+                    Number($scope.r_tweets_score / ($scope.democrat_score + $scope.republcan_score) * 100).toFixed(2),
+                    Number($scope.r_likes_score / ($scope.democrat_score + $scope.republcan_score) * 100).toFixed(2),
+                    Number($scope.r_friends_score / ($scope.democrat_score + $scope.republcan_score) * 100).toFixed(2)
                   ],
                   backgroundColor: [
                       'rgba(0, 0, 255, 1)',
