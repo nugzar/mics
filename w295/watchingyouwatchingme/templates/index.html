@@ -34,11 +34,17 @@
           <div class="jumbotron" ng-hide="loggedin">
             <h1>MICS Capstone Project (NN, AS, SA, JM)</h1>
             <p class="lead">
-              This web site tries to find out political affiliation of Twitter user. That means - your political affiliation. 
-              By reading your publicly posted tweets and comments to other tweets our algorithm tries to 
-              find out if you are leftist or rightist. Without your permission, your activity on twitter can 
-              disclose your political affiliation to others. <br /><br />
-              Please, log in using your twitter account to our web site and we will calculate your score. 
+                <p> is a privacy tool you can use to see for yourself how AI and machine learning could view your twitter interactions. 
+                  Due to the upcoming political elections we chose political tendency as the subject to analyze, however, our method 
+                  could also be applied to other potentially sensitive subjects.  
+                </p><p>Knowledge is power and with this tool you have the power to be informed how your existing and future twitter actions could impact our algorithm's perception of you.</p>
+                <p>Our method:</p>
+                <ul>
+                  <li>Apply pagerank algorithm to influential politicians on twitter</li>
+                  <li>Calculate a political tendency score for your interactions with these politicians on twitter</li>
+                </ul>
+                <p>Predict your political affiliation based on that political tendency score </p>
+              <p>Please, log in using your twitter account to our web site and we will calculate your score.</p>
             </p>
             <a class="btn btn-lg btn-primary" href="login" role="button">
               <span>
