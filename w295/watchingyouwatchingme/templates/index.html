@@ -84,7 +84,7 @@
                     <div class="text-center" ng-show="republcan_score == democrat_score">Based on your activity on Twitter we were not able to identify your political affiliation.</div>
                     <div class="progress">
                       <div class="progress-bar" role="progressbar" style="width: {{ '{{ democrat_score * 100 / (republcan_score + democrat_score) | number:0 }}%' }}" aria-valuenow="{{ '{{ democrat_score * 100 / (republcan_score + democrat_score) | number:0 }}' }}" aria-valuemin="0" aria-valuemax="100"></div>
-                      <div class="progress-bar bg-success" role="progressbar" style="width: {{ '{{ republcan_score * 100 / (republcan_score + democrat_score) | number:0 }}%' }}" aria-valuenow="{{ '{{ republcan_score * 100 / (republcan_score + democrat_score) | number:0 }}' }}" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar badge-danger" role="progressbar" style="width: {{ '{{ republcan_score * 100 / (republcan_score + democrat_score) | number:0 }}%' }}" aria-valuenow="{{ '{{ republcan_score * 100 / (republcan_score + democrat_score) | number:0 }}' }}" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>                  
                   </div>
                 </div>
