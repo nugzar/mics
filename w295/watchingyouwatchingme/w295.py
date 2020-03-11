@@ -109,12 +109,11 @@ def userinfo_processing(screenname=None):
         u = userinfo_authorized()
 
     # Now we need to check, if the data for some other user is requested
-    if (screenname is not None) and u['screen_name'] != screenname:
+    if (screenname is not None) and (u['screen_name'] != screenname) and ('authorized_screen_name' in session):
         if session['authorized_screen_name'] in app.config['ADMINS']:
             u = userinfo_search(screenname)
 
-    print (app.config['ADMINS'], session['authorized_screen_name'])
-    u["searchenabled"] = (session['authorized_screen_name'] in app.config['ADMINS'])
+    u["searchenabled"] = ('authorized_screen_name' in session) and (session['authorized_screen_name'] in app.config['ADMINS'])
     session['userinfo'] = json.dumps(u)
     return session['userinfo']
 
@@ -159,7 +158,7 @@ def usertweets():
     userinfo()
     u = json.loads(session['userinfo'])
 
-    if u['screen_name'] == session['authorized_screen_name']:
+    if ('authorized_screen_name' not in session) or (u['screen_name'] == session['authorized_screen_name']):
         api = TwitterAPI(session['consumer_key'], session['consumer_secret'],
             session['access_token'], session['access_token_secret'])
     else:
@@ -214,7 +213,7 @@ def userfriends():
     userinfo()
     u = json.loads(session['userinfo'])
 
-    if u['screen_name'] == session['authorized_screen_name']:
+    if ('authorized_screen_name' not in session) or (u['screen_name'] == session['authorized_screen_name']):
         api = TwitterAPI(session['consumer_key'], session['consumer_secret'],
             session['access_token'], session['access_token_secret'])
     else:
