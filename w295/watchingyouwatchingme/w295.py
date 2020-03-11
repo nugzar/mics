@@ -46,7 +46,7 @@ def index():
 
 @app.route('/influencers')
 def influencers():
-    return render_template('influencers.html', influencers=pageranks)
+    return render_template('influencers.html', influencers={k: v for k, v in sorted(pageranks.items(), key=lambda item: item[1]['pr'], reverse=True)})
 
 @app.route('/favicon.ico')
 def favicon():

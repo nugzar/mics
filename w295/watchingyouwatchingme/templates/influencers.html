@@ -35,6 +35,9 @@
                 <thead>
                   <tr class="table-info">
                     <th>
+                        #
+                    </th>
+                    <th>
                         Influencer
                     </th>
                     <th>
@@ -48,6 +51,9 @@
                 <tbody>
                 {% for influencer in influencers %}
                   <tr class="{{("text-danger" if influencers[influencer].pt == 1 else "text-primary")}}">
+                    <td>
+                        {{ loop.index0 + 1 }}
+                    </td>
                     <td>
                         {{influencers[influencer].name}}
                     </td>
