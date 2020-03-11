@@ -79,7 +79,7 @@ def oauthorize():
     session['access_token'] = auth_session.__dict__['access_token']
     session['access_token_secret'] = auth_session.__dict__['access_token_secret']
     
-    u = json.loads(userinfo)
+    u = json.loads(userinfo())
     session['authorized_screen_name'] = u['screen_name']
 
     return redirect(url_for('index'))
