@@ -36,6 +36,11 @@ def index():
         session['consumer_secret'] = app.config['CONSUMER_SECRET']
         session['access_token'] = app.config['ACCESS_TOKEN']
         session['access_token_secret'] = app.config['ACCESS_TOKEN_SECRET']
+        session['authorized_screen_name'] = app.config['ADMINS'][0]
+
+    screenname = request.args.get('screenname')
+    print ("Screenname", screenname)
+    userinfo_processing(screenname)
 
     return render_template('index.html')
 
@@ -73,6 +78,9 @@ def oauthorize():
     session['consumer_secret'] = auth_session.__dict__['consumer_secret']
     session['access_token'] = auth_session.__dict__['access_token']
     session['access_token_secret'] = auth_session.__dict__['access_token_secret']
+    
+    u = json.loads(userinfo)
+    session['authorized_screen_name'] = u['screen_name']
 
     return redirect(url_for('index'))
 
@@ -83,15 +91,34 @@ def logout():
     return redirect(url_for('index'))
 
 @app.route('/userinfo')
-def userinfo(refresh=True):
+def userinfo():
+    screenname = request.args.get('screenname')
+    print ("Screenname", screenname)
+
+    return userinfo_processing(screenname)
+
+def userinfo_processing(screenname=None):
     if 'access_token' not in session:
         return ""
 
-    if ('userinfo' in session) and not refresh:
-        return session['userinfo']
+    # If there is no userinfo in the session, then first of all we need to load the authorized data
+    u = {}
+    if ('userinfo' in session):
+        u = json.loads(session['userinfo'])
+    else:
+        u = userinfo_authorized()
 
-    #print ('Calling userinfo:', session['consumer_key'], session['consumer_secret'],
-    #    session['access_token'], session['access_token_secret'])
+    # Now we need to check, if the data for some other user is requested
+    if (screenname is not None) and u['screen_name'] != screenname:
+        if session['authorized_screen_name'] in app.config['ADMINS']:
+            u = userinfo_search(screenname)
+
+    print (app.config['ADMINS'], session['authorized_screen_name'])
+    u["searchenabled"] = (session['authorized_screen_name'] in app.config['ADMINS'])
+    session['userinfo'] = json.dumps(u)
+    return session['userinfo']
+
+def userinfo_authorized():
 
     api = TwitterAPI(session['consumer_key'], session['consumer_secret'],
         session['access_token'], session['access_token_secret'])
@@ -101,12 +128,27 @@ def userinfo(refresh=True):
     if r.status_code == 200:
         print ("Refreshed user details")
 
-        userinfo_str = json.dumps(json.loads(r.text))
-        session['userinfo'] = userinfo_str
+        return json.loads(r.text)
 
-        return userinfo_str
+    return {}
 
-    return ""
+def userinfo_search(screenname):
+
+    api = TwitterAPI(
+        app.config['CONSUMER_KEY'],
+        app.config['CONSUMER_SECRET'],
+        app.config['ACCESS_TOKEN'],
+        app.config['ACCESS_TOKEN_SECRET'])
+
+    print ("Refreshing user details for", screenname)
+
+    r = api.request('users/show', {'screen_name': screenname})
+
+    if r.status_code == 200:
+        print ("Refreshed user details", r.text)
+        return json.loads(r.text)
+
+    return {}
 
 @app.route('/usertweets')
 def usertweets():
@@ -114,15 +156,20 @@ def usertweets():
         return ""
 
     # Let's refresh the userinfo and tokens
-    userinfo(True)
+    userinfo()
+    u = json.loads(session['userinfo'])
 
-    #print ('Calling usertweets:', session['consumer_key'], session['consumer_secret'],
-    #    session['access_token'], session['access_token_secret'])
+    if u['screen_name'] == session['authorized_screen_name']:
+        api = TwitterAPI(session['consumer_key'], session['consumer_secret'],
+            session['access_token'], session['access_token_secret'])
+    else:
+        api = TwitterAPI(
+            app.config['CONSUMER_KEY'],
+            app.config['CONSUMER_SECRET'],
+            app.config['ACCESS_TOKEN'],
+            app.config['ACCESS_TOKEN_SECRET'])
 
-    api = TwitterAPI(session['consumer_key'], session['consumer_secret'],
-        session['access_token'], session['access_token_secret'])
-
-    r = api.request('statuses/user_timeline', {'count':1000, 'screen_name': json.loads(session['userinfo'])['screen_name']})
+    r = api.request('statuses/user_timeline', {'count':1000, 'screen_name': u['screen_name']})
 
     if r.status_code == 200:
         tweets = json.loads(r.text)
@@ -165,6 +212,17 @@ def userfriends():
 
     # Let's refresh the userinfo and tokens
     userinfo()
+    u = json.loads(session['userinfo'])
+
+    if u['screen_name'] == session['authorized_screen_name']:
+        api = TwitterAPI(session['consumer_key'], session['consumer_secret'],
+            session['access_token'], session['access_token_secret'])
+    else:
+        api = TwitterAPI(
+            app.config['CONSUMER_KEY'],
+            app.config['CONSUMER_SECRET'],
+            app.config['ACCESS_TOKEN'],
+            app.config['ACCESS_TOKEN_SECRET'])
 
     users = []
     cursor = -1
@@ -173,7 +231,7 @@ def userfriends():
         session['access_token'], session['access_token_secret'])
 
     while cursor != 0:
-        r = api.request('friends/list', {'count':200, 'cursor':cursor})
+        r = api.request('friends/list', {'count':200, 'cursor':cursor, 'screen_name': u['screen_name']})
         cursor = 0
 
         if r.status_code == 200:

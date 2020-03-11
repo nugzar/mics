@@ -22,10 +22,11 @@
                 <a class="nav-link" href="#"><i>Watching you... watching me...</i></a>
               </li>
             </ul>
-            <form class="form-inline mt-2 mt-md-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <form class="form-inline mt-2 mt-md-0" role="form" method="GET" enctype="multipart/form-data" action="">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="screenname" ng-show="userinfo.searchenabled" />
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit" ng-show="userinfo.searchenabled">Search</button>
               <img class="ml-3 rounded-circle" ng-src="{{ '{{userprofileimage}}' }}" height="34px" width="34px"/>
+              <label class="text-white">{{ '{{userinfo.name}}' }}</label>
             </form>
           </div>
         </nav>
