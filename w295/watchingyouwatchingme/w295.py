@@ -137,11 +137,14 @@ def userinfo_authorized():
 
 def userinfo_search(screenname):
 
-    api = TwitterAPI(
-        app.config['CONSUMER_KEY'],
-        app.config['CONSUMER_SECRET'],
-        app.config['ACCESS_TOKEN'],
-        app.config['ACCESS_TOKEN_SECRET'])
+    #api = TwitterAPI(
+    #    app.config['CONSUMER_KEY'],
+    #    app.config['CONSUMER_SECRET'],
+    #    app.config['ACCESS_TOKEN'],
+    #    app.config['ACCESS_TOKEN_SECRET'])
+
+    api = TwitterAPI(session['consumer_key'], session['consumer_secret'],
+        session['access_token'], session['access_token_secret'])
 
     print ("Refreshing user details for", screenname)
 
@@ -162,15 +165,18 @@ def usertweets():
     userinfo()
     u = json.loads(session['userinfo'])
 
-    if ('authorized_screen_name' not in session) or (u['screen_name'] == session['authorized_screen_name']):
-        api = TwitterAPI(session['consumer_key'], session['consumer_secret'],
-            session['access_token'], session['access_token_secret'])
-    else:
-        api = TwitterAPI(
-            app.config['CONSUMER_KEY'],
-            app.config['CONSUMER_SECRET'],
-            app.config['ACCESS_TOKEN'],
-            app.config['ACCESS_TOKEN_SECRET'])
+    #if ('authorized_screen_name' not in session) or (u['screen_name'] == session['authorized_screen_name']):
+    #    api = TwitterAPI(session['consumer_key'], session['consumer_secret'],
+    #        session['access_token'], session['access_token_secret'])
+    #else:
+    #    api = TwitterAPI(
+    #        app.config['CONSUMER_KEY'],
+    #        app.config['CONSUMER_SECRET'],
+    #        app.config['ACCESS_TOKEN'],
+    #        app.config['ACCESS_TOKEN_SECRET'])
+
+    api = TwitterAPI(session['consumer_key'], session['consumer_secret'],
+        session['access_token'], session['access_token_secret'])
 
     r = api.request('statuses/user_timeline', {'count':1000, 'screen_name': u['screen_name']})
 
@@ -217,6 +223,7 @@ def userfriends():
     userinfo()
     u = json.loads(session['userinfo'])
 
+    """
     if ('authorized_screen_name' not in session) or (u['screen_name'] == session['authorized_screen_name']):
         api = TwitterAPI(session['consumer_key'], session['consumer_secret'],
             session['access_token'], session['access_token_secret'])
@@ -226,6 +233,10 @@ def userfriends():
             app.config['CONSUMER_SECRET'],
             app.config['ACCESS_TOKEN'],
             app.config['ACCESS_TOKEN_SECRET'])
+    """
+    
+    api = TwitterAPI(session['consumer_key'], session['consumer_secret'],
+        session['access_token'], session['access_token_secret'])
 
     users = []
     cursor = -1
