@@ -1,4 +1,4 @@
-import os, boto3, joblib
+import os, joblib
 from flask import Flask, redirect, url_for, render_template
 from flask import request, session, json, send_from_directory
 from rauth import OAuth1Service
