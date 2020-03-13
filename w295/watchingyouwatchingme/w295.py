@@ -82,9 +82,11 @@ def oauthorize():
     session['consumer_secret'] = auth_session.__dict__['consumer_secret']
     session['access_token'] = auth_session.__dict__['access_token']
     session['access_token_secret'] = auth_session.__dict__['access_token_secret']
+
+    u = userinfo_authorized()
+    u["searchenabled"] = u['screen_name'] in app.config['ADMINS']
     
-    u = json.loads(userinfo())
-    session['authorized_screen_name'] = u['screen_name']
+    session['userinfo'] = json.dumps(u)
 
     return redirect(url_for('index'))
 
@@ -131,7 +133,9 @@ def userinfo_authorized():
     if r.status_code == 200:
         print ("Refreshed user details")
 
-        return json.loads(r.text)
+        u = json.loads(r.text)
+        session['authorized_screen_name'] = u['screen_name']
+        return u
 
     return {}
 
