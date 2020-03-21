@@ -32,7 +32,7 @@ WYWMApp.controller('WYWMController', ['$scope','$http', '$timeout', '$filter', f
       response.data.forEach(function (tweet) {
         if (tweet.is_political)
         {
-          score = tweet.mnb_sentiment * tweet.pt * tweet.pr;
+          score = tweet.mnb_score * tweet.mnb_sentiment * tweet.pt * tweet.pr;
           if (score > 0)
           {
             $scope.republcan_score += score;

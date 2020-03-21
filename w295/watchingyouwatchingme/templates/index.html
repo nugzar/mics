@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="static/css/all.css">
     <link rel="stylesheet" href="static/css/bootstrap.css">
-    <link rel="stylesheet" href="static/css/watchingyouwatchingme.css?20200304-01">
+    <link rel="stylesheet" href="static/css/watchingyouwatchingme.css?20200324-01">
 
     <title>Watching you... watching me...</title>
   </head>
@@ -138,8 +138,9 @@
                           <span class="badge badge-primary" ng-show="tweet.is_political && tweet.pt == -1">{{ '{{tweet.sname}}' }} (Dem)</span>
                           <b>
                             <span>
-                                <i class="far fa-thumbs-up" ng-show="tweet.mnb_sentiment == 1"></i>
-                                <i class="far fa-thumbs-down" ng-show="tweet.mnb_sentiment == -1"></i>
+                                <i class="far fa-smile" ng-show="tweet.mnb_sentiment == 1"></i>
+                                <i class="far fa-meh-rolling-eyes" ng-show="tweet.mnb_sentiment == 0"></i>
+                                <i class="far fa-frown" ng-show="tweet.mnb_sentiment == -1"></i>
                                 {{ '{{tweet.mnb_score}}' }}%</span>
                           </b>
                         </h6>
@@ -255,7 +256,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
-    <script src="static/js/watchingyouwatchingme.js?20200305-04"></script>
+    <script src="static/js/watchingyouwatchingme.js?20200324-01"></script>
 
   </body>
 </html>

@@ -1,9 +1,12 @@
-import os, joblib
+import os, joblib, nltk
 from flask import Flask, redirect, url_for, render_template
 from flask import request, session, json, send_from_directory
 from rauth import OAuth1Service
 from TwitterAPI import TwitterAPI
 from sklearn.naive_bayes import MultinomialNB
+from textblob import TextBlob
+from nltk.corpus import stopwords
+from nltk.stem.wordnet import WordNetLemmatizer
 
 app = Flask(__name__)
 app.config.from_pyfile('w295.config', silent=True)
@@ -27,6 +30,10 @@ mnb = joblib.load('MultinomialNB.joblib.pkl')
 print ("Loading pageranks...")
 pageranks = json.load(open("pageranks.json"))
 print ("Loading pageranks... Done")
+
+nltk.download('wordnet')
+nltk.download('punkt')
+nltk.download('stopwords')
 
 @app.route('/')
 def index():
@@ -154,6 +161,26 @@ def userinfo_search(screenname):
 
     return {}
 
+def tweet_normalization(tweet):
+    lem = WordNetLemmatizer()
+    normalized_tweet = []
+        
+    for word in TextBlob(tweet).split():
+        if word in stopwords.words('english'):
+            continue
+
+        if (word == 'rt') or ('http' in word) or (word.startswith('@')) or (word.startswith('#')):
+            continue
+        
+        if len(word) < 3:
+            continue
+
+        normalized_tweet.append(lem.lemmatize(word,'v'))
+
+    tweet = ' '.join(normalized_tweet)
+    tweet = ''.join([ele for ele in tweet.lower() if (ele >= 'a' and ele <= 'z') or (ele >= '0' and ele <= '9') or (ele in ' \'')])
+    return tweet
+
 @app.route('/usertweets')
 def usertweets():
     if 'access_token' not in session:
@@ -172,9 +199,9 @@ def usertweets():
         tweets = json.loads(r.text)
 
         for tweet in tweets:
-            data = cv.transform([tweet['text']]).toarray()
-            tweet['mnb_sentiment'] = (1 if int(mnb.predict(data)[0]) == 1 else -1)
-            tweet['mnb_score'] = int(mnb.predict_proba(data)[0][int(mnb.predict(data)[0])] * 100)
+            data = cv.transform([tweet_normalization(tweet['text'])]).toarray()
+            tweet['mnb_sentiment'] = int(mnb.predict(data)[0])
+            tweet['mnb_score'] = int(mnb.predict_proba(data)[0][tweet['mnb_sentiment'] + 1] * 100)
             tweet['is_political'] = False
 
             mentioned_user_ids = []
