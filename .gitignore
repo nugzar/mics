@@ -3,5 +3,6 @@ venv
 w295.config
 package
 data
+nohup*
 *.zip
 __pycache__
