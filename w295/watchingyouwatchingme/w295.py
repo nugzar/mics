@@ -1,4 +1,4 @@
-import os, joblib, nltk
+import os, joblib, nltk, tweet_normalization as tn
 from flask import Flask, redirect, url_for, render_template
 from flask import request, session, json, send_from_directory
 from rauth import OAuth1Service
@@ -161,26 +161,6 @@ def userinfo_search(screenname):
 
     return {}
 
-def tweet_normalization(tweet):
-    lem = WordNetLemmatizer()
-    normalized_tweet = []
-        
-    for word in TextBlob(tweet).split():
-        if word in stopwords.words('english'):
-            continue
-
-        if (word == 'rt') or ('http' in word) or (word.startswith('@')) or (word.startswith('#')):
-            continue
-        
-        if len(word) < 3:
-            continue
-
-        normalized_tweet.append(lem.lemmatize(word,'v'))
-
-    tweet = ' '.join(normalized_tweet)
-    tweet = ''.join([ele for ele in tweet.lower() if (ele >= 'a' and ele <= 'z') or (ele >= '0' and ele <= '9') or (ele in ' \'')])
-    return tweet
-
 @app.route('/usertweets')
 def usertweets():
     if 'access_token' not in session:
@@ -199,7 +179,7 @@ def usertweets():
         tweets = json.loads(r.text)
 
         for tweet in tweets:
-            data = cv.transform([tweet_normalization(tweet['text'])]).toarray()
+            data = cv.transform([tn.tweet_normalization(tweet['text'])]).toarray()
             tweet['mnb_sentiment'] = int(mnb.predict(data)[0])
             tweet['mnb_score'] = int(mnb.predict_proba(data)[0][tweet['mnb_sentiment'] + 1] * 100)
             tweet['is_political'] = False
