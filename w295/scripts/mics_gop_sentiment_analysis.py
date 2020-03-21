@@ -59,14 +59,14 @@ print (tweets.head(10))
 def tweet_normalization(tweet):
     lem = WordNetLemmatizer()
     normalized_tweet = []
-        
+
     for word in TextBlob(tweet).split():
         if word in stopwords.words('english'):
             continue
 
         if (word == 'rt') or ('http' in word) or (word.startswith('@')) or (word.startswith('#')):
             continue
-        
+
         if len(word) < 3:
             continue
 
@@ -85,7 +85,7 @@ def sentiment_normalization(sentiment):
 
     if sentiment == 'Neutral':
       return 0
-    
+
 tweet_list = 'I was playing with my friends with whom I used to play, when you called me yesterday'
 print(tweet_normalization(tweet_list))
 
@@ -153,7 +153,7 @@ for algo in algorithms:
     #print(classification_report(predictions,test_labels))
     #print(confusion_matrix(predictions,test_labels))
     #print(accuracy_score(predictions,test_labels))
-    
+
     #print("")
     #print("%s : Done" % (algo,))
 
@@ -162,9 +162,9 @@ print (clf.predict_proba(cv.transform([tweet_normalization('We’re not done wit
 
 #classifier = nltk.NaiveBayesClassifier.train(training_set)
 
-#import joblib
-#joblib.dump(cv, "CountVectorizer.joblib.pkl", compress=9)
-#joblib.dump(clf, "MultinomialNB.joblib.pkl", compress=9)
+import joblib
+joblib.dump(cv, "CountVectorizer.joblib.pkl", compress=9)
+joblib.dump(clf, "MultinomialNB.joblib.pkl", compress=9)
 
 
 
