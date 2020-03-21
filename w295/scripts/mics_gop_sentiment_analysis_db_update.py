@@ -26,12 +26,12 @@ for tweet in tweets:
   data = cv.transform([tweet_text]).toarray()
   mnb_sentiment = mnb.predict(data)
   mnb_score = mnb.predict_proba(data)
-  print(tweet['id'], mnb_sentiment[0], mnb_score[0][mnb_sentiment[0]], tweet_text)
+  print(tweet['id'], mnb_sentiment[0], mnb_score[0][mnb_sentiment[0]+1], mnb_score[0], tweet_text)
 
   cursor.execute("UPDATE tweets SET gop_mnb_sentiment = %s, gop_mnb_score = %s WHERE id = %s",
   (
     int(mnb_sentiment[0]),
-    round(float(mnb_score[0][mnb_sentiment[0]]), 8),
+    round(float(mnb_score[0][mnb_sentiment[0]+1]), 8),
     tweet['id']
   ))
 
