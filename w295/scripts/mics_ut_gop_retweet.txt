@@ -1,0 +1,1 @@
+update tweets set usertext='', ut_gop_mnb_sentiment=1, ut_gop_mnb_score=1 where length(retweeted_status) > 5 and ut_gop_mnb_sentiment is null limit 10000

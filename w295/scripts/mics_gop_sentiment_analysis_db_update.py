@@ -11,7 +11,7 @@ con = pymysql.connect(host='w295ft.ckge4y2pabwj.us-east-1.rds.amazonaws.com',
 
 print ("Getting tweets from the database...")
 cursor = con.cursor(pymysql.cursors.DictCursor)
-cursor.execute("SELECT id, text FROM tweets WHERE gop_mnb_sentiment IS NULL LIMIT 5000")
+cursor.execute("SELECT id, text FROM tweets WHERE gop_mnb_sentiment IS NULL LIMIT 10000")
 tweets = cursor.fetchall()
 
 print ("Loading CountVectorizer.joblib.pkl...")

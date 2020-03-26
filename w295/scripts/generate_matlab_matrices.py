@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 import pymysql, numpy as np
 from numpy import linalg as LA
-import sys, json
+import sys
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
 
-con = pymysql.connect(host='localhost',
+con = pymysql.connect(host='w295ft.ckge4y2pabwj.us-east-1.rds.amazonaws.com',
   port=3306,
-  user='root',
-  passwd='',
+  user='w295',
+  passwd='asdASD123',
   db='w295')
 
 cursor = con.cursor(pymysql.cursors.DictCursor)
@@ -92,17 +92,12 @@ for index, pr in inf_df.iterrows():
   cursor.execute("UPDATE users SET pagerank = %s WHERE id = %s", (pr['pagerank'], pr['id']))
   con.commit()
 
-cursor.execute("SELECT id_str, political_tendency, pagerank FROM v_influencers")
-influencer_pageranks = cursor.fetchall()
 
-ipgs = {}
-
-for pg in influencer_pageranks:
-  ipgs[pg["id_str"]] = {}
-  ipgs[pg["id_str"]]["pt"] = pg["political_tendency"]
-  ipgs[pg["id_str"]]["pr"] = pg["pagerank"]
-
-print (ipgs)
-print (json.dumps(ipgs))
-
+'''
+print (influencers_results)
+print (influencers)
+print (likes)
+print (comments)
+print (followings)
+'''
 con.close()
