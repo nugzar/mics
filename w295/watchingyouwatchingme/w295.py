@@ -205,6 +205,19 @@ def usertweets():
                     tweet['sname'] = pageranks[id_str]["sname"]
                     tweet['is_political'] = True
 
+            # In case of retweets, the sentiment should not be analysed. Retweet measn 100% support of the previous influencer
+            if ("retweeted_status" in tweet) and ("id" in tweet["retweeted_status"]):
+              tweet['mnb_sentiment'] = 1
+              tweet['mnb_score'] = 100.
+              tweet['is_political'] = False
+              tweet['text'] = tweet['text'].split(':')[0]
+
+              if tweet["retweeted_status"]["user"]["id_str"] in pageranks:
+                tweet['pt'] = pageranks[tweet["retweeted_status"]["user"]["id_str"]]["pt"]
+                tweet['pr'] = pageranks[tweet["retweeted_status"]["user"]["id_str"]]["pr"]
+                tweet['sname'] = pageranks[tweet["retweeted_status"]["user"]["id_str"]]["sname"]
+                tweet['is_political'] = True
+
         return json.dumps(tweets)
 
     return ""
