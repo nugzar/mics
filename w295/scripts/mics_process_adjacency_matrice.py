@@ -8,7 +8,7 @@ con = pymysql.connect(host='w295ft.ckge4y2pabwj.us-east-1.rds.amazonaws.com',
   db='w295')
 
 cursor = con.cursor(pymysql.cursors.DictCursor)
-cursor.execute("call P_REFRESH_ADJACENCY_MATRIX_FOR_ALL_USERS")
+cursor.execute("call P_REFRESH_ADJACENCY_MATRIX_FOR_PAGERANK_USERS")
 
 con.close()
 
