@@ -6,3 +6,4 @@ data
 nohup*
 *.zip
 __pycache__
+.vscode
