@@ -183,6 +183,7 @@ def usertweets():
             tweet['mnb_sentiment'] = int(mnb.predict(data)[0])
             tweet['mnb_score'] = int(mnb.predict_proba(data)[0][tweet['mnb_sentiment'] + 1] * 100)
             tweet['is_political'] = False
+            tweet['status'] = True
 
             mentioned_user_ids = []
 
@@ -257,7 +258,8 @@ def userfriends():
                 "pt": 0,
                 "sname": user["screen_name"],
                 "id": user["id"],
-                "id_str": user["id_str"]
+                "id_str": user["id_str"],
+                "status": True
             }
             if u["id_str"] in pageranks:
                 u["pr"] = pageranks[u["id_str"]]["pr"]
@@ -296,7 +298,8 @@ def userlikes():
                 'created_at': like['created_at'],
                 'id': like['id'],
                 'id_str': like['id_str'],
-                'text': like['text']
+                'text': like['text'],
+                'status': True
             }
             if like["user"]["id_str"] in pageranks:
                 id_str = like["user"]["id_str"]

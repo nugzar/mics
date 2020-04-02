@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="static/css/all.css">
     <link rel="stylesheet" href="static/css/bootstrap.css">
-    <link rel="stylesheet" href="static/css/watchingyouwatchingme.css?20200324-01">
+    <link rel="stylesheet" href="static/css/watchingyouwatchingme.css?20200401-01">
 
     <title>Watching you... watching me...</title>
   </head>
@@ -126,12 +126,18 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr ng-repeat="tweet in usertweets" ng-if="alltweets || tweet.is_political">
+                  <tr ng-repeat="tweet in usertweets" ng-if="alltweets || tweet.is_political" ng-class="{'text-muted': (!tweet.status)}" ng-style="(!tweet.status) && {'text-decoration':'line-through'}">
                     <td>
                       <div class="media mt-4">
                       <img ng-src="{{ '{{tweet.user.profile_image_url_https}}' }}" class="align-self-start mr-3 rounded-circle" alt="{{ '{{tweet.user.name}}' }}">
+
                       <div class="media-body" ng-class="{'alert': tweet.is_political, 'alert-warning': tweet.is_political}">
-                        <h6 class="mt-0"><b>{{ '{{tweet.user.name}}' }}</b> 
+                        <h6 class="mt-0">
+                          <a href="" class="btn btn-white p-0" ng-click="togglestatus(tweet)">
+                            <i class="fas" ng-class="{'fa-toggle-off': (!tweet.status), 'fa-toggle-on': (tweet.status)}"></i>
+                          </a>
+    
+                          <b>{{ '{{tweet.user.name}}' }}</b> 
                           <a href="https://twitter.com/{{ '{{tweet.user.screen_name}}' }}/status/{{ '{{tweet.id_str}}' }}">@{{ '{{tweet.user.screen_name}}' }}</a>
                           <span>{{ '{{tweet.created_at}}' }}</span>
                           <span class="badge badge-danger" ng-show="tweet.is_political && tweet.pt == 1">{{ '{{tweet.sname}}' }} (Rep)</span>
@@ -185,7 +191,7 @@
               <table class="table table-sm table-borderless" ng-show="userfriends">
                 <thead>
                   <tr class="table-info">
-                    <th>
+                    <th colspan="2">
                       <div class="row">
                         <div class="col-sm-4">
                             Following
@@ -203,7 +209,12 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr ng-repeat="userfriend in userfriends" ng-if="allfriends || userfriend.pt != 0">
+                  <tr ng-repeat="userfriend in userfriends" ng-if="allfriends || userfriend.pt != 0" ng-class="{'text-muted': (!userfriend.status)}" ng-style="(!userfriend.status) && {'text-decoration':'line-through'}">
+                    <td>
+                      <a href="" class="btn btn-white p-0" ng-click="togglestatus(userfriend)">
+                        <i class="fas" ng-class="{'fa-toggle-off': (!userfriend.status), 'fa-toggle-on': (userfriend.status)}"></i>
+                      </a>
+                    </td>
                     <td>
                         <b>{{ '{{userfriend.sname}}' }}</b>
                         <span class="badge badge-danger" ng-show="userfriend.pt == 1">(Rep)</span>
@@ -217,7 +228,7 @@
               <table class="table table-sm table-borderless" ng-show="userlikes">
                   <thead>
                     <tr class="table-info">
-                      <th>
+                      <th colspan="2">
                           <div class="row">
                           <div class="col-sm-4">
                               Likes
@@ -235,13 +246,18 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr ng-repeat="userlike in userlikes" ng-if="alllikes || userlike.pt != 0">
+                    <tr ng-repeat="userlike in userlikes" ng-if="alllikes || userlike.pt != 0" ng-class="{'text-muted': (!userlike.status)}" ng-style="(!userlike.status) && {'text-decoration':'line-through'}">
                       <td>
-                          <b>{{ '{{userlike.sname}}' }}</b>
-                          <span class="badge badge-danger" ng-show="userlike.pt == 1">(Rep):</span>
-                          <span class="badge badge-primary" ng-show="userlike.pt == -1">(Dem):</span>
-                          <br />
-                          {{ '{{userlike.text}}' }}
+                        <a href="" class="btn btn-white p-0" ng-click="togglestatus(userlike)">
+                          <i class="fas" ng-class="{'fa-toggle-off': (!userlike.status), 'fa-toggle-on': (userlike.status)}"></i>
+                        </a>
+                      </td>
+                      <td>
+                        <b>{{ '{{userlike.sname}}' }}</b>
+                        <span class="badge badge-danger" ng-show="userlike.pt == 1">(Rep):</span>
+                        <span class="badge badge-primary" ng-show="userlike.pt == -1">(Dem):</span>
+                        <br />
+                        {{ '{{userlike.text}}' }}
                       </td>
                     </tr>
                   </tbody>
@@ -256,7 +272,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
-    <script src="static/js/watchingyouwatchingme.js?20200324-01"></script>
+    <script src="static/js/watchingyouwatchingme.js?20200401-01"></script>
 
   </body>
 </html>

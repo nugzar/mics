@@ -94,6 +94,11 @@ WYWMApp.controller('WYWMController', ['$scope','$http', '$timeout', '$filter', f
       displayChart();
     });
 
+    $scope.togglestatus = function(o)
+    {
+      o.status = !o.status;
+    }
+  
     function displayChart() {
 
       if (!$scope.usertweets || !$scope.userlikes || !$scope.userfriends)
