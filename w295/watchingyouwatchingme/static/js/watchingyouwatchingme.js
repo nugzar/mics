@@ -12,7 +12,7 @@ WYWMApp.controller('WYWMController', ['$scope','$http', '$timeout', '$filter', f
     $scope.userinfo = response.data;
     $scope.userprofileimage = $scope.userinfo.profile_image_url_https;
     $scope.loggedin = true;
-    $scope.alltweets = true;
+    $scope.alltweets = false;
     $scope.allfriends = false;
     $scope.alllikes = false;
     $scope.republcan_score = 0.0;
@@ -26,11 +26,43 @@ WYWMApp.controller('WYWMController', ['$scope','$http', '$timeout', '$filter', f
     $scope.r_friends_score = 0.0;
 
     $http.get('/usertweets').then(function(response) {
-      $scope.d_tweets_score = 0.0;
-      $scope.r_tweets_score = 0.0;
+      $scope.usertweets = response.data;
+      $scope.calculateScore();
+    });
 
-      response.data.forEach(function (tweet) {
-        if (tweet.is_political)
+    $http.get('/userfriends').then(function(response) {
+      $scope.userfriends = response.data;
+      $scope.calculateScore();
+    });
+
+    $http.get('/userlikes').then(function(response) {
+      $scope.userlikes = response.data;
+      $scope.calculateScore();
+    });
+
+    $scope.togglestatus = function(o)
+    {
+      o.status = !o.status;
+      $scope.calculateScore();
+    }
+
+    $scope.calculateScore = function() {
+
+      if (!$scope.usertweets || !$scope.userlikes || !$scope.userfriends)
+        return;
+
+        $scope.republcan_score = 0.0;
+        $scope.democrat_score = 0.0;
+    
+        $scope.d_tweets_score = 0.0;
+        $scope.d_likes_score = 0.0;
+        $scope.d_friends_score = 0.0;
+        $scope.r_tweets_score = 0.0;
+        $scope.r_likes_score = 0.0;
+        $scope.r_friends_score = 0.0;
+    
+      $scope.usertweets.forEach(function (tweet) {
+        if (tweet.is_political && tweet.status)
         {
           score = tweet.mnb_score * tweet.mnb_sentiment * tweet.pt * tweet.pr;
           if (score > 0)
@@ -45,61 +77,40 @@ WYWMApp.controller('WYWMController', ['$scope','$http', '$timeout', '$filter', f
           }
         }
       });
-
-      $scope.usertweets = response.data;
-      displayChart();
-    });
-
-    $http.get('/userfriends').then(function(response) {
-      $scope.d_friends_score = 0.0;
-      $scope.r_friends_score = 0.0;
-
-      response.data.forEach(function (friend) {
+  
+      $scope.userfriends.forEach(function (friend) {
         score = friend.pt * friend.pr;
-        if (score > 0)
+
+        if (score > 0 && friend.status)
         {
           $scope.republcan_score += score;
           $scope.r_friends_score += score;
         }
-        else if (score < 0)
+        else if (score < 0 && friend.status)
         {
           $scope.democrat_score += -score;
           $scope.d_friends_score += -score;
         }
       });
 
-      $scope.userfriends = response.data;
-      displayChart();
-    });
-
-    $http.get('/userlikes').then(function(response) {
-      $scope.d_likes_score = 0.0;
-      $scope.r_likes_score = 0.0;
-
-      response.data.forEach(function (like) {
+      $scope.userlikes.forEach(function (like) {
         score = like.pt * like.pr;
-        if (score > 0)
+        if (score > 0 && like.status)
         {
           $scope.republcan_score += score;
           $scope.r_likes_score += score;
         }
-        else if (score < 0)
+        else if (score < 0 && like.status)
         {
           $scope.democrat_score += -score;
           $scope.d_likes_score += -score;
         }
       });
 
-      $scope.userlikes = response.data;
-      displayChart();
-    });
-
-    $scope.togglestatus = function(o)
-    {
-      o.status = !o.status;
+      $scope.displayChart();
     }
-  
-    function displayChart() {
+    
+    $scope.displayChart = function() {
 
       if (!$scope.usertweets || !$scope.userlikes || !$scope.userfriends)
         return;
