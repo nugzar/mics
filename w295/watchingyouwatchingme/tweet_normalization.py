@@ -11,8 +11,8 @@ def tweet_normalization(tweet):
         if word in stopwords.words('english'):
             continue
 
-        if (word == 'rt') or ('http' in word) or (word.startswith('@')): # or (word.startswith('#'))
-            continue
+        #if (word == 'rt') or ('http' in word) or (word.startswith('@')): # or (word.startswith('#'))
+        #    continue
 
         if len(word) < 3:
             continue
