@@ -5,7 +5,6 @@ import gzip, csv, json
 influencers = {}
 testusers = {}
 
-print ("Loading influencer data from csv/v_influencers_pageranks.csv.gz...")
 with gzip.open("csv/v_influencers_pageranks.csv.gz", "rt") as f_influencers:
   csvobj_influencers = csv.reader(f_influencers) #, delimiter = ',', quotechar="'")
   for influencer in csvobj_influencers:
@@ -17,7 +16,6 @@ with gzip.open("csv/v_influencers_pageranks.csv.gz", "rt") as f_influencers:
 
 #print (influencers)
 
-print ("Loading testuser data from csv/v_testusers.csv.gz...")
 with gzip.open("csv/v_testusers.csv.gz", "rt") as f_testusers:
   csvobj_testusers = csv.reader(f_testusers)
   for testuser in csvobj_testusers:
@@ -32,7 +30,6 @@ with gzip.open("csv/v_testusers.csv.gz", "rt") as f_testusers:
         "rep_tweets_pr": 0.
       }
 
-print ("Processing followers data from v_testusers_followers.csv.gz...")
 with gzip.open("csv/v_testusers_followers.csv.gz", "rt") as f_followers:
   csvobj_followers = csv.reader(f_followers)
   for follower in csvobj_followers:
@@ -43,7 +40,6 @@ with gzip.open("csv/v_testusers_followers.csv.gz", "rt") as f_followers:
       if (influencers[follower[0]]["pt"] == 1): # Republican
         testusers[follower[3]]["rep_following_pr"] = testusers[follower[3]]["rep_following_pr"] + influencers[follower[0]]["pr"]
 
-print ("Processing likes data from v_testusers_likes.csv.gz...")
 with gzip.open("csv/v_testusers_likes.csv.gz", "rt") as f_likes:
   csvobj_likes = csv.reader(f_likes)
   for like in csvobj_likes:
@@ -54,10 +50,6 @@ with gzip.open("csv/v_testusers_likes.csv.gz", "rt") as f_likes:
       if (influencers[like[4]]["pt"] == 1): # Republican
         testusers[like[0]]["rep_likes_pr"] = testusers[like[0]]["rep_likes_pr"] + influencers[like[4]]["pr"]
 
-['id', 'created_at', 'user_id', 'user_screen_name', 'user_name', 'is_influencer', 'in_reply_to_screen_name', 'in_reply_to_user_id_str', 'in_reply_to_status_id_str', 'quoted_status_id_str', 'lang', 'quote_count', 'reply_count', 'retweet_count', 'text', 'mentioned_user_ids_str', 'mnb_sentiment', 'mnb_score', 'gop_mnb_sentiment', 'gop_mnb_score', 'usertext', 'ut_gop_mnb_sentiment', 'ut_gop_mnb_score']
-
-
-print ("Processing tweets data from v_testusers_tweets.csv.gz...")
 with gzip.open("csv/v_testusers_tweets.csv.gz", "rt") as f_tweets:
   csvobj_tweets = csv.reader(f_tweets)
   for tweet in csvobj_tweets:
@@ -77,6 +69,8 @@ with gzip.open("csv/v_testusers_tweets.csv.gz", "rt") as f_tweets:
           if (influencers[influencer_id]["pt"] * sentiment == 1): # Sentiment pro Republican
             testusers[tweet[2]]["rep_tweets_pr"] = testusers[tweet[2]]["rep_tweets_pr"] + influencers[influencer_id]["pr"] * sentiment_score
 
+
+print ("testuserid,screen_name,affiliation,accuracy,dem_score,rep_score")
 for id in testusers:
   testuser = testusers[id]
   if (
@@ -88,5 +82,12 @@ for id in testusers:
     rep_score = testuser["rep_likes_pr"] + testuser["rep_following_pr"] + testuser["rep_tweets_pr"]
 
     if (dem_score != rep_score):
-      print (id, testuser["screen_name"], ("republican" if dem_score < rep_score else "democrat"), (rep_score if dem_score < rep_score else dem_score) / (dem_score + rep_score) * 100, dem_score, rep_score)
+      print ("%s,%s,%s,%s,%s,%s" % (
+        id, 
+        testuser["screen_name"],
+        ("republican" if dem_score < rep_score else "democrat"),
+        (rep_score if dem_score < rep_score else dem_score) / (dem_score + rep_score),
+        dem_score,
+        rep_score)
+      )
 
