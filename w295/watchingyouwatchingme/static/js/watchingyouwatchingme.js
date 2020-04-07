@@ -115,6 +115,10 @@ WYWMApp.controller('WYWMController', ['$scope','$http', '$timeout', '$filter', f
       if (!$scope.usertweets || !$scope.userlikes || !$scope.userfriends)
         return;
 
+      if ($scope.democrat_score + $scope.republcan_score == 0)
+        // No political activity. Avoiding divide by zero
+        $scope.democrat_score = $scope.republcan_score = 1;
+
       var ctx = document.getElementById('myChart').getContext('2d');
       var myChart = new Chart(ctx, {
           type: 'pie',
