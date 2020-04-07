@@ -55,6 +55,10 @@ def index():
 def influencers():
     return render_template('influencers.html', influencers={k: v for k, v in sorted(pageranks.items(), key=lambda item: item[1]['pr'], reverse=True)})
 
+@app.route('/cookies')
+def cookies():
+    return render_template('cookies.html')
+
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static/img'),
