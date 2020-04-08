@@ -1,4 +1,4 @@
-import os, joblib, nltk, tweet_normalization as tn
+import os, joblib, nltk, tweet_normalization as tn, math
 from flask import Flask, redirect, url_for, render_template
 from flask import request, session, json, send_from_directory
 from rauth import OAuth1Service
@@ -53,7 +53,14 @@ def index():
 
 @app.route('/influencers')
 def influencers():
-    return render_template('influencers.html', influencers={k: v for k, v in sorted(pageranks.items(), key=lambda item: item[1]['pr'], reverse=True)})
+    print (list({k: v for k, v in sorted(pageranks.items(), key=lambda item: item[1]['pr'], reverse=True)})[0])
+    data = {"influencers": {k: v for k, v in sorted(pageranks.items(), key=lambda item: item[1]['pr'], reverse=True)}}
+    data["max"] = 0
+    for influencer in data["influencers"]:
+        data["influencers"][influencer]["lpr"] = round(-math.log(data["influencers"][influencer]["pr"]), 2)
+        if data["max"] < data["influencers"][influencer]["lpr"]:
+            data["max"] = data["influencers"][influencer]["lpr"]
+    return render_template('influencers.html', data = data)
 
 @app.route('/cookies')
 def cookies():

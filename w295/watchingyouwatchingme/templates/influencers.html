@@ -46,24 +46,35 @@
                     <th>
                         Rank
                     </th>
-                  </tr>
+                    <th>
+                        &nbsp;
+                  </th>
+                </tr>
                 </thead>
                 <tbody>
-                {% for influencer in influencers %}
-                  <tr class="{{("text-danger" if influencers[influencer].pt == 1 else "text-primary")}}">
-                    <td>
+                {% for influencer in data["influencers"] %}
+                  <tr class="{{("text-danger" if data["influencers"][influencer].pt == 1 else "text-primary")}}">
+                    <td class="align-middle">
                         {{ loop.index0 + 1 }}
                     </td>
-                    <td>
-                        {{influencers[influencer].name}}
+                    <td class="align-middle">
+                        {{data["influencers"][influencer].name}}
                     </td>
-                    <td>
-                        {{("Republican" if influencers[influencer].pt == 1 else "Democrat")}}
+                    <td class="align-middle">
+                        {{("Republican" if data["influencers"][influencer].pt == 1 else "Democrat")}}
                     </td>
-                    <td>
-                        {{influencers[influencer].pr}}
+                    <td class="align-middle">
+                        <div class="progress">
+                          <div class="progress-bar {{("bg-danger" if data["influencers"][influencer].pt == 1 else "bg-primary")}}" role="progressbar" style="width: {{(data["max"] - data["influencers"][influencer]["lpr"]) / data["max"] * 100 |int}}%" aria-valuenow="{{(data["max"] - data["influencers"][influencer]["lpr"]) / data["max"] * 100 |int}}" aria-valuemin="0" aria-valuemax="100">
+                          </div>
+                        </div>                  
                     </td>
-                  </tr>
+                    <td class="align-middle">
+                      <span class="badge {{("badge-danger" if data["influencers"][influencer].pt == 1 else "badge-primary")}}">
+                        {{"$%.2f"|format((data["max"] - data["influencers"][influencer]["lpr"]) / data["max"] * 100)}}%
+                      </span>
+                  </td>
+                </tr>
                 {% endfor %}
                 </tbody>
               </table>
