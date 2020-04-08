@@ -71,7 +71,7 @@
                     </td>
                     <td class="align-middle">
                       <span class="badge {{("badge-danger" if data["influencers"][influencer].pt == 1 else "badge-primary")}}">
-                        {{"$%.2f"|format((data["max"] - data["influencers"][influencer]["lpr"]) / data["max"] * 100)}}%
+                        {{"%.2f"|format((data["max"] - data["influencers"][influencer]["lpr"]) / data["max"] * 100)}}%
                       </span>
                   </td>
                 </tr>
