@@ -119,8 +119,8 @@ WYWMApp.controller('WYWMController', ['$scope','$http', '$timeout', '$filter', f
         // No political activity. Avoiding divide by zero
         $scope.democrat_score = $scope.republcan_score = 1;
 
-      var ctx = document.getElementById('myChart').getContext('2d');
-      var myChart = new Chart(ctx, {
+      var ctx = document.getElementById('pie').getContext('2d');
+      var pie = new Chart(ctx, {
           type: 'pie',
           data: {
               labels: [
