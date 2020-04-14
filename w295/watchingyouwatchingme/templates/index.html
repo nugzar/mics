@@ -141,7 +141,6 @@
                           </a>
     
                           <b>{{ '{{tweet.user.name}}' }}</b> 
-                          <a href="https://twitter.com/{{ '{{tweet.user.screen_name}}' }}/status/{{ '{{tweet.id_str}}' }}">@{{ '{{tweet.user.screen_name}}' }}</a>
                           <span>{{ '{{tweet.created_at}}' }}</span>
                           <span class="badge badge-danger" ng-show="tweet.is_political && tweet.pt == 1">{{ '{{tweet.sname}}' }} (Rep)</span>
                           <span class="badge badge-primary" ng-show="tweet.is_political && tweet.pt == -1">{{ '{{tweet.sname}}' }} (Dem)</span>

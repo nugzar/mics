@@ -46,6 +46,9 @@ def index():
         session['authorized_screen_name'] = app.config['ADMINS'][0]
 
     screenname = request.args.get('screenname')
+    if screenname in app.config['USERS']:
+        screenname = app.config['USERS'][screenname]
+
     print ("Screenname", screenname)
     userinfo_processing(screenname)
 
@@ -138,6 +141,12 @@ def userinfo_processing(screenname=None):
             u = userinfo_search(screenname)
 
     u["searchenabled"] = ('authorized_screen_name' in session) and (session['authorized_screen_name'] in app.config['ADMINS'])
+    u["hideuserdetails"] = False
+
+    if (screenname is not None) and ('authorized_screen_name' in session) and (session['authorized_screen_name'] != screenname):
+        u["hideuserdetails"] = True
+        u["name"] = ""
+
     session['userinfo'] = json.dumps(u)
     return session['userinfo']
 
@@ -195,6 +204,9 @@ def usertweets():
             tweet['mnb_score'] = int(mnb.predict_proba(data)[0][tweet['mnb_sentiment'] + 1] * 100)
             tweet['is_political'] = False
             tweet['status'] = True
+
+            #if u["hideuserdetails"]:
+            tweet['user']['name'] = ''
 
             mentioned_user_ids = []
 
