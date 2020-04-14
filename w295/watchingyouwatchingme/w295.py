@@ -69,6 +69,10 @@ def influencers():
 def cookies():
     return render_template('cookies.html')
 
+@app.route('/tnc')
+def termsandconditions():
+    return render_template('termsandconditions.html')
+
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static/img'),
