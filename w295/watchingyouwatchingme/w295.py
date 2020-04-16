@@ -78,6 +78,10 @@ def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static/img'),
         'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
+@app.route('/video')
+def video():
+    return render_template('video.html')
+
 @app.route('/login')
 def login():
     request_token, request_token_secret = twitter.get_request_token()
